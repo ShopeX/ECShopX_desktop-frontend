@@ -7,7 +7,7 @@ Node.js (current LTS) and npm are required to run the project. To be sure about 
 
 ### Installation
 ```
-cd ecshopx-pc
+cd ECShopX_desktop-frontend
 npm i
 ```
 
