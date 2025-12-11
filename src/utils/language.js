@@ -15,9 +15,14 @@ export const locales = [
       name: '中文',
       iso: 'zh-CN',
       language: 'zh-CN'
+    },
+    {
+      code: 'ar',
+      name: 'العربية',
+      iso: 'ar-SA',
+      language: 'ar-SA'
     }
   ]
-  
+
   export const languageKey = 'i18n_redirected'
   export const defaultLocale = process.env.VUE_APP_DEFAULT_LANG || 'en'
-  

@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+openspec
 
 # local env files
 .env.local

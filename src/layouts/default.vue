@@ -7,12 +7,13 @@
 
 <template>
   <LayoutHoc>
-  <div class="system-container">
+  <div class="system-container" :dir="direction">
     <SpHeader />
     <div class="page-body">
       <Nuxt />
     </div>
     <SpFooter />
+    <CookieConsent />
   </div>
 </LayoutHoc>
 </template>
@@ -24,9 +25,20 @@ import { mapActions, mapState } from 'vuex'
 import { Tracker } from '@/service'
 import { isNativeBrower } from '@/utils'
 import { mixin } from '@/mixins'
+import { getCurrentDirection } from '@/utils/rtl'
 
 export default {
   mixins: [mixin],
+  computed: {
+    ...mapState({
+      pageSeo: (state) => {
+        return state.pageSeo
+      }
+    }),
+    direction() {
+      return getCurrentDirection(this)
+    }
+  },
   head() {
     return {
       // title: this.pageSeo.title,
@@ -36,13 +48,6 @@ export default {
         { hid: 'description', name: 'description', content: this.pageSeo.mate_description }
       ]
     }
-  },
-  computed: {
-    ...mapState({
-      pageSeo: (state) => {
-        return state.pageSeo
-      }
-    })
   },
   data() {
     return {

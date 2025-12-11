@@ -56,11 +56,11 @@ ul {
 }
 
 .fl {
-  float: left;
+  @include float-start;
 }
 
 .fr {
-  float: right;
+  @include float-end;
 }
 
 .txt-center {

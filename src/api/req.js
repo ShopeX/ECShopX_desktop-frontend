@@ -47,6 +47,8 @@ const setCountryCode = (config) => {
     // 根据语言设置 country_code
     if (locale === 'en') {
       country_code = 'en-CN'
+    } else if (locale === 'ar') {
+      country_code = 'ar-SA'
     } else {
       country_code = 'zh-CN'
     }

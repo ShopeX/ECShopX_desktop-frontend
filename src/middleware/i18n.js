@@ -11,8 +11,9 @@ export default function (context) {
 
   const enPath = `en`
   const zhPath = 'zh'
+  const arPath = 'ar'
 
-  const pathLang = getlanguageByPath(route.path) 
+  const pathLang = getlanguageByPath(route.path)
   let lang = pathLang || app.i18n.locale || defaultLocale
   const routePath = route.path;
   store.commit('SET_LANG', lang)
@@ -22,18 +23,17 @@ export default function (context) {
     routePath.indexOf(`${lang}`) === -1 &&
     defaultLocale !== lang
   ) {
-    const trans = routePath.indexOf(zhPath) !== -1
-      ? {
-        c: zhPath,
-        r: enPath
-      }
-      : routePath.indexOf(enPath) !== -1
-        ? {
-          c: enPath,
-          r: zhPath
-        }
-        : null;
-    const path = trans ? routePath.replace(trans.c, trans.r) : `/${`${lang}`}${routePath}`
+    // 支持三种语言之间的路径转换
+    let trans = null
+    if (routePath.indexOf(zhPath) !== -1) {
+      trans = { c: zhPath, r: lang }
+    } else if (routePath.indexOf(enPath) !== -1) {
+      trans = { c: enPath, r: lang }
+    } else if (routePath.indexOf(arPath) !== -1) {
+      trans = { c: arPath, r: lang }
+    }
+
+    const path = trans ? routePath.replace(trans.c, trans.r) : `/${lang}${routePath}`
     return redirect({ path: path, query: route.query })
   }
 }

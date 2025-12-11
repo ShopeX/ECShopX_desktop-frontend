@@ -15,12 +15,13 @@
 
 <template>
   <LayoutHoc>
-  <div class="shop-auth">
+  <div class="shop-auth" :dir="direction">
     <shop-header v-if="show" />
     <div class="page-body">
       <Nuxt />
     </div>
     <sp-footer />
+    <CookieConsent />
   </div>
 </LayoutHoc>
 </template>
@@ -30,6 +31,7 @@ import '@/main'
 import { mapActions, mapState } from 'vuex'
 import { Tracker } from '@/service'
 import { isNativeBrower } from '@/utils'
+import { getCurrentDirection } from '@/utils/rtl'
 
 export default {
   data () {
@@ -55,7 +57,10 @@ export default {
 
         return res.params ? JSON.parse(res.params) : []
       }
-    })
+    }),
+    direction() {
+      return getCurrentDirection(this)
+    }
   },
   created() {},
   mounted() {

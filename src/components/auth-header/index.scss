@@ -195,7 +195,9 @@
       .category-list {
         position: absolute;
         top: 42px;
+        left: 0;
         width: 1000px;
+        direction: ltr;
         // display: none;
         height: 0;
         overflow: hidden;

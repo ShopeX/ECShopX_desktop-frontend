@@ -152,19 +152,19 @@ textarea {
 }
 
 .f-l {
-  float: left;
+  @include float-start;
 }
 
 .f-r {
-  float: right;
+  @include float-end;
 }
 
 .t-r {
-  text-align: right !important;
+  @include text-align-end;
 }
 
 .t-l {
-  text-align: left !important;
+  @include text-align-start;
 }
 
 .t-c {

@@ -3,6 +3,8 @@
  * See LICENSE file for license details.
  */
 
+@import 'mixins/rtl';
+
 @import "variables";
 
 @function strip-unit($number) {

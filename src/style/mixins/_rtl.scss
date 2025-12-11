@@ -1,0 +1,211 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+/**
+ * RTL (Right-to-Left) Mixin
+ * 用于支持从右到左的语言布局
+ */
+
+/**
+ * RTL 模式下的样式
+ * 用法: @include rtl { ... }
+ */
+@mixin rtl {
+  [dir="rtl"] & {
+    @content;
+  }
+}
+
+/**
+ * LTR 模式下的样式
+ * 用法: @include ltr { ... }
+ */
+@mixin ltr {
+  [dir="ltr"] &,
+  &:not([dir]) {
+    @content;
+  }
+}
+
+/**
+ * 方向感知的 margin-inline-start
+ * 在 LTR 中为 margin-left，在 RTL 中为 margin-right
+ */
+@mixin margin-inline-start($value) {
+  margin-left: $value;
+  
+  @include rtl {
+    margin-left: 0;
+    margin-right: $value;
+  }
+}
+
+/**
+ * 方向感知的 margin-inline-end
+ * 在 LTR 中为 margin-right，在 RTL 中为 margin-left
+ */
+@mixin margin-inline-end($value) {
+  margin-right: $value;
+  
+  @include rtl {
+    margin-right: 0;
+    margin-left: $value;
+  }
+}
+
+/**
+ * 方向感知的 padding-inline-start
+ * 在 LTR 中为 padding-left，在 RTL 中为 padding-right
+ */
+@mixin padding-inline-start($value) {
+  padding-left: $value;
+  
+  @include rtl {
+    padding-left: 0;
+    padding-right: $value;
+  }
+}
+
+/**
+ * 方向感知的 padding-inline-end
+ * 在 LTR 中为 padding-right，在 RTL 中为 padding-left
+ */
+@mixin padding-inline-end($value) {
+  padding-right: $value;
+  
+  @include rtl {
+    padding-right: 0;
+    padding-left: $value;
+  }
+}
+
+/**
+ * 方向感知的 border-inline-start
+ */
+@mixin border-inline-start($value) {
+  border-left: $value;
+  
+  @include rtl {
+    border-left: none;
+    border-right: $value;
+  }
+}
+
+/**
+ * 方向感知的 border-inline-end
+ */
+@mixin border-inline-end($value) {
+  border-right: $value;
+  
+  @include rtl {
+    border-right: none;
+    border-left: $value;
+  }
+}
+
+/**
+ * Float 到开始位置（LTR 中为 left，RTL 中为 right）
+ */
+@mixin float-start {
+  float: left;
+  
+  @include rtl {
+    float: right;
+  }
+}
+
+/**
+ * Float 到结束位置（LTR 中为 right，RTL 中为 left）
+ */
+@mixin float-end {
+  float: right;
+  
+  @include rtl {
+    float: left;
+  }
+}
+
+/**
+ * 文本对齐到开始位置（LTR 中为 left，RTL 中为 right）
+ */
+@mixin text-align-start {
+  text-align: left;
+  
+  @include rtl {
+    text-align: right;
+  }
+}
+
+/**
+ * 文本对齐到结束位置（LTR 中为 right，RTL 中为 left）
+ */
+@mixin text-align-end {
+  text-align: right;
+  
+  @include rtl {
+    text-align: left;
+  }
+}
+
+/**
+ * 方向感知的 left 定位
+ * 在 RTL 模式下转换为 right
+ */
+@mixin left($value) {
+  left: $value;
+  
+  @include rtl {
+    left: auto;
+    right: $value;
+  }
+}
+
+/**
+ * 方向感知的 right 定位
+ * 在 RTL 模式下转换为 left
+ */
+@mixin right($value) {
+  right: $value;
+  
+  @include rtl {
+    right: auto;
+    left: $value;
+  }
+}
+
+/**
+ * Flexbox 方向感知
+ * 在 RTL 模式下反转 flex-direction
+ */
+@mixin flex-direction-row {
+  flex-direction: row;
+  
+  @include rtl {
+    flex-direction: row-reverse;
+  }
+}
+
+/**
+ * Justify-content 到开始位置
+ */
+@mixin justify-content-start {
+  justify-content: flex-start;
+  
+  @include rtl {
+    justify-content: flex-end;
+  }
+}
+
+/**
+ * Justify-content 到结束位置
+ */
+@mixin justify-content-end {
+  justify-content: flex-end;
+  
+  @include rtl {
+    justify-content: flex-start;
+  }
+}
+

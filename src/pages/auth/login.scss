@@ -6,8 +6,13 @@
 .page-auth-login {
   // margin: 50px auto 100px;
 	background: transparent;
-	height: 590px;
+	min-height: 590px;
+	display: flex;
 	align-items: center;
+	@include justify-content-end;
+	position: relative;
+	@include padding-inline-end(100px);
+	@include padding-inline-start(100px);
 	.login-logo{
 		left: auto;
 		// top: 100px;
@@ -19,10 +24,10 @@
 		background-color: rgba(255, 255, 255, 0.9);
 		width: 350px;
 		// height: 372px;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		top: 82px;;
-    left: 844px;
 		position: relative;
     padding: 5px;
 		.login-title {
