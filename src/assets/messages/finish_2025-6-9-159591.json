@@ -1,0 +1,30 @@
+{
+	"zh": {
+		"finish.result.595530-0": "加载中...",
+		"finish.result.595530-1": "订单支付",
+		"finish.result.595530-2": "成功",
+		"finish.result.595530-3": "失败",
+		"finish.result.595530-4": "！我们将尽快为您处理",
+		"finish.result.595530-5": "待商家确认",
+		"finish.result.595530-6": "订单支付{0}！我们将尽快为您处理",
+		"finish.result.595530-7": "订单号：",
+		"finish.result.595530-8": "订单金额：¥",
+		"finish.result.595530-9": "查看订单详情",
+		"finish.result.595530-10": "继续购物",
+		"finish.result.595530-11": "无订单号请刷新后重试"
+	},
+	"en": {
+		"finish.result.595530-0": "Loading in progress ..",
+		"finish.result.595530-1": "Order payment",
+		"finish.result.595530-2": "success",
+		"finish.result.595530-3": "fail",
+		"finish.result.595530-4": "We will handle it for you as soon as possible",
+		"finish.result.595530-5": "Waiting for merchant confirmation",
+		"finish.result.595530-6": "Order payment {0}! We will handle it for you as soon as possible",
+		"finish.result.595530-7": "order number:",
+		"finish.result.595530-8": "Order amount: ¥",
+		"finish.result.595530-9": "View order details",
+		"finish.result.595530-10": "CONTINUE SHOPPING",
+		"finish.result.595530-11": "No order number, please refresh and try again"
+	}
+}

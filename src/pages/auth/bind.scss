@@ -1,0 +1,35 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$form-w: 555px;
+$reg-pic-w: 555px;
+.page-bind {
+  .bind {
+    &-tips{
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      color: $color-primary-text;
+      margin-bottom: 30px;
+    }
+
+    &-form {
+      .form-item {
+        display: flex;
+        justify-content: space-between;
+        &:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .btn-container{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+      border-top: 1px solid #adadad;
+    }
+  }
+}

@@ -1,0 +1,246 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-w0007 {
+  .all-category {
+    float: left;
+    position: relative;
+
+    &:after {
+      content: '\0020';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    // overflow: hidden;
+    .all-category__btn {
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      width: 200px;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .category-list {
+      position: absolute;
+      top: 40px;
+      font-size: 16px;
+      // width: 1000px;
+      // display: none;
+      height: 0;
+      overflow: hidden;
+      z-index: 1099;
+
+      &:hover {
+        width: 1190px;
+      }
+
+      .category-main {
+        &__btn {
+          height: 59px;
+          line-height: 24px;
+          text-align: left;
+          padding-left: 20px;
+          padding-top: 10px;
+          // margin-left: 65px;
+          // color: #ffffff;
+          // background: #ff0000;
+          width: 200px;
+          cursor: pointer;
+          color: inherit;
+          overflow: hidden;
+          /*超出宽度部分隐藏*/
+          text-overflow: ellipsis;
+
+          /*超出部分以点号代替*/
+          &__img {
+            margin-bottom: -4px;
+            // margin-right: 3px;
+          }
+
+          .category-main__btn_title {
+            // color: #3B3B3B;
+          }
+
+          .category-main__btn_subtitle {
+            // color: #8C8C8C;
+            font-size: 14px;
+            line-height: 28px;
+
+            &__first {
+              margin-left: 20px;
+            }
+          }
+        }
+
+        &__con {
+          position: absolute;
+          z-index: 1001;
+          left: 200px;
+          top: 0px;
+          display: none;
+          width: calc(100% - 200px);
+          background: #f5f6fa;
+          // min-height: 420px;
+          height: auto;
+        }
+
+        &:hover {
+          .category-main__btn {
+            background: #f5f8f8;
+            // color: #ff0000;
+          }
+
+          .category-main__con {
+            display: block;
+            min-height: 100%;
+          }
+        }
+      }
+
+      .category-child {
+        position: absoule;
+        // height: auto;
+        overflow: visible;
+        background: #f5f6fa;
+        margin-top: 16px;
+        clear: both;
+        @include clearfix();
+
+        &__btn {
+          // border-bottom:3px solid #F00 !important;
+          border-collapse: collapse;
+          height: 44px;
+          font-weight: 500;
+          padding-left: 20px;
+          // padding-top: 10px;
+          float: left;
+          text-align: left;
+          cursor: pointer;
+          color: #3b3b3b;
+          margin-top: 0px;
+          font-size: 14px;
+          width: 110px;
+          text-overflow: ellipsis;
+          /*超出部分以点号代替*/
+          @include text-overflow();
+
+          &:hover {
+            // color: #ff0000;
+          }
+        }
+      }
+
+      .category-subchild-main {
+        border-bottom: 1px dashed #000;
+        float: left;
+        // max-height: 120px;
+        overflow: hidden;
+        /*超出宽度部分隐藏*/
+        @include clearfix();
+        width: 850px;
+        min-height: 44px;
+      }
+
+      .category-subchild {
+        float: left;
+        @include clearfix();
+
+        &__line {
+          height: 44px;
+          line-height: 21px;
+          font-weight: 400;
+          float: left;
+          text-align: left;
+          cursor: pointer;
+          // padding-top: 10px;
+          margin-left: 12px;
+          // font-size: 14px;
+          color: #8c8c8c;
+        }
+
+        &__btn {
+          height: 44px;
+          line-height: 21px;
+          font-weight: 400;
+          float: left;
+          text-align: center;
+          cursor: pointer;
+          // padding-top: 10px;
+          margin-left: 10px;
+          // padding-right: 10px;
+          font-size: 14px;
+          // max-width: 70px;
+
+          text-overflow: ellipsis;
+          /*超出部分以点号代替*/
+          // background-color: lightblue;
+          @include text-overflow();
+
+          .link-page {
+            &__a {
+              color: #8c8c8c;
+
+              &:hover {
+                // background: #FF5D02;
+                color: #ff5d02 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      .category-list {
+        height: auto;
+        overflow: visible;
+      }
+    }
+
+    &.hover {
+      .category-list {
+        // height: auto;
+        transition: height 0.2s;
+        background: white;
+        // overflow: visible;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .all-category__btn {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .navs-con {
+    // margin-left: 23px;
+    .nav-item {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 10px;
+
+      &:hover {
+        .link-page {
+          .link-page__a {
+            color: #333333;
+
+            &:hover {
+              color: #ff5d02 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

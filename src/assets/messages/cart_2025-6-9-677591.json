@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"comps.point.775552-0": "积分抵扣",
+		"comps.point.775552-1": "当前账户积分:",
+		"comps.point.775552-2": "输入抵扣积分",
+		"comps.point.775552-3": "使用",
+		"comps.point.775552-4": "您的积分余额不足"
+	},
+	"en": {
+		"comps.point.775552-0": "Points deduction",
+		"comps.point.775552-1": "Current account points:",
+		"comps.point.775552-2": "Input deduction points",
+		"comps.point.775552-3": "use",
+		"comps.point.775552-4": "Your points balance is insufficient"
+	}
+}

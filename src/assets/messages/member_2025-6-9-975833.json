@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"comps.address-item.757087-0": "默认地址",
+		"comps.address-item.757087-1": "设置为默认收货地址",
+		"comps.address-item.757087-2": "编辑",
+		"comps.address-item.757087-3": "删除"
+	},
+	"en": {
+		"comps.address-item.757087-0": "Default address",
+		"comps.address-item.757087-1": "Set as default shipping address",
+		"comps.address-item.757087-2": "edit",
+		"comps.address-item.757087-3": "delete"
+	}
+}

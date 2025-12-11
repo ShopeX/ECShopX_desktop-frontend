@@ -1,0 +1,36 @@
+{
+	"zh": {
+		"member.change-password.132231-0": "修改密码",
+		"member.change-password.132231-1": "图片验证码",
+		"member.change-password.132231-2": "动态验证码",
+		"member.change-password.132231-3": "设置密码",
+		"member.change-password.132231-4": "建议使用两种或两种以上的字符组合",
+		"member.change-password.132231-5": "确认密码",
+		"member.change-password.132231-6": "再次输入密码",
+		"member.change-password.132231-7": "确认修改",
+		"member.change-password.132231-8": "请输入图形验证码",
+		"member.change-password.132231-9": "请输入验证码",
+		"member.change-password.132231-10": "发送验证码",
+		"member.change-password.132231-11": "发送成功",
+		"member.change-password.132231-12": "${e}秒后重发",
+		"member.change-password.132231-13": "重发验证码",
+		"member.change-password.132231-14": "新密码已经设置成功"
+	},
+	"en": {
+		"member.change-password.132231-0": "Change Password",
+		"member.change-password.132231-1": "Image verification code",
+		"member.change-password.132231-2": "Dynamic verification code",
+		"member.change-password.132231-3": "administrator",
+		"member.change-password.132231-4": "Suggest using two or more character combinations",
+		"member.change-password.132231-5": "Confirm password",
+		"member.change-password.132231-6": "Confirm Password",
+		"member.change-password.132231-7": "Confirm modification",
+		"member.change-password.132231-8": "Please enter the graphic verification code",
+		"member.change-password.132231-9": "Please enter the verification code",
+		"member.change-password.132231-10": "Send verification code",
+		"member.change-password.132231-11": "Successfully sent",
+		"member.change-password.132231-12": "Resend in ${e} seconds",
+		"member.change-password.132231-13": "Resend verification code",
+		"member.change-password.132231-14": "The new password has been successfully set"
+	}
+}

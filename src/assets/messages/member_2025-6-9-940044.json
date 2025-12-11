@@ -1,0 +1,40 @@
+{
+	"zh": {
+		"aftersales._id.399829-0": "会员中心",
+		"aftersales._id.399829-1": "申请退货",
+		"aftersales._id.399829-2": "订单号：",
+		"aftersales._id.399829-3": "退货单号：",
+		"aftersales._id.399829-4": "退款/退货说明",
+		"aftersales._id.399829-5": "凭证",
+		"aftersales._id.399829-6": "拒绝原因",
+		"aftersales._id.399829-7": "物流公司",
+		"aftersales._id.399829-8": "物流单号",
+		"aftersales._id.399829-9": "提交",
+		"aftersales._id.399829-10": "暂无物流信息，请稍后查看",
+		"aftersales._id.399829-11": "在线支付",
+		"aftersales._id.399829-12": "货到付款",
+		"aftersales._id.399829-13": "预存款充值",
+		"aftersales._id.399829-14": "请选择物流商",
+		"aftersales._id.399829-15": "请输入物流单号",
+		"aftersales._id.399829-16": "填写物流信息成功"
+	},
+	"en": {
+		"aftersales._id.399829-0": "member center",
+		"aftersales._id.399829-1": "Apply for return",
+		"aftersales._id.399829-2": "order number:",
+		"aftersales._id.399829-3": "Return Order Number:",
+		"aftersales._id.399829-4": "Refund/Return Instructions",
+		"aftersales._id.399829-5": "voucher",
+		"aftersales._id.399829-6": "Reason for refusal",
+		"aftersales._id.399829-7": "logistics company",
+		"aftersales._id.399829-8": "Logistics tracking number",
+		"aftersales._id.399829-9": "submit",
+		"aftersales._id.399829-10": "No logistics information available at the moment, please check later",
+		"aftersales._id.399829-11": "Online payment",
+		"aftersales._id.399829-12": "cash on delivery",
+		"aftersales._id.399829-13": "Pre deposit recharge",
+		"aftersales._id.399829-14": "Please choose a logistics provider",
+		"aftersales._id.399829-15": "Please enter the logistics tracking number",
+		"aftersales._id.399829-16": "Successfully filled in logistics information"
+	}
+}

@@ -1,0 +1,219 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-aftersales-detail {
+    &__title {
+      padding: 40px 0 30px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .order-status {
+      background: #efefef;
+      height: 48px;
+      line-height: 48px;
+      margin-bottom: 20px;
+      font-size: 17px;
+      padding: 0 15px;
+      .status {
+        float: left;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+          color: $color-invalid;
+        }
+        .time {
+          margin-left: 5px;
+        }
+      }
+      .bn {
+        font-weight: bold;
+        float: right;
+        span {
+          font-weight: normal;
+          color: $color-invalid;
+        }
+      }
+    }
+    .refund-info, .refund-reason {
+      padding-left: 20px;
+      position: relative;
+      &__label, &__text {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+    }
+    .logistics-form {
+      width: 400px;
+    }
+    .header-column {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .column {
+      float: left;
+      &.t-goods {
+        width: 40%;
+      }
+      &.t-quantity {
+        width: 15%;
+      }
+      &.t-price {
+        width: 15%;
+      }
+      &.t-coupon {
+        width: 15%;
+      }
+      &.t-sum {
+        width: 15%;
+      }
+    }
+    .item-list {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .t-quantity,
+      .t-price,
+      .t-coupon,
+      .t-sum {
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      .t-sum {
+        color: $color-invalid;
+      }
+    }
+    .goods-info {
+      > div {
+        float: left;
+      }
+      &__img {
+        width: 80px;
+        margin-right: 10px;
+      }
+    }
+    .pay-cont {
+      padding-left: 20px;
+      .sp-radio__label {
+        margin-right: 30px;
+      }
+      &__icon {
+        height: 40px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .checkout-f {
+      padding: 30px 0 90px 0;
+      .checkout-total {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #b7b7b7;
+        &__r {
+          text-align: right;
+          border-top: 2px solid #b7b7b7;
+          padding-top: 15px;
+        }
+        &__label {
+          display: inline-block;
+          width: calc(100% - 145px);
+          font-size: 16px;
+          margin-right: 20px;
+          margin-bottom: 5px;
+        }
+        &__value {
+          display: inline-block;
+          width: 120px;
+          text-align: left;
+          font-weight: bold;
+          vertical-align: middle;
+        }
+        &__p {
+          font-size: 18px;
+        }
+        &__pt {
+          font-size: 20px;
+          color: $color-invalid;
+        }
+      }
+    }
+    .required-icon {
+      position: absolute;
+      left: -10px;
+      top: 15px;
+      color: $color-invalid;
+    }
+
+    .goods-item__ts {
+      .quantity {
+        vertical-align: middle;
+      }
+      .price {
+        .sp-price {
+          font-size: 15px;
+        }
+      }
+    }
+    .img-list {
+      @include clearfix();
+      margin-bottom: 10px;
+      li{
+        @include pdt-img(60px,60px);
+        height: 60px;
+        float: left;
+        border: 1px solid #dad1d1;
+        margin-right: 20px;
+      }
+      img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+    }
+  
+    @include respond(sm) {
+      .order-status {
+        font-size: 14px;
+        height: auto;
+        line-height: normal;
+        padding: 13px 15px;
+        .status {
+          float: none;
+          margin-bottom: 10px;
+          .time {
+            display: none;
+          }
+        }
+        .bn {
+          float: none;
+        }
+      }
+      .t-goods {
+        width: 100% !important;
+      }
+      .pay-cont {
+        margin: 10px 0;
+      }
+      .checkout-f {
+        padding: 0 0 30px 0;
+        .container-member {
+          padding: 0 15px;
+        }
+        .g-btn {
+          margin-top: 15px;
+        }
+        .time {
+          display: block;
+        }
+      }
+      .edit-btn {
+        position: relative;
+        top: -3px;
+      }
+      .logistics-form {
+        width: 100%;
+      }
+    }
+  }
+  

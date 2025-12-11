@@ -1,0 +1,38 @@
+{
+	"zh": {
+		"shops.near.137693-0": "全部分类",
+		"shops.near.137693-1": "请输入",
+		"shops.near.137693-2": "关注店铺",
+		"shops.near.137693-3": "取消关注",
+		"shops.near.137693-4": "距离",
+		"shops.near.137693-5": "评论",
+		"shops.near.137693-6": "月销",
+		"shops.near.137693-7": "综合排序",
+		"shops.near.137693-8": "销量",
+		"shops.near.137693-9": "动态加载SDK",
+		"shops.near.137693-10": "地图初始化",
+		"shops.near.137693-11": "北京市",
+		"shops.near.137693-12": "昌平区",
+		"shops.near.137693-13": "/市/i,",
+		"shops.near.137693-14": "取消成功",
+		"shops.near.137693-15": "收藏成功"
+	},
+	"en": {
+		"shops.near.137693-0": "All categories",
+		"shops.near.137693-1": "Enter",
+		"shops.near.137693-2": "Follow the store",
+		"shops.near.137693-3": "unfollow",
+		"shops.near.137693-4": "distance",
+		"shops.near.137693-5": "comment",
+		"shops.near.137693-6": "Monthly sales",
+		"shops.near.137693-7": "Comprehensive sorting",
+		"shops.near.137693-8": "sales volume",
+		"shops.near.137693-9": "Dynamically load SDK",
+		"shops.near.137693-10": "Map Initialization",
+		"shops.near.137693-11": "Beijing",
+		"shops.near.137693-12": "Changping District",
+		"shops.near.137693-13": "/City/i,",
+		"shops.near.137693-14": "Cancel successfully",
+		"shops.near.137693-15": "Collection successful"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"zh": {
+		"pointitems.index.871104-0": "onexbbc自营店（自营店铺）",
+		"pointitems.index.871104-1": "进入店铺",
+		"pointitems.index.871104-2": "正在加载",
+		"pointitems.index.871104-3": "暂无数据",
+		"pointitems.index.871104-4": "没有更多了",
+		"pointitems.index.871104-5": "综合",
+		"pointitems.index.871104-6": "销量",
+		"pointitems.index.871104-7": "上新",
+		"pointitems.index.871104-8": "价格降序",
+		"pointitems.index.871104-9": "价格升序",
+		"pointitems.index.871104-10": "全部商品"
+	},
+	"en": {
+		"pointitems.index.871104-0": "Onexbbc self operated store (self operated store)",
+		"pointitems.index.871104-1": "Enter the store",
+		"pointitems.index.871104-2": "loading",
+		"pointitems.index.871104-3": "No data available at the moment",
+		"pointitems.index.871104-4": "There's nothing more",
+		"pointitems.index.871104-5": "comprehensive",
+		"pointitems.index.871104-6": "sales volume",
+		"pointitems.index.871104-7": "Up new",
+		"pointitems.index.871104-8": "Price descending order",
+		"pointitems.index.871104-9": "Price ascending order",
+		"pointitems.index.871104-10": "All products"
+	}
+}

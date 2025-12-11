@@ -1,0 +1,111 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-W0018 {
+  &-body {
+    position: relative;
+  }
+  .swiper-container-title {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3b3b;
+  }
+  .swiper-container {
+    height: 100%;
+    .swiper-pagination {
+      height: 30px;
+      padding: 0 20px;
+      &-custom {
+        top: 0px;
+        .pag-style1 {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          border-radius: 20px;
+          background: #8d8d8d;
+          color: #fff;
+          font-size: 12px;
+          text-align: center;
+          line-height: 24px;
+        }
+        .pag-style3 {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          margin-right: 2px;
+        }
+        .pag-style4 {
+          display: inline-block;
+          width: 30px;
+          height: 4px;
+          border-radius: 2px;
+          margin-right: 2px;
+        }
+
+        .pag-style5 {
+          width: 100px;
+          margin-right: 6px;
+          &.active {
+            width: 120px;
+          }
+        }
+      }
+    }
+    .goods-list-wrap {
+      .goods-wrap__info {
+        margin: 25px 10px;
+        padding: 10px 10px;
+        width: 290px;
+        height: 122px;
+        text-align: left;
+        .goods-title {
+          float: right;
+          width: 160px;
+          // height: 56px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #3b3b3b;
+          line-height: 22px;
+        }
+        .goods-item_price {
+          float: right;
+          width: 160px;
+          margin-top: 20px;
+          .mkt-price {
+            margin-right: 10px;
+          }
+        }
+        .goods-image {
+        }
+      }
+    }
+  }
+  .custom-pagination {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1000;
+
+    &.right {
+      right: 0;
+    }
+    &.left {
+      left: 0;
+    }
+    &.center {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    img {
+      margin-right: 10px;
+      &.active {
+        width: 120px;
+      }
+    }
+  }
+}

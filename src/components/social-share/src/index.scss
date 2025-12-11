@@ -1,0 +1,215 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.social-share {
+  margin: 0 0 18px;
+  .social-share-panel {
+    display: none;
+  }
+  .icon-wechat {
+    .wechat-qrcode {
+      display: none;
+      border: 1px solid #eee;
+      position: absolute;
+      z-index: 9;
+      top: -205px;
+      left: -84px;
+      width: 200px;
+      height: 192px;
+      color: #666;
+      font-size: 12px;
+      text-align: center;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 10px #aaa;
+      box-shadow: 0 2px 10px #aaa;
+      -webkit-transition: all 200ms;
+      transition: all 200ms;
+      -webkit-tansition: all 350ms;
+      -moz-transition: all 350ms
+    }
+
+    .wechat-qrcode.bottom {
+      top: 40px;
+      left: -84px
+    }
+
+    .wechat-qrcode.bottom:after {
+      display: none
+    }
+
+    .wechat-qrcode h4 {
+      font-weight: normal;
+      height: 26px;
+      line-height: 26px;
+      font-size: 12px;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+      color: #777
+    }
+
+    .wechat-qrcode .qrcode {
+      width: 105px;
+      margin: 10px auto
+    }
+
+    .wechat-qrcode .qrcode table {
+      margin: 0 !important
+    }
+
+    .wechat-qrcode .help p {
+      font-weight: normal;
+      line-height: 16px;
+      padding: 0;
+      margin: 0
+    }
+
+    .wechat-qrcode:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      margin-left: -6px;
+      bottom: -13px;
+      width: 0;
+      height: 0;
+      border-width: 8px 6px 6px 6px;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent
+    }
+
+    &:hover .wechat-qrcode {
+      display: block
+    }
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .mb-iconfont {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $color-brand-primary;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0.3;
+    transition: all .3s;
+    &:hover {
+      background: none;
+      opacity: 1;
+      .social-share-panel {
+        display: block;
+      }
+    }
+  }
+  .social-share-panel {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    z-index: $z-index-tooltip;
+    top: 10px;
+    padding-top: 20px;
+    font-size: $font-size;
+    &__cont {
+      padding-bottom: 10px;
+      background: #fff;
+      box-shadow: 0 1px 4px 1px rgba(#000, .2);
+      .sp-loading__spinner {
+        margin: 0 auto;
+        padding: 60px;
+        display: block;
+      }
+    }
+    .share-goods {
+      &__img {
+        @include pdt-img(300px, 300px, cover);
+      }
+      &__qr {
+        width: 75px;
+        height: 75px;
+      }
+      &__bd {
+        margin: 10px;
+        padding: 0 0 5px 75px + 10px;
+        position: relative;
+        min-height: 75px;
+      }
+      &__qr {
+        margin-left: -(75px + 10px);
+        float: left;
+        position: absolute;
+      }
+      &__title {
+        @include multi-ellipsis(2);
+        line-height: 1.5;
+        margin-bottom: 10px;
+        padding: 3px 0 0;
+      }
+      &__price {
+        color: $color-red;
+        font-size: $font-size-small;
+      }
+      &__line {
+        color: #333;
+        margin: 5px 10px;
+        display: table;
+        font-size: $font-size-small;
+        width: 90%;
+        &-hd, &-bd {
+          display: table-cell;
+          vertical-align: top;
+        }
+        &-hd {
+          width: 62px;
+          word-break: keep-all;
+        }
+      }
+      .btn-share-download {
+        background: $color-red;
+        color: #fff;
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: $font-size-small;
+        padding: 0 6px;
+        line-height: 1.5;
+      }
+    }
+    &__article {
+      display: inline-block;
+      font-size: 0;
+      border: 1px solid $color-border-gray;
+    }
+    &.pinpai {
+      width: 122px;
+    }
+  }
+
+  @include respond(sm) {
+    .mb-iconfont {
+      font-size: 22px;
+      margin-right: 3px;
+    }
+    .sp-modal {
+      &__wrap, &__mask {
+        z-index: 10001;
+      }
+
+      &__content {
+        .social-share-panel {
+          display: block;
+          overflow: scroll;
+          position: relative;
+          padding: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}

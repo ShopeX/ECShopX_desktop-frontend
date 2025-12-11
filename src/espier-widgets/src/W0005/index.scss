@@ -1,0 +1,145 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-w0005 {
+  &-body {
+    // padding: 10px;
+  }
+  .wgt-goodstab {
+    &_tab {
+      height: 60px;
+      padding: 0 20px;
+      // border-bottom: 1px solid red;
+      &:after {
+        content: '\0020';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        overflow: hidden;
+      }
+      .title {
+        font-size: 24px;
+        color: #333;
+        float: left;
+        height: 60px;
+        line-height: 60px;
+      }
+      .tabList {
+        text-align: right;
+        float: right;
+        margin-top: 26px;
+        .tabItem {
+          // line-height: 40px;
+          padding: 0 15px;
+          display: inline-block;
+          cursor: pointer;
+          color: #606266;
+          font-size: 14px;
+          &:hover,
+          &.active {
+            font-weight: 650;
+          }
+        }
+      }
+    }
+    &_goods {
+      position: relative;
+      width: 100%;
+      // height: 560px;
+      overflow: hidden;
+      // padding: 0 10px;
+      &_scroll {
+      }
+    }
+  }
+
+  .goods-wrap {
+    display: none;
+    &.active {
+      display: block;
+    }
+    &:after {
+      content: '\0020';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    .goods-list-wrap {
+      float: left;
+      margin-right: 10px;
+      &:nth-child(1) {
+        width: 400px;
+        height: 400px;
+      }
+      &:nth-child(2) {
+        width: 385px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(3) {
+        width: 385px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &:nth-child(4) {
+        width: 385px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(5) {
+        width: 385px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &:nth-child(6) {
+        width: 385px;
+      }
+      &:nth-child(7) {
+        width: 385px;
+        margin-right: 0;
+      }
+      &:not(:first-child) {
+        .goods-image {
+          float: left;
+          margin-right: 10px;
+          .img-wrap span {
+            font-size: 14px;
+          }
+        }
+        .goods-wrap__info {
+          float: left;
+          width: 225px;
+        }
+      }
+    }
+
+    .goods-wrap__info {
+      .goods-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+      }
+    }
+
+    .goods-tags {
+      margin: 4px 0;
+    }
+    .tag-item {
+      padding: 0 5px;
+      // margin-top: 10px;
+      margin-right: 4px;
+      border-radius: 2px;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+    }
+  }
+}

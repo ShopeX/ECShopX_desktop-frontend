@@ -1,0 +1,76 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$input-color-text: #525252;
+$button-color-bg-dark: #000000;
+$button-color-light: #020304;
+input,select,textarea{
+    border: none;
+    outline: none;
+}
+
+// .input,.input>input{
+//     background: $color-bg-gray;
+//     font-size: 16px;
+//     padding-left: 10px;
+//     line-height: 24px;
+//     letter-spacing: 2px;
+//     color: $input-color-text;
+// }
+.label-text{
+    color: $input-color-text;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.label-tips{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: $input-color-text;
+}
+.label-required::after{
+    content: '*';
+    font-size: 12px;
+    vertical-align: top;
+}
+.label-required-red::after{
+    content: '*';
+    font-size: 12px;
+    vertical-align: top;
+    color: $color-red;
+  }
+.textarea{
+    width: 100%;
+	height: 100%;
+	background-color: $color-bg-gray;
+}
+button.button-light,button.button-dark{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    padding: 0px;
+}
+button.button-light{
+    color: $button-color-light;
+    border: solid 1px $button-color-light;
+}
+button.button-dark{
+    color: #ffffff;
+    background-color: $button-color-bg-dark;
+}
+
+.yzm-img{
+    position: absolute;
+    right: 0;
+    height: 30px;
+    background-color: $color-secondary-text;
+    z-index: 10;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }

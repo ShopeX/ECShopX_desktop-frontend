@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"sp-header.minicart.461304-0": "购物袋中还没有商品，赶紧选购吧！",
+		"sp-header.minicart.461304-1": "立即选购",
+		"sp-header.minicart.461304-2": "共",
+		"sp-header.minicart.461304-3": "件商品",
+		"sp-header.minicart.461304-4": "合计",
+		"sp-header.minicart.461304-5": "进入购物车",
+		"sp-header.minicart.461304-6": "去结算",
+		"sp-header.minicart.461304-7": "/items?tag=新品"
+	},
+	"en": {
+		"sp-header.minicart.461304-0": "There are no items in the shopping bag yet, hurry up and choose!",
+		"sp-header.minicart.461304-1": "Buy Now",
+		"sp-header.minicart.461304-2": "common",
+		"sp-header.minicart.461304-3": "Item Product",
+		"sp-header.minicart.461304-4": "total",
+		"sp-header.minicart.461304-5": "enter the shopping cart",
+		"sp-header.minicart.461304-6": "Go settle",
+		"sp-header.minicart.461304-7": "/items? Tag=New Product"
+	}
+}

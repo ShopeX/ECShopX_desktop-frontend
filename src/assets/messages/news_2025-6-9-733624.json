@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"news.index.335531-0": "品牌资讯",
+		"news.index.335531-1": "官方所有的最新消息，在这里都可以得知，以保证不会让您错过它们。",
+		"news.index.335531-2": "查看",
+		"news.index.335531-3": "品牌动态",
+		"news.index.335531-4": "无效的文章ID"
+	},
+	"en": {
+		"news.index.335531-0": "Brand Information",
+		"news.index.335531-1": "All the latest official news can be found here to ensure that you won't miss them.",
+		"news.index.335531-2": "view",
+		"news.index.335531-3": "Brand Dynamics",
+		"news.index.335531-4": "Invalid article ID"
+	}
+}

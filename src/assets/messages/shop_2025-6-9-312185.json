@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"shop.review.121498-0": "已提交申请，请耐心等待~",
+		"shop.review.121498-1": "预计会在1~5个工作日完成审核",
+		"shop.review.121498-2": "恭喜您已完成入驻!",
+		"shop.review.121498-3": "登录地址及账号密码将发送短信至",
+		"shop.review.121498-4": "注册手机号,请注意查收",
+		"shop.review.121498-5": "很抱歉! 您的入驻申请未通过",
+		"shop.review.121498-6": "审批意见:",
+		"shop.review.121498-7": "重新填写"
+	},
+	"en": {
+		"shop.review.121498-0": "The application has been submitted, please be patient and wait~",
+		"shop.review.121498-1": "Expected to complete the review within 1-5 working days",
+		"shop.review.121498-2": "Congratulations on completing your registration!",
+		"shop.review.121498-3": "Login address and account password will be sent via SMS to",
+		"shop.review.121498-4": "Register your phone number, please check it carefully",
+		"shop.review.121498-5": "I'm sorry! Your application to join has not been approved",
+		"shop.review.121498-6": "Approval Opinion:",
+		"shop.review.121498-7": "Fill in again"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"comp.settleformOne.524219-0": "商户类型",
+		"comp.settleformOne.524219-1": "请选择",
+		"comp.settleformOne.524219-2": "经营范围",
+		"comp.settleformOne.524219-3": "入驻类型",
+		"comp.settleformOne.524219-4": "企业",
+		"comp.settleformOne.524219-5": "个体户",
+		"comp.settleformOne.524219-6": "请上传银行卡正面照片",
+		"comp.settleformOne.524219-7": "请选择入驻类型"
+	},
+	"en": {
+		"comp.settleformOne.524219-0": "Merchant type",
+		"comp.settleformOne.524219-1": "Please choose",
+		"comp.settleformOne.524219-2": "Nature of Business",
+		"comp.settleformOne.524219-3": "Type of Entry",
+		"comp.settleformOne.524219-4": "enterprise",
+		"comp.settleformOne.524219-5": "self-employed person",
+		"comp.settleformOne.524219-6": "Please upload a photo of the front of your bank card",
+		"comp.settleformOne.524219-7": "Please select the type of entry"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"zh": {
+		"shop.settleForm.283678-0": "入驻类型",
+		"shop.settleForm.283678-1": "商户信息",
+		"shop.settleForm.283678-2": "证照信息",
+		"shop.settleForm.283678-3": "《入驻协议》",
+		"shop.settleForm.283678-4": "上一页",
+		"shop.settleForm.283678-5": "下一页",
+		"shop.settleForm.283678-6": "提交",
+		"shop.settleForm.283678-7": "提示",
+		"shop.settleForm.283678-8": "请确认是否提交审核",
+		"shop.settleForm.283678-9": "取消",
+		"shop.settleForm.283678-10": "确认",
+		"shop.settleForm.283678-11": "入驻协议",
+		"shop.settleForm.283678-12": "提交成功"
+	},
+	"en": {
+		"shop.settleForm.283678-0": "Type of Entry",
+		"shop.settleForm.283678-1": "Merchant Information",
+		"shop.settleForm.283678-2": "License information",
+		"shop.settleForm.283678-3": "Settlement Agreement",
+		"shop.settleForm.283678-4": "previous page",
+		"shop.settleForm.283678-5": "next page",
+		"shop.settleForm.283678-6": "submit",
+		"shop.settleForm.283678-7": "prompt",
+		"shop.settleForm.283678-8": "Please confirm whether to submit for review",
+		"shop.settleForm.283678-9": "cancel",
+		"shop.settleForm.283678-10": "confirm",
+		"shop.settleForm.283678-11": "Entry Agreement",
+		"shop.settleForm.283678-12": "Submitted successfully"
+	}
+}

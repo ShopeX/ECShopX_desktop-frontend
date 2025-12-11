@@ -1,0 +1,40 @@
+{
+	"zh": {
+		"shop.index.963066-0": "手机号",
+		"shop.index.963066-1": "图形验证码",
+		"shop.index.963066-2": "验证码",
+		"shop.index.963066-3": "登录",
+		"shop.index.963066-4": "阅读并同意",
+		"shop.index.963066-5": "入驻协议",
+		"shop.index.963066-6": "登录/注册",
+		"shop.index.963066-7": "请输入手机号",
+		"shop.index.963066-8": "验证码不能为空",
+		"shop.index.963066-9": "发送验证码",
+		"shop.index.963066-10": "请输入正确的手机号",
+		"shop.index.963066-11": "请输入图形验证码",
+		"shop.index.963066-12": "发送成功",
+		"shop.index.963066-13": "${e}秒后重发",
+		"shop.index.963066-14": "重发验证码",
+		"shop.index.963066-15": "请查看并勾选入驻协议",
+		"shop.index.963066-16": "登录成功"
+	},
+	"en": {
+		"shop.index.963066-0": "cell-phone number",
+		"shop.index.963066-1": "Graphic verification code",
+		"shop.index.963066-2": "Verification code",
+		"shop.index.963066-3": "log on",
+		"shop.index.963066-4": "Read and agree",
+		"shop.index.963066-5": "Entry Agreement",
+		"shop.index.963066-6": "Login/Register",
+		"shop.index.963066-7": "Please enter your phone number",
+		"shop.index.963066-8": "The verification code cannot be empty",
+		"shop.index.963066-9": "Send verification code",
+		"shop.index.963066-10": "Please enter the correct phone number",
+		"shop.index.963066-11": "Please enter the graphic verification code",
+		"shop.index.963066-12": "Successfully sent",
+		"shop.index.963066-13": "Resend in ${e} seconds",
+		"shop.index.963066-14": "Resend verification code",
+		"shop.index.963066-15": "Please review and check the entry agreement",
+		"shop.index.963066-16": "Login succeeded"
+	}
+}

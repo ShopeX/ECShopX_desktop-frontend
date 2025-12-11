@@ -1,0 +1,10 @@
+{
+	"zh": {
+		"comps.alipay.268516-0": "正在支付...",
+		"comps.alipay.268516-1": "支付单号:"
+	},
+	"en": {
+		"comps.alipay.268516-0": "Payment in progress ..",
+		"comps.alipay.268516-1": "Payment Order Number:"
+	}
+}

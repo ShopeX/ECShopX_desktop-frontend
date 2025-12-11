@@ -1,0 +1,18 @@
+{
+	"zh": {
+		"comps.point-cart.059340-0": "积分兑换",
+		"comps.point-cart.059340-1": "价格:",
+		"comps.point-cart.059340-2": "{0}积分",
+		"comps.point-cart.059340-3": "{0}积分",
+		"comps.point-cart.059340-4": "库存:",
+		"comps.point-cart.059340-5": "立即兑换"
+	},
+	"en": {
+		"comps.point-cart.059340-0": "Redeem",
+		"comps.point-cart.059340-1": "Price:",
+		"comps.point-cart.059340-2": "{0} Points",
+		"comps.point-cart.059340-3": "{0} Points",
+		"comps.point-cart.059340-4": "stock:",
+		"comps.point-cart.059340-5": "Redeem now"
+	}
+}

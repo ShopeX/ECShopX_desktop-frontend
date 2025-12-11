@@ -1,0 +1,53 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$form-w: 555px;
+$reg-pic-w: 555px;
+
+.page-reg {
+  .reg {
+    &-form {
+      // padding-top: 0;
+      &_prompt {
+        line-height: 57px;
+        color: #525252;
+        font-size: 14px;
+      }
+      .form-item {
+        margin-bottom: 27px;
+        &.mb22{
+          margin-bottom: 22px;
+        }
+        &:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .sp-input,.sort-select,.sp-datepicker {
+      width: 275px;
+      display: inline-block;
+      margin-left: auto;
+    }
+    .sp-datepicker{
+      .y-s{
+        width: 33%;
+      }
+      .sort-select{
+        width: 100%;
+      }
+    }
+
+    .btn-container{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+      border-top: 1px solid #adadad;
+    }
+  }
+  .reg-modal__p{
+    min-height: 90px;
+  }
+}

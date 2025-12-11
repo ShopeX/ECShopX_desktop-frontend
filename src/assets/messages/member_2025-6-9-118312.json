@@ -1,0 +1,34 @@
+{
+	"zh": {
+		"comps.smenu.182568-0": "会员信息",
+		"comps.smenu.182568-1": "个人资料",
+		"comps.smenu.182568-2": "更改密码",
+		"comps.smenu.182568-3": "收货地址",
+		"comps.smenu.182568-4": "我的订单",
+		"comps.smenu.182568-5": "所有订单",
+		"comps.smenu.182568-6": "售后订单",
+		"comps.smenu.182568-7": "我的优惠券",
+		"comps.smenu.182568-8": "我的收藏",
+		"comps.smenu.182568-9": "我的足迹",
+		"comps.smenu.182568-10": "我的积分",
+		"comps.smenu.182568-11": "关注店铺",
+		"comps.smenu.182568-12": "可使用优惠券",
+		"comps.smenu.182568-13": "失效优惠券"
+	},
+	"en": {
+		"comps.smenu.182568-0": "Member information",
+		"comps.smenu.182568-1": "personal data",
+		"comps.smenu.182568-2": "Change password",
+		"comps.smenu.182568-3": "Delivery address",
+		"comps.smenu.182568-4": "My Order",
+		"comps.smenu.182568-5": "All orders",
+		"comps.smenu.182568-6": "After sales order",
+		"comps.smenu.182568-7": "my coupon",
+		"comps.smenu.182568-8": "My collection",
+		"comps.smenu.182568-9": "My Tracks ",
+		"comps.smenu.182568-10": "My points",
+		"comps.smenu.182568-11": "Follow the store",
+		"comps.smenu.182568-12": "Coupons can be used",
+		"comps.smenu.182568-13": "Invalid coupon"
+	}
+}

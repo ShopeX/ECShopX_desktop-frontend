@@ -1,0 +1,81 @@
+.header-bar {
+  &__topbar {
+    background: #f2f2f2;
+    padding: 5px 0;
+    .topbar-login {
+      a {
+        margin-right: 10px;
+        font-size: 13px;
+      }
+    }
+    .topbar-member {
+      a {
+        margin-right: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  &__search {
+    padding: 20px 0;
+    .logo-con {
+      width: 25%;
+      float: left;
+      img {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .search-con {
+      width: 50%;
+      float: left;
+      margin-top: 7px;
+    }
+    .cart-con {
+      width: 25%;
+      float: left;
+      margin-top: 7px;
+      text-align: right;
+      .cart-link {
+        background: $color-brand-primary;
+        color: $color-primary-text;
+        text-align: center;
+        height: 36px;
+        line-height: 32px;
+        padding: 0 20px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .mb-iconfont {
+        font-size: 20px;
+        color: $color-primary-text;
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+  &__nav {
+    border-bottom: 2px solid $color-brand-primary;
+    .all-category {
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      width: 200px;
+      text-align: center;
+      background-color: $color-brand-primary;
+      color: $color-primary-text;
+      cursor: pointer;
+    }
+    .navs-con {
+      float: left;
+      margin-left: 60px;
+      .nav-item {
+        float: left;
+        margin-right: 60px;
+        a {
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

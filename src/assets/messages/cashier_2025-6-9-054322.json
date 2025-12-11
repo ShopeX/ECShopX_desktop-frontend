@@ -1,0 +1,10 @@
+{
+	"zh": {
+		"comps.testpay.542788-0": "正在支付...",
+		"comps.testpay.542788-1": "支付单号:"
+	},
+	"en": {
+		"comps.testpay.542788-0": "Payment in progress ..",
+		"comps.testpay.542788-1": "Payment Order Number:"
+	}
+}

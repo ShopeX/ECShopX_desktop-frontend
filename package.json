@@ -1,0 +1,91 @@
+{
+  "name": "ecshopx-pc",
+  "version": "4.0.0",
+  "private": true,
+  "repository": "https://git.ishopex.cn/onex/ecshopx-newpc.git",
+  "scripts": {
+    "dev": "nuxt",
+    "dev:release": "BUILD_ENV=release nuxt --dotenv=false --mode=release",
+    "dev:stage": "BUILD_ENV=stage nuxt --dotenv=false --mode=stage",
+    "dev:uat": "BUILD_ENV=uat nuxt --dotenv=false --mode=uat",
+    "build": "BUILD_ENV=production nuxt build --dotenv=false --mode=production",
+    "build:release": "BUILD_ENV=release nuxt build --dotenv=false --mode=release",
+    "build:stage": "BUILD_ENV=stage nuxt build --dotenv=false --mode=stage",
+    "build:uat": "BUILD_ENV=uat nuxt build --dotenv=false --mode=uat",
+    "lint": "vue-cli-service lint",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "start-release": "standard-version",
+    "upload": "node build/upload.js"
+  },
+  "dependencies": {
+    "nuxt": "^2.15.8",
+    "nuxt-i18n": "^6.28.1",
+    "@nuxtjs/device": "^1.2.4",
+    "@nuxtjs/component-cache": "^1.1.5",
+    "@nuxtjs/proxy": "^1.3.3",
+    "axios": "^0.26.0",
+    "cache-manager": "^2.10.0",
+    "cookie-universal-nuxt": "^2.2.2",
+    "copy-to-clipboard": "^3.2.0",
+    "hammerjs": "^2.0.8",
+    "lodash-es": "^4.17.11",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "qrcode": "^1.4.4",
+    "social-share.js": "^1.0.16",
+    "ssr-window": "^1.0.1",
+    "store": "^2.0.12",
+    "swiper": "^5.4.5",
+    "vant": "^2.0.2",
+    "vue": "^2.7.10",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-clickaway": "^2.2.2",
+    "vue-color": "^2.7.1",
+    "vue-hotzone": "^1.1.0",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-lazyload": "^1.2.6",
+    "vuex-persistedstate": "3.0.0",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@vue/babel-preset-app": "^3.7.0",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "ali-oss": "^6.1.1",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "dotenv-flow": "^0.4.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "exec-sh": "^0.4.0",
+    "glob": "^7.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.4",
+    "prettier-eslint-cli": "^5.0.0",
+    "process-argv-parser": "0.0.1",
+    "qn-webpack": "^2.0.3",
+    "sass": "1.77.6",
+    "sass-loader": "10.5.2",
+    "postcss-html": "^1.5.0",
+    "standard-version": "^9.3.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "volta": {
+    "node": "16.16.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 9"
+  ]
+}

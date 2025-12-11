@@ -1,0 +1,201 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$form-w: 555px;
+$reg-pic-w: 555px;
+
+.page-reg {
+  background-color: #fff;
+  .auth-header {
+    border-bottom: 1px solid $color-border-gray;
+    margin-bottom: 60px;
+    .login-link {
+      float: right;
+      font-size: 16px;
+      color: #606266;
+    }
+  }
+  .reg {
+    &-process {
+      text-align: center;
+      margin-bottom: 100px;
+      .process-item {
+        display: inline-block;
+        margin: 0 90px;
+        position: relative;
+        .status {
+          width: 30px;
+          height: 30px;
+          line-height: 26px;
+          text-align: center;
+          border-radius: 50%;
+          border: 2px solid $color-border-gray;
+          .num {
+            color:$color-border-gray;
+            font-weight: bold;
+          }
+          .ec-icon-check {
+            display: none;
+            font-weight: bold;
+          }
+        }
+        .line {
+          position: absolute;
+          top: 15px;
+          right: -185px;
+          width: 185px;
+          height: 2px;
+          background: $color-border-gray;
+          z-index: 10;
+          &.active {
+            background: $color-brand-primary;
+          }
+        }
+        .text {
+          position: absolute;
+          top: 55px;
+          left: -35px;
+          width: 100px;
+          z-index: 10;
+          color: $color-border-gray;
+        }
+        &.active {
+          .status {
+            border-color: $color-brand-primary;
+            .num {
+              display: none;
+            }
+            .ec-icon-check {
+              display: inline-block;
+              color: $color-brand-primary;
+            }
+          }
+          .text {
+            font-weight: bold;
+            color: $color-brand-primary;
+          }
+        }
+      }
+    }
+    &-form {
+
+      .graphics-code{
+        .yzm-text{
+          padding-left:10px!important;
+        }
+      }
+      .form {
+        width: 400px;
+        .dash-line {
+          border-top: 1px dashed $color-border-gray;
+          margin-bottom: 20px;
+        }
+        .form-item {
+          margin-bottom: 20px;
+          position: relative;
+          .label-text {
+            position: absolute;
+            left: 15px;
+            top: 16px;
+            z-index: 10;
+          }
+          .sp-input {
+            padding-left: 85px;
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            &__input {
+              height: 50px;
+            }
+          }
+          &.yzm-feild {
+            .sp-input {
+              width: 65%;
+            }
+            .yzm-img, .vcode-btn {
+              float: right;
+              width: 30%;
+              height: 52px;
+              cursor: pointer;
+              img {
+                width: 100%;
+              }
+            }
+            .sp-timer {
+              height: 100%;
+              line-height: 52px;
+              background: #fff;
+              color: inherit;
+              border: 1px solid $color-border-gray;
+              border-radius: 4px;
+            }
+            .form-item__error-message {
+              right: 35%;
+            }
+          }
+          &.btn-container {
+            margin-top: 60px;
+          }
+          &.btn-container-reg {
+            margin-top: 10px;
+          }
+          .sp-btn {
+            height: 52px;
+            border-radius: 4px;
+            &__txt {
+              color: #fff;
+            }
+            &.is-disabled {
+              border-color: $color-border-gray;
+              background: $color-border-gray;
+            }
+          }
+          &.form-select {
+            height: 52px;
+            border-radius: 4px;
+            border: 1px solid $color-border-gray;
+            padding-left: 85px;
+            .sort-select {
+              height: 100%;
+              &__value {
+                height: 100%;
+                background: transparent;
+                &-input {
+                  line-height: 50px;
+                  padding: 0;
+                  color: #7a7a7a;
+                }
+                .ec-icon-unfold {
+                  right: 15px;
+                  top: 17px;
+                }
+              }
+              &__dropdown-list {
+                border-color: $color-border-gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .reg-complete {
+    text-align: center;
+    .reg-img {
+      width: 84px;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: bold;
+      color: $color-brand-primary;
+      margin: 20px 0;
+    }
+    .vip {
+      font-weight: bold;
+      font-size: 16px;
+      color: #7F7F7F;
+    }
+  }
+}

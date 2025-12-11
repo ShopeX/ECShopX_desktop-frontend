@@ -1,0 +1,189 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-near {
+  background: #f5f5f5;
+  overflow: hidden;
+	.container{
+		background: transparent;
+		margin-top: 24px;
+		&__btn {
+			  height: 40px;
+			  line-height: 40px;
+			  width: 200px;
+				font-size: 16px;
+			  text-align: center;
+			  // background-color: #ff0000;
+			  cursor: pointer;
+			}
+		.navs-con {
+			// float: left;
+			position: relative;
+			left: 220px;
+			bottom: 30px;
+			.nav-item {
+				height: 40px;
+				font-weight: 500;
+				margin: 0 10px;
+				cursor: pointer;
+				font-size: 16px;
+				color: #3B3B3B;
+				line-height: 27px;
+				&:hover{
+					// color: #FF5D02!important;
+				}
+				&.active {
+					font-weight: 650;
+					color: #FF5D02;
+				}
+			}
+			.shop_serch{
+				position: relative;
+				height: 40px;
+				left: 725px;
+				bottom: 30px;
+				width: 234px;
+				border-radius: 20px;
+				border-width: 1px;
+				border-color: #FF5D02;
+				border-style: solid;
+				overflow: hidden;
+				background: #FFFFFF;
+				.search-input{
+					height: 40px;
+					width: 196px;
+					// border-radius: 20px;
+					padding-left: 10px;
+					border: 0;
+					&:focus {
+					  outline: none;
+					}
+				}
+				.espier-icon-sousuo-01{
+					color: #8C8C8C;
+					cursor: pointer;
+				}
+			}
+		}
+		
+		.near-content{
+			margin-top: -44px;
+			// margin-bottom: 50px;
+			display: table;
+			// overflow: scroll;
+			.near-content-left{
+				display: table-cell;
+				width: 200px;
+				background-color: #FFFFFF;
+				vertical-align: top;
+				position: relative;
+				.menu{
+					height: 600px;
+					overflow: auto;
+					.menu-con{
+						margin-left: 16px;
+						margin-top: 10px;
+						.menu-block{
+							height: 40px;
+							.menu-item{
+								cursor: pointer;
+								height: 18px;
+								.menu-item-title{
+									color: #3B3B3B;
+								}
+								&.active {
+									font-weight: 650;
+									.menu-item-title{
+										color:#FF5D02;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.near-content-right{
+				display: table-cell;
+				padding-left: 20px;
+				width: 980px;
+				.shop_list{
+					height: 600px;
+					overflow: auto;
+					&_item{
+						background-color: #FFFFFF;
+						margin-bottom: 16px;
+						height: 96px;
+						&__banner{
+							position: relative; 
+							cursor: pointer;
+							left: 13px;
+							top: 13px;
+							width: 70px;
+							height: 70px;
+						}
+						&_content{
+							position: relative;
+							left: 102px;
+							width: 720px;
+							height: 70px;
+							bottom: 63px;
+							&__name{
+								cursor: pointer;
+								height: 18px;
+								font-size: 18px;
+								font-weight: 400;
+								color: #3B3B3B;
+								line-height: 27px;
+							}
+							&__info{
+								position: relative;
+								top: 24px;
+								width: 321px;
+								height: 14px;
+								font-size: 14px;
+								font-weight: 400;
+								color: #8C8C8C;
+								line-height: 21px;
+							}
+						}
+						&_right{
+							float: right;
+							height: 70px;
+							width: 120px;
+							color: #3B3B3B;
+							.icon-new-pc-shoucang{
+								font-size: 11px;
+							}
+							&__concern{
+								position: relative;
+								top: 16px;
+								margin-right: 24px;
+								cursor: pointer;
+								&_text{
+									font-size: 14px;
+									font-weight: 400;
+									line-height: 21px;
+								}
+							}
+							&__distance{
+								position: relative;
+								top: 22px;
+								width: 120px;
+								text-align: center;
+								&_text{
+									height: 14px;
+									font-size: 14px;
+									font-weight: 400;
+									color: #8C8C8C;
+									line-height: 21px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"zh": {
+		"comp.protocolDialog.382474-0": "提示",
+		"comp.protocolDialog.382474-1": "请确认是否提交审核"
+	},
+	"en": {
+		"comp.protocolDialog.382474-0": "prompt",
+		"comp.protocolDialog.382474-1": "Please confirm whether to submit for review"
+	}
+}

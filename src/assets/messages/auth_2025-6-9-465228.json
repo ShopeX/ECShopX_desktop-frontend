@@ -1,0 +1,38 @@
+{
+	"zh": {
+		"auth.forget-password.651974-0": "忘记密码",
+		"auth.forget-password.651974-1": "手机号",
+		"auth.forget-password.651974-2": "图片验证码",
+		"auth.forget-password.651974-3": "验证码",
+		"auth.forget-password.651974-4": "建议使用两种或两种以上的字符组合",
+		"auth.forget-password.651974-5": "再次输入密码",
+		"auth.forget-password.651974-6": "登录",
+		"auth.forget-password.651974-7": "请输入手机号",
+		"auth.forget-password.651974-8": "请输入图形验证码",
+		"auth.forget-password.651974-9": "请输入验证码",
+		"auth.forget-password.651974-10": "发送验证码",
+		"auth.forget-password.651974-11": "请输入正确的手机号",
+		"auth.forget-password.651974-12": "发送成功",
+		"auth.forget-password.651974-13": "${e}秒后重发",
+		"auth.forget-password.651974-14": "重发验证码",
+		"auth.forget-password.651974-15": "新密码已经设置成功"
+	},
+	"en": {
+		"auth.forget-password.651974-0": "forgot password",
+		"auth.forget-password.651974-1": "cell-phone number",
+		"auth.forget-password.651974-2": "Image verification code",
+		"auth.forget-password.651974-3": "Verification code",
+		"auth.forget-password.651974-4": "Suggest using two or more character combinations",
+		"auth.forget-password.651974-5": "Confirm Password",
+		"auth.forget-password.651974-6": "log on",
+		"auth.forget-password.651974-7": "Please enter your phone number",
+		"auth.forget-password.651974-8": "Please enter the graphic verification code",
+		"auth.forget-password.651974-9": "Please enter the verification code",
+		"auth.forget-password.651974-10": "Send verification code",
+		"auth.forget-password.651974-11": "Please enter the correct phone number",
+		"auth.forget-password.651974-12": "Successfully sent",
+		"auth.forget-password.651974-13": "Resend in ${e} seconds",
+		"auth.forget-password.651974-14": "Resend verification code",
+		"auth.forget-password.651974-15": "The new password has been successfully set"
+	}
+}

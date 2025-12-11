@@ -1,0 +1,295 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$goods-color-primary:#1f201f;
+.page-item-detail-pointitem {
+  background-color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+
+  .sp-footer__nav {
+    margin-top: 0;
+  }
+  .goods-details {
+    text-align: center;
+
+    &__main {
+      margin: 0 auto;
+      overflow: hidden;
+      // float: left;
+      // width: calc(100% - 220px);
+      margin-left: 10px;
+      padding-bottom: 30px;
+      background: #fff;
+      //border: 1px solid $color-border-gray-light;
+      .tab-wrap {
+        height: 65px;
+        text-align: left;
+        //background: #e8e8e8;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #e8e8e8;
+        .tab-list {
+          display: inline-block;
+          .tab-item {
+            width: 140px;
+            height: 65px;
+            line-height: 65px;
+            font-size: 16px;
+            padding: 0 20px;
+            text-align: center;
+            display: inline-block;
+            //border-right: 1px solid #ccc;
+            cursor: pointer;
+            position: relative;
+            float: left;
+            &.active {
+              // background:  $color-brand-primary;
+              //color: #fff;
+              &::before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 10;
+                width: 100%;
+                height: 4px;
+                background: $color-brand-primary;
+                content: '';
+              }
+            }
+          }
+        }
+      }
+      .goods-parameter {
+        &__list {
+          margin: 0 20px;
+        }
+        &__item {
+          display: inline-block;
+          float: left;
+          width: 33%;
+          text-align: left;
+          font-size: 12px;
+        }
+        .more-wrap {
+          margin-top: 20px;
+          height: 41px;
+          line-height: 40px;
+          text-align: right;
+          padding-right: 50px;
+          border-bottom: 1px solid #e8e8e8;
+          .more-text {
+            color: #409EFF;
+            cursor: pointer;
+          }
+        }
+      }
+      .goods-parameter-more {
+        &__list {
+          margin: 0 20px;
+        }
+        &__item {
+          height: 41px;
+          line-height: 40px;
+          border-bottom: 1px solid #eee;
+          .p-key {
+            width: 160px;
+            display: inline-block;
+            text-align: right;
+            padding-right: 5px;
+            color: #999;
+            font-size: 14px;
+            float: left;
+            line-height: 40px;
+          }
+          .p-value {
+            padding-left: 50px;
+            color: #999;
+            font-size: 14px;
+            text-align: left;
+            display: inline-block;
+            width: calc(100% - 160px);
+          }
+        }
+      }
+      .no-info {
+        margin-top: 30px;
+      }
+      .goods-intro {
+        &__detail {
+          text-align: left;
+          img {
+            width: 100%;
+            display: block;
+          }
+        } 
+        img {
+          // width: 100%;
+          display: block;
+          // margin: 0 auto !important;
+        }
+        table {
+          width: 100% !important;
+        }
+      }
+    }
+    .goods-evaluation {
+      &__list {
+        padding: 10px 20px 0;
+      }
+      .loading-data {
+        text-align: center;
+      }
+    }
+  }
+
+  .goods-list {
+    //background: $color-bg-gray;
+    //padding: 48px 100px 80px;
+    &__hd {
+      font-size: 30px;
+      text-align: center;
+      letter-spacing: 12px;
+      margin: 0 0 40px;
+    }
+    .good-card {
+      width: 300px;
+      &__img {
+        height: 400px;
+      }
+    }
+    .card-list {
+      @include clearfix();
+      position: relative;
+      margin: 0 auto;
+      padding: 0 80px;
+      &__cont {
+        // width: (204px + 30px * 2) * 3;
+        overflow: hidden;
+        box-sizing: content-box;
+      }
+      &__btn {
+        background: url("~assets/imgs/rec_arr_left.png") no-repeat
+          center center;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 80px;
+        height: 70px;
+        z-index: 99;
+      }
+      &__btn-next {
+        background: url("~assets/imgs/rec_arr_right.png") no-repeat
+          center center;
+        right: 0;
+        left: auto;
+      }
+      .swiper-button-disabled {
+        opacity: 0.3;
+        cursor: default;
+      }
+    }
+  }
+
+  @include respond("lg+") {
+    .goods-list {
+      .good-card {
+        &__title {
+          text-align: center;
+          padding: 0;
+          margin-bottom: 12px;
+        }
+        &__content {
+          font-size: 18px;
+          .fl {
+            display: none;
+          }
+          .sp-price {
+            display: block;
+            float: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(lg) {
+    .goods-list {
+      .card-list {
+        padding: 0;
+        &__btn {
+          width: 30px;
+        }
+      }
+      .good-card {
+        width: 200px;
+        &__img {
+          width: 200px;
+          height: 280px;
+        }
+      }
+    }
+  }
+
+  @include respond(md) {
+    .goods-list {
+      padding: 16px 0 20px;
+    }
+  }
+
+  @include respond(sm) {
+    .bread-crumb {
+      display: none;
+    }
+    .goods-list {
+      padding: 10px 0;
+      &__hd {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 0 0 12px;
+      }
+      .good-card {
+        width: calc(100vw / 2 - 15px);
+        &__img {
+          width: 100%;
+          height: calc(100vw / 2 / 0.72);
+          border: none;
+          margin: 0 0 2px;
+          img {
+            width: 100%;
+            height: auto;
+            max-height: none;
+          }
+        }
+        &__title {
+          font-size: 14px;
+          margin: 0 0 3px;
+        }
+        &__content {
+          font-size: 11px;
+        }
+        .number {
+          color: #888;
+        }
+        .sp-price {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  // 手风琴样式
+  .goods-acoordion{
+    .collapse__title{
+      font-size: 16px;
+      color: $goods-color-primary;
+    }
+  }
+}

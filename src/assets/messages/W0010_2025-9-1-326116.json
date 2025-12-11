@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"W0010.index.258451-0": "我的购物车",
+		"W0010.index.258451-1": "共{0}件商品，合计",
+		"W0010.index.258451-2": "进入购物车",
+		"W0010.index.258451-3": "购物车"
+	},
+	"en": {
+		"W0010.index.258451-0": "my cart",
+		"W0010.index.258451-1": "A total of {0} products, total",
+		"W0010.index.258451-2": "enter the shopping cart",
+		"W0010.index.258451-3": "shopping cart"
+	}
+}

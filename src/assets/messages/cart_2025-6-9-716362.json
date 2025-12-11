@@ -1,0 +1,20 @@
+{
+	"zh": {
+		"cart.addAddress.163303-0": "保存",
+		"cart.addAddress.163303-1": "杭州",
+		"cart.addAddress.163303-2": "宁波",
+		"cart.addAddress.163303-3": "温州",
+		"cart.addAddress.163303-4": "嘉兴",
+		"cart.addAddress.163303-5": "湖州",
+		"cart.addAddress.163303-6": "当前值：{0}, 当前索引：{1}"
+	},
+	"en": {
+		"cart.addAddress.163303-0": "save",
+		"cart.addAddress.163303-1": "Hangzhou",
+		"cart.addAddress.163303-2": "NINGBO",
+		"cart.addAddress.163303-3": "Wenzhou",
+		"cart.addAddress.163303-4": "Jiaxing",
+		"cart.addAddress.163303-5": "Huzhou",
+		"cart.addAddress.163303-6": "Current value: {0}, current index: {1}"
+	}
+}

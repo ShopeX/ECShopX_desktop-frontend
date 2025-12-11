@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"comps.fast-cart.338393-0": "加入购物车",
+		"comps.fast-cart.338393-1": "商品",
+		"comps.fast-cart.338393-2": "价格",
+		"comps.fast-cart.338393-3": "购买数量",
+		"comps.fast-cart.338393-4": "库存"
+	},
+	"en": {
+		"comps.fast-cart.338393-0": "add to cart",
+		"comps.fast-cart.338393-1": "goods",
+		"comps.fast-cart.338393-2": "price",
+		"comps.fast-cart.338393-3": "Purchase quantity",
+		"comps.fast-cart.338393-4": "stock"
+	}
+}

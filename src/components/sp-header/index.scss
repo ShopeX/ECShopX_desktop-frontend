@@ -1,0 +1,221 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.header-bar {
+  &__topbar {
+    //background: #f2f2f2;
+    padding: 5px 0;
+    .topbar-login {
+      a,
+      .name {
+        margin-right: 10px;
+        font-size: 13px;
+        color: #666;
+      }
+			
+      .sys-hello {
+        font-size: 13px;
+        display: inline-block;
+      }
+      .member-phone {
+        font-size: 13px;
+        color: $color-brand-primary;
+        margin-right: 10px;
+      }
+      .exit-btn {
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+    .topbar-member {
+      a {
+        color: #666;
+        margin-right: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  &__search {
+    padding: 20px 0;
+    .container {
+      height: 70px;
+    }
+    .logo-con {
+      width: 25%;
+      float: left;
+      img {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .search-con {
+      width: 50%;
+      float: left;
+      margin-top: 7px;
+    }
+    .cart-con {
+      width: 25%;
+      float: left;
+      margin-top: 7px;
+      text-align: right;
+      .cart-link {
+        background: $color-brand-primary;
+        color: $color-primary-text;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+        display: inline-block;
+        border-radius: 5px;
+        position: relative;
+        .cart-icon {
+          display: inline-block;
+          position: relative;
+          margin-right: 5px;
+          height: 100%;
+          vertical-align: top;
+          .ec-icon-cart {
+            color: #fff;
+            font-size: 20px;
+          }
+          .count {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            transform: translateY(-35%) translateX(100%);
+            border: 1px solid $color-brand-primary;
+            background: #fff;
+            color: $color-brand-primary;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 12px;
+            min-width: 20px;
+            height: 20px;
+            line-height: 18px;
+            padding: 0 5px;
+            text-align: center;
+            white-space: nowrap;
+            z-index: 10;
+          }
+        }
+      }
+      .mb-iconfont {
+        font-size: 20px;
+        color: $color-primary-text;
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+  &__nav {
+    border-bottom: 2px solid $color-brand-primary;
+    position: relative;
+    .all-category {
+      &:hover {
+        .category-list {
+          height: 400px;
+          // height: 200px;  
+          transition: height .2s;
+        }
+      }
+      &__btn {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        width: 200px;
+        text-align: center;
+        background-color: $color-brand-primary;
+        color: $color-primary-text;
+        cursor: pointer;
+      }
+      .category-list {
+        position: absolute;
+        top: 42px;
+        width: 1000px;
+        // display: none;
+        height: 0;
+        overflow: hidden;
+        z-index: 999;
+        .category-main {
+          &__btn {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: $color-primary-text;
+            background: $color-brand-primary;
+            width: 200px;
+            cursor: pointer;
+          }
+          &__con {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            display: none;
+            width: calc(100% - 200px);
+            background: #f5f8f8;
+            height: 400px;
+          }
+          &:hover {
+            .category-main__btn {
+              background: #f5f8f8;
+              color: $color-brand-primary;
+            }
+            .category-main__con {
+              display: block;
+						  // min-height: 100%;
+            }
+          }
+        }
+        .category-child {
+          @include clearfix();
+          &__btn {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 120px;
+            padding-left: 20px;
+            float: left;
+            text-align: left;
+            cursor: pointer;
+            @include text-overflow();
+            &:hover {
+              color: $color-brand-primary;
+            }
+          }
+        }
+        .category-subchild {
+          float: left;
+          @include clearfix();
+          &__btn {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 120px;
+            padding-left: 20px;
+            float: left;
+            text-align: left;
+            cursor: pointer;
+            @include text-overflow();
+            &:hover {
+              color: $color-brand-primary;
+            }
+          }
+        }
+      }
+    }
+    .navs-con {
+      float: left;
+      margin-left: 60px;
+      .nav-item {
+        float: left;
+        margin-right: 60px;
+        a {
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"zh": {
+		"comps.goods_like.366072-0": "正在加载",
+		"comps.goods_like.366072-1": "暂无数据",
+		"comps.goods_like.366072-2": "没有更多了",
+		"comps.goods_like.366072-3": "综合",
+		"comps.goods_like.366072-4": "销量",
+		"comps.goods_like.366072-5": "上新",
+		"comps.goods_like.366072-6": "价格降序",
+		"comps.goods_like.366072-7": "价格升序",
+		"comps.goods_like.366072-8": "全部商品"
+	},
+	"en": {
+		"comps.goods_like.366072-0": "Loading",
+		"comps.goods_like.366072-1": "No data available at the moment",
+		"comps.goods_like.366072-2": "There's nothing more",
+		"comps.goods_like.366072-3": "comprehensive",
+		"comps.goods_like.366072-4": "sales volume",
+		"comps.goods_like.366072-5": "Up new",
+		"comps.goods_like.366072-6": "Price descending order",
+		"comps.goods_like.366072-7": "Price ascending order",
+		"comps.goods_like.366072-8": "All products"
+	}
+}

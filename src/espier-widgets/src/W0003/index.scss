@@ -1,0 +1,29 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-w0003 {
+  &-inner {
+    position: relative;
+  }
+  .img-zone__item {
+    position: absolute;
+    // border: 1px solid red;
+    a {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .default-bg {
+    background: #d3d3d3;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+}

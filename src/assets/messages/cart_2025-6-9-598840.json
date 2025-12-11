@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"comps.cart-item.988097-0": "失效",
+		"comps.cart-item.988097-1": "编辑",
+		"comps.cart-item.988097-2": "删除"
+	},
+	"en": {
+		"comps.cart-item.988097-0": "invalid",
+		"comps.cart-item.988097-1": "edit",
+		"comps.cart-item.988097-2": "delete"
+	}
+}

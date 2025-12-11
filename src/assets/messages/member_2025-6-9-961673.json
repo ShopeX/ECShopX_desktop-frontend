@@ -1,0 +1,36 @@
+{
+	"zh": {
+		"aftersales.index.616149-0": "会员中心",
+		"aftersales.index.616149-1": "退货/退款列表",
+		"aftersales.index.616149-2": "退单号",
+		"aftersales.index.616149-3": "售后服务内容",
+		"aftersales.index.616149-4": "申请时间",
+		"aftersales.index.616149-5": "处理状态",
+		"aftersales.index.616149-6": "操作",
+		"aftersales.index.616149-7": "查看",
+		"aftersales.index.616149-8": "售后单号：",
+		"aftersales.index.616149-9": "申请时间：",
+		"aftersales.index.616149-10": "状态：",
+		"aftersales.index.616149-11": "售后服务内容：",
+		"aftersales.index.616149-12": "正在加载退款售后订单列表...",
+		"aftersales.index.616149-13": "抱歉！您的退款售后订单列表为空",
+		"aftersales.index.616149-14": "请继续购物。"
+	},
+	"en": {
+		"aftersales.index.616149-0": "member center",
+		"aftersales.index.616149-1": "Return/Refund List",
+		"aftersales.index.616149-2": "Refund number",
+		"aftersales.index.616149-3": "After sales service content",
+		"aftersales.index.616149-4": "Application Time",
+		"aftersales.index.616149-5": "Processing status",
+		"aftersales.index.616149-6": "operate",
+		"aftersales.index.616149-7": "view",
+		"aftersales.index.616149-8": "After sales tracking number:",
+		"aftersales.index.616149-9": "Application time:",
+		"aftersales.index.616149-10": "Status:",
+		"aftersales.index.616149-11": "After sales service content:",
+		"aftersales.index.616149-12": "Loading refund after-sales order list ..",
+		"aftersales.index.616149-13": "i 'm sorry! Your refund after-sales order list is empty",
+		"aftersales.index.616149-14": "Please continue shopping."
+	}
+}

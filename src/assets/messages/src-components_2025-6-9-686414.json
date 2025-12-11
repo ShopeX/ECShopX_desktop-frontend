@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"address-picker.index.863802-0": "请选择省",
+		"address-picker.index.863802-1": "请选择市",
+		"address-picker.index.863802-2": "区"
+	},
+	"en": {
+		"address-picker.index.863802-0": "Please select province",
+		"address-picker.index.863802-1": "Please select a city",
+		"address-picker.index.863802-2": "distinguish"
+	}
+}

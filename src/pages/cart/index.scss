@@ -1,0 +1,300 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-cart {
+  padding: 50px 0;
+  .cart-hd {
+    height: 44px;
+    background: #e8e8e8;
+    @include clearfix();
+    .hd-item {
+      float: left;
+      font-size: 12px;
+      color: #666;
+      line-height: 44px;
+      padding: 0 10px;
+      &.name {
+        width: 688px;
+        padding-left: 48px;
+      }
+      &.price {
+        width: 121px;
+      }
+      &.num {
+        width: 148px;
+      }
+      &.amount {
+        width: 100px;
+      }
+      &.action {
+        width: 100px;
+      }
+    }
+  }
+  .cart-bd {
+    .cart-shop {
+      &-hd {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        // border-bottom-color: #E43838;
+        height: 46px;
+        .shop-name {
+          float: left;
+          line-height: 46px;
+        }
+        .shop-coupon {
+          float: left;
+          margin-left: 500px;
+          margin-top: 12px;
+        }
+        .g-count {
+          float: left;
+        }
+      }
+    }
+    .shop-goods-item {
+      @include clearfix();
+      height: 112px;
+      padding: 15px 20px;
+      border-left: 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      .sp-radio__label {
+        float: left;
+        margin-right: 6px;
+      }
+      .g-wrap {
+        float: left;
+        width: 642px;
+        @include clearfix();
+        .spimg {
+          float: left;
+          width: 80px;
+          height: 80px;
+          margin-right: 12px;
+        }
+        .goods-name {
+          float: left;
+          font-size: 12px;
+          color: #333;
+          width: 300px;
+          margin-right: 20px;
+        }
+        .goods-spec {
+          float: left;
+          font-size: 12px;
+          color: #888;
+        }
+      }
+      .goods-price {
+        float: left;
+        width: 100px;
+        .price__symbol,
+        .price__int,
+        .price__decimal {
+          font-size: 14px;
+          // font-family: ArialMT;
+          color: #333;
+        }
+      }
+      .goods-num {
+        float: left;
+        width: 180px;
+        .sp-point-num-input {
+          padding: 0 !important;
+          &__btn {
+            width: 22px;
+            height: 22px;
+            line-height: 18px;
+            background: #e3e3e3;
+          }
+          &__input {
+            width: 40px;
+            height: 22px;
+            border-top: 1px solid #e3e3e3;
+            border-bottom: 1px solid #e3e3e3;
+          }
+        }
+      }
+      .goods-amount {
+        float: left;
+        width: 100px;
+        .price__symbol,
+        .price__int,
+        .price__decimal {
+          font-size: 14px;
+          // font-family: Arial-BoldMT;
+          font-weight: 600;
+          color: #000;
+        }
+      }
+      .goods-action {
+        width: 100px;
+        float: left;
+        .delete-text {
+          color: #888;
+          font-size: 12px;
+          cursor: p;
+        }
+      }
+    }
+  }
+  .cart-ft {
+    height: 50px;
+    margin-top: 20px;
+    @include clearfix();
+    .cart-ft-hd {
+      float: left;
+      width: 1088px;
+      @include clearfix();
+      border: 1px solid #e8e8e8;
+      background: #f6f6f6;
+      height: 100%;
+    }
+    .calc-btn {
+      float: left;
+      width: 100px;
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      line-height: 48px;
+      cursor: pointer;
+      &.disabled {
+        background: $color-disabled-text !important;
+      }
+    }
+    .left-con {
+      float: left;
+			.sp-radio__label {
+			  margin: 12px 20px 0;
+			  float: left;
+			}
+    }
+    .right-con {
+      float: right;
+    }
+    
+    .sp-radio__text {
+      font-size: 12px;
+      color: #666;
+    }
+    .text-grel-all {
+			
+      font-size: 12px;
+      color: #666;
+      margin-left: 20px;
+      margin-top: 15px;
+      float: left;
+      cursor: pointer;
+    }
+    .cart-col-sl {
+      float: left;
+      font-size: 12px;
+      color: #666;
+      margin-top: 15px;
+      .checknum {
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0 4px;
+      }
+    }
+    .diss-count {
+      float: left;
+      font-size: 14px;
+      color: #333;
+      margin-top: 15px;
+      margin-left: 30px;
+      .sp-price {
+        position: relative;
+        top: -1px;
+				.price__symbol,
+				.price__int,
+				.price__decimal {
+				  font-size: 15px;
+				  color: #333;
+				}
+      }
+    }
+    .text-grel {
+      color: #aaa;
+      font-size: 12px;
+    }
+    .total-price {
+      float: left;
+      margin-right: 20px;
+      font-size: 14px;
+      color: #333;
+      margin-left: 30px;
+      margin-top: 14px;
+    }
+  }
+  .loading-container {
+    padding: 150px 0;
+    text-align: center;
+  }
+  .cart-recommend {
+    margin-top: 20px;
+  }
+  .invalid-cart {
+    margin-top: 20px;
+    .shop-goods-item {
+      position: relative;
+      background: #e8e8e8;
+			.g-wrap {
+			  margin-left: 26px;
+			  .spimg {
+			    opacity: 0.5;
+			  }
+			  .goods-name,
+			  .goods-spec {
+			    color: #b9b7b7 !important;
+			  }
+			}
+			.sp-price{
+				.price__symbol,
+				.price__int,
+				.price__decimal {
+				  color: #b9b7b7 !important;
+				}
+			}
+			.goods-action {
+			  margin-left: 280px;
+			}
+    }
+    .invalid-text {
+      font-size: 12px;
+      float: left;
+      color: #b9b7b7;
+      position: absolute;
+      top: 47px;
+      left: 5px;
+    }
+    
+  }
+  .cart-empty {
+    text-align: center;
+    margin: 80px 0;
+    &-con {
+      display: inline-block;
+      @include clearfix();
+    }
+    &-img {
+      float: left;
+    }
+    &-info {
+      float: left;
+      text-align: left;
+      margin-top: 20px;
+      .txt {
+        color: #888;
+      }
+      .ec-icon-right {
+        color: inherit;
+        font-size: 13px;
+      }
+    }
+  }
+}

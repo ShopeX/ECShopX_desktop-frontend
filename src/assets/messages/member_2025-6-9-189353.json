@@ -1,0 +1,34 @@
+{
+	"zh": {
+		"comps.InvoiceInfo.892977-0": "发票信息",
+		"comps.InvoiceInfo.892977-1": "类型：",
+		"comps.InvoiceInfo.892977-2": "个人",
+		"comps.InvoiceInfo.892977-3": "企业",
+		"comps.InvoiceInfo.892977-4": "开票状态：",
+		"comps.InvoiceInfo.892977-5": "已开票",
+		"comps.InvoiceInfo.892977-6": "未开票",
+		"comps.InvoiceInfo.892977-7": "发票抬头：",
+		"comps.InvoiceInfo.892977-8": "公司名称：",
+		"comps.InvoiceInfo.892977-9": "税号：",
+		"comps.InvoiceInfo.892977-10": "公司地址：",
+		"comps.InvoiceInfo.892977-11": "电话号码：",
+		"comps.InvoiceInfo.892977-12": "开户银行：",
+		"comps.InvoiceInfo.892977-13": "银行账号："
+	},
+	"en": {
+		"comps.InvoiceInfo.892977-0": "Invoice Information",
+		"comps.InvoiceInfo.892977-1": "Type:",
+		"comps.InvoiceInfo.892977-2": "person",
+		"comps.InvoiceInfo.892977-3": "enterprise",
+		"comps.InvoiceInfo.892977-4": "Invoice status:",
+		"comps.InvoiceInfo.892977-5": "Invoiced ",
+		"comps.InvoiceInfo.892977-6": "Not invoiced",
+		"comps.InvoiceInfo.892977-7": "Invoice header:",
+		"comps.InvoiceInfo.892977-8": "corporate name:",
+		"comps.InvoiceInfo.892977-9": "duty paragraph:",
+		"comps.InvoiceInfo.892977-10": "Company address:",
+		"comps.InvoiceInfo.892977-11": "Phone number:",
+		"comps.InvoiceInfo.892977-12": "Bank of Deposit:",
+		"comps.InvoiceInfo.892977-13": "bank account:"
+	}
+}

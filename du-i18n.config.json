@@ -1,0 +1,36 @@
+{
+	"quoteKeys": [
+		"this.$t",
+		"$t",
+		"i18n.t"
+	],
+	"defaultLang": "zh",
+	"tempLangs": [
+		"zh",
+		"en"
+	],
+	"langPaths": "**/src/assets/lang/**",
+	"transSourcePaths": "**/src/assets/source/**",
+	"tempPaths": "**/src/assets/messages/**",
+	"multiFolders": [
+		"src",
+		"pages"
+	],
+	"prefixKey": null,
+	"keyJoinStr": null,
+	"keyBoundaryChars": [
+		"\n",
+		">",
+		"<",
+		"}",
+		"{",
+		"(",
+		")"
+	],
+	"uncheckMissKeys": [],
+	"isSingleQuote": true,
+	"isHookImport": false,
+	"isOnlineTrans": true,
+	"baiduAppid": "20240529002064566",
+	"baiduSecrectKey": "U7H9dghQ74wtjylflb5h"
+}

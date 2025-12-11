@@ -1,0 +1,20 @@
+{
+	"zh": {
+		"comps.payInfo.590028-0": "付款信息",
+		"comps.payInfo.590028-1": "付款方式：",
+		"comps.payInfo.590028-2": "查看付款凭证",
+		"comps.payInfo.590028-3": "付款时间：",
+		"comps.payInfo.590028-4": "积分支付",
+		"comps.payInfo.590028-5": "微信支付",
+		"comps.payInfo.590028-6": "支付宝支付"
+	},
+	"en": {
+		"comps.payInfo.590028-0": "Payment information",
+		"comps.payInfo.590028-1": "payment method:",
+		"comps.payInfo.590028-2": "View payment voucher",
+		"comps.payInfo.590028-3": "Payment Time:",
+		"comps.payInfo.590028-4": "Integral payment",
+		"comps.payInfo.590028-5": "WeChat Pay",
+		"comps.payInfo.590028-6": "Alipay payment"
+	}
+}

@@ -1,0 +1,197 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@import './variables';
+
+/*reset*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.25;
+  margin-bottom: 0.2em;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a {
+  // color: $color-link;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.lnk {
+  color: $color-link;
+  cursor: pointer;
+}
+
+a.lnk {
+  text-decoration: none;
+}
+
+a.lnk:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: 0;
+}
+
+.gray {
+  color: $color-gray;
+}
+
+.red {
+  color: $color-red;
+}
+
+.orange {
+  color: $color-orange;
+}
+
+.green {
+  color: $color-green;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.black {
+  color: $color-black;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.t-r {
+  text-align: right !important;
+}
+
+.t-l {
+  text-align: left !important;
+}
+
+.t-c {
+  text-align: center !important;
+}
+
+.clearfix {
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none !important;
+}
+
+.loading-result {
+  padding: 100px 0;
+  text-align: center;
+}

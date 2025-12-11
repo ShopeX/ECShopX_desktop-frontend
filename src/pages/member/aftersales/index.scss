@@ -1,0 +1,92 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-refund {
+    margin: 0 auto 100px;
+    &__title {
+      margin: 0 0 15px;
+    }
+    .refund-list {
+      &__header {
+        padding: 10px 0;
+        background: #e5e5e5;
+        > div {
+          float: left;
+          font-size: 14px;
+          padding: 0 10px;
+          color: #515151;
+          text-align: center;
+        }
+        .refund-id {
+          width: 25%;
+        }
+        .refund-reason {
+          width: 20%;
+        }
+        .refund-time {
+          width: 20%;
+        }
+        .refund-status {
+          width: 20%;
+        }
+        .refund-action {
+          width: 15%;
+        }
+      }
+      &__body {
+        &-b {
+          width: 100%;
+          display: table;
+          border-right: 1px solid $color-border-gray-light;
+          border-bottom: 1px solid $color-border-gray-light;
+          border-left: 1px solid $color-border-gray-light;
+          color: #515151;
+          > div {
+            display: table-cell;
+            padding: 10px;
+            text-align: center;
+          }
+          .refund-id {
+            width: 25%;
+          }
+          .refund-reason {
+            width: 20%;
+            border-left: 1px solid $color-border-gray-light;
+            span {
+              width: 105px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+          }
+          .refund-time {
+            width: 20%;
+            border-left: 1px solid $color-border-gray-light;
+          }
+          .refund-status {
+            width: 20%;
+            border-right: 1px solid $color-border-gray-light;
+            border-left: 1px solid $color-border-gray-light;
+          }
+          .refund-btn {
+            width: 15%;
+            .sp-btn {
+              cursor: pointer;
+              color: #515151;
+              &:hover {
+                color: #515151;
+                background: none;
+              }
+            }
+          }
+        }
+        &-mb {
+          display: none;
+        }
+      }
+    }
+  }

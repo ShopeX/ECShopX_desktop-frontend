@@ -1,0 +1,28 @@
+{
+	"zh": {
+		"receive.coupons.213323-0": "领券中心",
+		"receive.coupons.213323-1": "为你推荐好券",
+		"receive.coupons.213323-2": "我的优惠券",
+		"receive.coupons.213323-3": "@/assets/imgs/coupons/小矩形.png",
+		"receive.coupons.213323-4": "满300可用",
+		"receive.coupons.213323-5": "4月钜惠",
+		"receive.coupons.213323-6": "使用规则",
+		"receive.coupons.213323-7": "立即领取",
+		"receive.coupons.213323-8": "已领取",
+		"receive.coupons.213323-9": "已结束",
+		"receive.coupons.213323-10": "~@/assets/imgs/coupons/圆角矩形.png"
+	},
+	"en": {
+		"receive.coupons.213323-0": "Coupon Center",
+		"receive.coupons.213323-1": "Recommend good coupons for you",
+		"receive.coupons.213323-2": "my coupon",
+		"receive.coupons.213323-3": "@/Assets/imgs/coupons/small rectangles. png",
+		"receive.coupons.213323-4": "Available at 300+",
+		"receive.coupons.213323-5": "April Juhui",
+		"receive.coupons.213323-6": "Usage rules",
+		"receive.coupons.213323-7": "Get it now",
+		"receive.coupons.213323-8": "Received already",
+		"receive.coupons.213323-9": "Ended",
+		"receive.coupons.213323-10": "~@/Assets/imgs/coupons/rounded rectangles. png"
+	}
+}

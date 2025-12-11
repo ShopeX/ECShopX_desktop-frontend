@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"pointitems.cashierpoint.173269-0": "积分支付成功，您的商品正在出库中…",
+		"pointitems.cashierpoint.173269-1": "商品介绍",
+		"pointitems.cashierpoint.173269-2": "商品评价",
+		"pointitems.cashierpoint.173269-3": "首页"
+	},
+	"en": {
+		"pointitems.cashierpoint.173269-0": "Points payment successful, your product is currently being shipped out",
+		"pointitems.cashierpoint.173269-1": "Product Introduction",
+		"pointitems.cashierpoint.173269-2": "Reviews",
+		"pointitems.cashierpoint.173269-3": "home page"
+	}
+}

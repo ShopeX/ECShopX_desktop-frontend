@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"sp-goods-info.buy-toolbar.855108-0": "赠品不可购买",
+		"sp-goods-info.buy-toolbar.855108-1": "商品已下架",
+		"sp-goods-info.buy-toolbar.855108-2": "加入购物车",
+		"sp-goods-info.buy-toolbar.855108-3": "立即购买"
+	},
+	"en": {
+		"sp-goods-info.buy-toolbar.855108-0": "Gifts cannot be purchased",
+		"sp-goods-info.buy-toolbar.855108-1": "The product has been taken down",
+		"sp-goods-info.buy-toolbar.855108-2": "add to cart",
+		"sp-goods-info.buy-toolbar.855108-3": "BUY NOW"
+	}
+}

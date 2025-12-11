@@ -1,0 +1,105 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-article {
+  padding-top: 40px;
+  margin: 0 auto 100px;
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .article-content {
+    margin: auto;
+    // width: 1210px;
+  }
+  .article-title {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .article-common {
+    // width: 590px;
+    // float: left;
+    // margin-right: 10px;
+    .item {
+      
+      background-color: #fff;
+      // float: left;
+      margin-bottom: 10px;
+      // &:nth-child(2n + 1) {
+      //   margin-right: 10px;
+      // }
+    }
+    &.right {
+      float: right;
+    }
+    h3 {
+      background: #000;
+      color: #fff;
+      font-size: 16px;
+      height: 44px;
+      line-height: 44px;
+      text-indent: 10px;
+    }
+    ul {
+      li {
+        // margin: 0 10px;
+        padding-bottom: 10px;
+        list-style: none;
+        color: #666;
+        .txt-title {
+          display: block;
+          border-bottom: 1px dashed #d2d2d2;
+          color: #000;
+          font-size: 15px;
+          font-weight: bold;
+          cursor: pointer;
+          line-height: 36px;
+        }
+        .txt {
+          display: none;
+          // p {
+          //   color: #5699c3;
+          //   margin-top: 6px;
+          //   margin-bottom: 20px;
+          //   font-size: 13px;
+          // }
+          // div {
+          //   color: #000;
+          //   text-decoration: underline;
+          //   cursor: pointer;
+          // }
+        }
+        &.active {
+          .txt {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @include respond(sm) {
+    padding-top: 10px;
+    margin-bottom: 0;
+    .article-content {
+      width: 100%;
+    }
+    .article-title {
+      text-align: center;
+    }
+    .article-common {
+      width: 100%;
+      .item {
+        margin-left: 10px;
+        margin-right: 10px;
+        // width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"zh": {
+		"comps.invoice-editor.536909-0": "个人",
+		"comps.invoice-editor.536909-1": "公司",
+		"comps.invoice-editor.536909-2": "发票抬头",
+		"comps.invoice-editor.536909-3": "公司名称",
+		"comps.invoice-editor.536909-4": "税号",
+		"comps.invoice-editor.536909-5": "公司地址",
+		"comps.invoice-editor.536909-6": "电话号码",
+		"comps.invoice-editor.536909-7": "开户银行",
+		"comps.invoice-editor.536909-8": "银行账户",
+		"comps.invoice-editor.536909-9": "请输入发票抬头",
+		"comps.invoice-editor.536909-10": "请输入公司名称",
+		"comps.invoice-editor.536909-11": "请输入税号"
+	},
+	"en": {
+		"comps.invoice-editor.536909-0": "person",
+		"comps.invoice-editor.536909-1": "company",
+		"comps.invoice-editor.536909-2": "Invoice header",
+		"comps.invoice-editor.536909-3": "corporate name",
+		"comps.invoice-editor.536909-4": "Tax ID",
+		"comps.invoice-editor.536909-5": "Company address",
+		"comps.invoice-editor.536909-6": "Phone number:",
+		"comps.invoice-editor.536909-7": "bank of deposit",
+		"comps.invoice-editor.536909-8": "bank account",
+		"comps.invoice-editor.536909-9": "Please enter the invoice header",
+		"comps.invoice-editor.536909-10": "Please enter the company name",
+		"comps.invoice-editor.536909-11": "Please enter tax number"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"member.coupon.613454-0": "我的优惠券",
+		"member.coupon.613454-1": "您暂时没有任何优惠劵",
+		"member.coupon.613454-2": "可用优惠券",
+		"member.coupon.613454-3": "不可用优惠券"
+	},
+	"en": {
+		"member.coupon.613454-0": "my coupon",
+		"member.coupon.613454-1": "You currently do not have any discount coupons",
+		"member.coupon.613454-2": "Available coupons",
+		"member.coupon.613454-3": "Unavailable coupons"
+	}
+}

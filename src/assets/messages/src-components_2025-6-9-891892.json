@@ -1,0 +1,20 @@
+{
+	"zh": {
+		"src.index.918636-0": "分享到微博",
+		"src.index.918636-1": "分享到微信",
+		"src.index.918636-2": "分享到QQ",
+		"src.index.918636-3": "分享到QZone",
+		"src.index.918636-4": "微信扫一扫：分享",
+		"src.index.918636-5": "微信里点“发现”，扫一下",
+		"src.index.918636-6": "二维码便可将本文分享至朋友圈。"
+	},
+	"en": {
+		"src.index.918636-0": "Share on Weibo",
+		"src.index.918636-1": "Share on WeChat",
+		"src.index.918636-2": "Share on QQ",
+		"src.index.918636-3": "Share on QZone",
+		"src.index.918636-4": "Scan WeChat: Share",
+		"src.index.918636-5": "Click on 'Discover' in WeChat and scan it",
+		"src.index.918636-6": "The QR code allows you to share this article on your Moments."
+	}
+}

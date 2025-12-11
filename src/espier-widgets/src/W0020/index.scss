@@ -1,0 +1,158 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-W0020 {
+  overflow: hidden;
+  .wgt-shop {
+    &_title {
+      height: 40px;
+      line-height: 40px;
+      // padding: 0 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      .bg-null {
+        span,
+        a {
+          &::before,
+          &::after {
+            display: none !important;
+          }
+        }
+      }
+      .link-page {
+        span,
+        a {
+          // font-size: 28px;
+          // color: #333;
+          // display: block;
+          &:before {
+            content: '';
+            display: inline-block;
+            background-image: url(./img/sprite.png);
+            background-position: 0px 0px;
+            width: 28px;
+            height: 24px;
+            left: 0px;
+          }
+          &:after {
+            content: '';
+            display: inline-block;
+            background-image: url(./img/sprite.png);
+            background-position: -28px 0px;
+            width: 28px;
+            height: 24px;
+            right: 0px;
+          }
+        }
+      }
+    }
+    &_list {
+      overflow: hidden;
+      padding: 0;
+      margin: 0 -10px;
+      .shop-item {
+        float: left;
+        box-sizing: border-box;
+        width: 583px;
+        margin: 0 0 10px 20px;
+        padding-bottom: 6px;
+        background: #fff;
+        &_wrap {
+          .shop-item-top {
+            float: left;
+          }
+          .shop-item-content {
+            float: left;
+            overflow: hidden;
+            margin-top: 12px;
+            text-align: center;
+            width: 149px;
+            &_img {
+              position: relative;
+              display: inline-block;
+              -webkit-filter: blur(3px);
+              filter: blur(3px);
+            }
+            &_logo {
+              position: relative;
+              top: -180px;
+              left: 34.5px;
+              .img-wrap {
+                border-radius: 40px;
+                // background-color: red;
+              }
+            }
+            &_title {
+              display: inline-block;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              position: relative;
+              width: 100px;
+              top: -178px;
+              font-size: 16px;
+              font-weight: 500;
+              color: #ffffff;
+              line-height: 44px;
+            }
+            &_tag-list {
+              position: relative;
+              top: -178px;
+              height: 24px;
+              &_text {
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                border-radius: 2px;
+                border: 1px solid #ffffff;
+                margin-right: 6px;
+                padding: 1.5px 1px;
+                width: 64px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 18px;
+              }
+            }
+          }
+          .goods-list {
+            .goods-list-item {
+              .goods-list-item__warp {
+                float: left;
+                margin-left: 20px;
+                margin-top: 45px;
+                margin-bottom: 20px;
+                text-align: center;
+                .goods-list-item__warp_title {
+                  // display:inline-block;
+                  // white-space: nowrap;
+                  // text-overflow: ellipsis;
+                  // overflow: hidden;
+                  margin-top: 10px;
+                  width: 108px;
+                  height: 40px;
+                  line-height: 22px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #8c8c8c;
+                  @include mult-ellipsis(2);
+                }
+                .goods-list-item__warp_price {
+                  margin-top: 5px;
+                  width: 108px;
+                  font-size: 24px;
+                  font-weight: 500;
+                  color: #ff0036;
+                  line-height: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

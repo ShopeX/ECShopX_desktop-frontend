@@ -1,0 +1,211 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-W0015 {
+  &-body {
+    // padding: 10px;
+  }
+  .wgt-goodstab {
+    &_tab {
+      height: 60px;
+      padding: 0 20px;
+      // border-bottom: 1px solid red;
+      &:after {
+        content: '\0020';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        overflow: hidden;
+      }
+      .title {
+        margin-top: 20px;
+        width: 112px;
+        text-align: center;
+        float: left;
+        .title-span {
+          width: 88px;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+        }
+      }
+      .tabList {
+        text-align: left;
+        float: left;
+        margin-top: 22px;
+        margin-left: 80px;
+        .tabItem {
+          // line-height: 40px;
+          padding: 0 15px;
+          display: inline-block;
+          cursor: pointer;
+          color: #606266;
+          font-size: 14px;
+          &:hover,
+          &.active {
+            font-weight: 650;
+            color: #ff5d02;
+          }
+        }
+      }
+    }
+    &_goods {
+      float: right;
+      position: relative;
+      width: 100%;
+      // height: 560px;
+      overflow: hidden;
+      // padding: 0 10px;
+      &_scroll {
+      }
+    }
+  }
+
+  .goods-wrap {
+    margin-left: 10px;
+    display: none;
+    &.active {
+      display: block;
+    }
+    &:after {
+      content: '\0020';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    .goods-list-wrap {
+      .goods-wrap__info {
+        .goods-title {
+          color: #3b3b3b;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          word-break: break-all;
+          width: 170px;
+        }
+      }
+      float: left;
+
+      margin-right: 20px;
+      margin-top: 10px;
+      .goods-price {
+        margin-top: 16px;
+      }
+      &:nth-child(1) {
+        margin-top: 0px;
+        width: 290px;
+        height: 300px;
+        margin-bottom: 20px;
+        .goods-wrap__info {
+          width: 257px;
+          .goods-title {
+            font-size: 18px;
+          }
+          .goods-price {
+            margin-top: 4px;
+          }
+          .goods-image {
+            margin-top: 8px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(3) {
+        width: 260px;
+        height: 102px;
+        // margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &:nth-child(4) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(5) {
+        width: 260px;
+        height: 102px;
+        // margin-right: 0;
+        // margin-bottom: 10px;
+      }
+      &:nth-child(6) {
+        width: 260px;
+        height: 102px;
+        // margin-bottom: 10px;
+      }
+      &:nth-child(7) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(8) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(9) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(10) {
+        width: 260px;
+        height: 102px;
+        margin-bottom: 10px;
+      }
+      &:not(:first-child) {
+        .goods-image {
+          float: right;
+          margin-top: -35px;
+          .img-wrap span {
+            font-size: 14px;
+          }
+        }
+      }
+      &:nth-child(11) {
+        width: 306px;
+        height: 122px;
+        margin-top: -120px;
+        .goods-image {
+          margin-right: 15px;
+          margin-top: -25px;
+        }
+        .goods-wrap__info {
+          .goods-title {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .goods-image {
+        margin-right: -0px;
+      }
+    }
+    .goods-tags {
+      margin: 4px 0;
+    }
+    .tag-item {
+      padding: 0 5px;
+      // margin-top: 10px;
+      margin-right: 4px;
+      border-radius: 2px;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+    }
+  }
+}

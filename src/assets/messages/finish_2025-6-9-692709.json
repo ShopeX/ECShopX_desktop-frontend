@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"finish.success.925932-0": "支付成功",
+		"finish.success.925932-1": "谢谢您的惠顾。",
+		"finish.success.925932-2": "订单号：",
+		"finish.success.925932-3": "查看订单",
+		"finish.success.925932-4": "返回主页"
+	},
+	"en": {
+		"finish.success.925932-0": "pay success",
+		"finish.success.925932-1": "Thank you for your patronage.",
+		"finish.success.925932-2": "order number:",
+		"finish.success.925932-3": "view order",
+		"finish.success.925932-4": "Return to homepage"
+	}
+}
