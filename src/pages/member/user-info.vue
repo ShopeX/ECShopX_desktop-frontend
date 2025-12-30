@@ -429,7 +429,7 @@ $num-color : #FF5D02;
               <div class="order-container">
                 <div class="block-hd">
                   <span class="title">{{ $t('member.user-info.869309-22') }}</span>
-                  <nuxt-link class="more" to="/member/trade">
+                  <nuxt-link class="more" :to="getLocalizedPath('/member/trade')">
                     {{ $t('member.user-info.869309-23') }}<i class="ec-icon ec-icon-right"></i>
                   </nuxt-link>
                 </div>
@@ -453,7 +453,7 @@ $num-color : #FF5D02;
               <div class="follow-goods">
                 <div class="block-hd">
                   <span class="title">{{ $t('member.user-info.869309-24') }}</span>
-                  <nuxt-link class="more" to="/member/collector">
+                  <nuxt-link class="more" :to="getLocalizedPath('/member/collector')">
                     {{ $t('member.user-info.869309-23') }}<i class="ec-icon ec-icon-right"></i>
                   </nuxt-link>
                 </div>
@@ -477,7 +477,7 @@ $num-color : #FF5D02;
               <div class="footprint-container">
                 <div class="block-hd">
                   <span class="title">{{ $t('member.user-info.869309-25') }}</span>
-                  <nuxt-link class="more" to="/member/foottrace">
+                  <nuxt-link class="more" :to="getLocalizedPath('/member/foottrace')">
                     {{ $t('member.user-info.869309-23') }}<i class="ec-icon ec-icon-right"></i>
                   </nuxt-link>
                 </div>
@@ -507,6 +507,7 @@ $num-color : #FF5D02;
 <script>
 import { memberInfo, getCount, getHistoryList } from '@/api/member'
 import { mixin } from '@/mixins'
+import { localePath } from '@/utils/localePath'
 import smenu from '../member/comps/smenu'
 import goodFocus from './comps/good-focus'
 
@@ -566,7 +567,7 @@ export default {
           num: 0,
           icon: 'icon-new-pc-daiziti',
           title: this.$t('member.user-info.869309-34'),
-          link: '/member/trade?status=6'
+          link: '/member/trade?status=4'
         },
         aftersales: {
           num: 0,
@@ -611,15 +612,21 @@ export default {
   },
   mounted() {},
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     // 跳转
     toLink(link) {
-      this.$router.push(link)
+      const localizedLink = this.getLocalizedPath(link)
+      this.$router.push(localizedLink)
     },
     handelClick(type, i) {
       this.active = i
     },
     handelClickToLink(id) {
-      this.$router.push(`/items/${id}`)
+      const path = this.getLocalizedPath(`/items/${id}`)
+      this.$router.push(path)
     },
     async getMemberInfo() {
       let res = await memberInfo()

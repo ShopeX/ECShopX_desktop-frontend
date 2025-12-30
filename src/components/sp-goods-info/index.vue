@@ -38,6 +38,7 @@
   }
   .slider-item {
     overflow: hidden;
+    width: 85px;
     height: 85px;
   }
   .goodsinfo-right {
@@ -290,7 +291,7 @@
             }"
             >{{ $t('sp-goods-info.index.091195-4') }}{{ info.vipgrade_guide_title.gradeDiscount }}{{ $t('sp-goods-info.index.091195-5') }}</span
           >
-          <nuxt-link to="/member/vip">
+          <nuxt-link :to="getLocalizedPath('/member/vip')">
             <span class="vip-desc"
               >{{ info.vipgrade_guide_title.guide_title_desc }}
               <i class="espier-icon espier-icon-xiangyou-01"></i>
@@ -411,6 +412,7 @@ const swiperOptions = {
 }
 import S from '@/spx'
 import BuyToolbar from './buy-toolbar'
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpGoodsInfo',
   props: {
@@ -479,6 +481,10 @@ export default {
     }
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     FilterPriceLabel(info) {
       const { act_price, member_price } = info
 

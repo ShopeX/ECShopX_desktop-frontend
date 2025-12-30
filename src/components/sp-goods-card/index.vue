@@ -72,7 +72,7 @@
 </style>
 <template>
   <div class="sp-goods-card">
-    <nuxt-link :to="`/items/${info.item_id}?distributor_id=${info.distributor_id}`">
+    <nuxt-link :to="getLocalizedPath(`/items/${info.item_id}?distributor_id=${info.distributor_id}`)">
       <div class="goods-card-hd">
         <img :src="info.imgUrl" alt="" width="100%">
       </div>
@@ -102,6 +102,7 @@
 
 <script>
 // import i18n from '@/i18n'
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpGoodsCard',
   props: {
@@ -114,6 +115,10 @@ export default {
     }
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     FilterPriceLabel(info) {
       const { activity_price, member_price } = info
       if(activity_price) {

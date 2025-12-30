@@ -49,7 +49,7 @@
         <SpFormItem class="clearfix">
           <SpRadio type="checkbox" size="small" v-model="license">
             <span class="license-info">
-              {{ $t('staff.login.275114-6') }}<nuxt-link class="license-content" to="/license/staff">{{ $t('staff.login.275114-7') }}</nuxt-link>
+              {{ $t('staff.login.275114-6') }}<nuxt-link class="license-content" :to="getLocalizedPath('/license/staff')">{{ $t('staff.login.275114-7') }}</nuxt-link>
             </span>
           </SpRadio>
         </SpFormItem>
@@ -60,7 +60,7 @@
         </SpFormItem>
       </SpForm>
       <div class="jump">
-        <nuxt-link class="license-content" to="/auth/login">
+        <nuxt-link class="license-content" :to="getLocalizedPath('/auth/login')">
             {{ $t('staff.login.275114-8') }}<i class="mb-iconfont mb-iconfont-right"></i><br>
             ({{ $t('staff.login.275114-9') }})
         </nuxt-link>
@@ -75,6 +75,7 @@ import store from 'store'
 import _debounce from 'lodash/debounce'
 import S from '@/spx'
 import { analytics } from '@/plugins/analytics'
+import { localePath } from '@/utils/localePath'
 
 export default {
   beforeRouteEnter (to, from, next) {
@@ -131,6 +132,10 @@ export default {
   },
 
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     ...mapActions(['initStore']),
     handleBlurWorkId (e) {
       this.getStaffMobile()

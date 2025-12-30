@@ -128,7 +128,7 @@
     </div>
     <div class="news-list clearfix">
       <div class="news-list__item" v-for="(item, index) in list" :key="index">
-        <nuxt-link :to="`/article/detail/${item.article_id}`" @click.native="$track('news', `/article/detail/${item.article_id}`, item.article_id)">
+        <nuxt-link :to="getLocalizedPath(`/article/detail/${item.article_id}`)" @click.native="$track('news', `/article/detail/${item.article_id}`, item.article_id)">
           <div
             class="news-list__item-img"
 
@@ -168,6 +168,7 @@
 <script>
 import { formatDataTime } from '@/utils'
 import { analytics } from '@/plugins/analytics'
+import { localePath } from '@/utils/localePath'
 
 export default {
   data () {
@@ -193,6 +194,10 @@ export default {
     })
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     // 分页查询
     handleChangePage (page) {
       this.page_no = page

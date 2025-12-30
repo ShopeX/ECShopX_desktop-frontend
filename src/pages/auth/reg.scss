@@ -8,8 +8,13 @@ $reg-pic-w: 555px;
 
 .page-auth-reg {
 	background: transparent;
-	height: 590px;
+	min-height: 590px;
+	display: flex;
 	align-items: center;
+	@include justify-content-end;
+	position: relative;
+	@include padding-inline-end(100px);
+	@include padding-inline-start(100px);
 	.reg-logo{
 			left: auto;
 			// top: 100px;
@@ -20,20 +25,22 @@ $reg-pic-w: 555px;
 	.reg-main{
 		background-color: rgba(255, 255, 255, 0.9);
 		width: 350px;
-		height: 430px;
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
 		align-items: center;
-		top: 82px;;
-		left: 844px;
 		position: relative;
+		padding: 24px 0;
+		overflow: visible;
+		flex-shrink: 0;
 		.reg-title {
 			font-weight: 400;
 			color: #8C8C8C;
 			height: 26px;
 			line-height: 39px;
 			font-size: 26px;
-			margin: 24px 0;
+			margin: 0 0 24px 0;
 			text-align: center;
+			width: 100%;
 		}
 		.auth-header {
 			border-bottom: 1px solid $color-border-gray;
@@ -44,7 +51,11 @@ $reg-pic-w: 555px;
 				color: #606266;
 			}
 		}
-		.reg {
+		.auth {
+			width: 100%;
+			flex: 0 0 auto;
+			display: flex;
+			flex-direction: column;
 			&-process {
 					text-align: center;
 					height: 60px;
@@ -110,8 +121,11 @@ $reg-pic-w: 555px;
 					}
 				}
 			&-form {
+				width: 100%;
+				margin-top: 0;
 				.form {
-					margin-top: 4px;
+					margin-top: 0;
+					width: 100%;
 					.dash-line {
 						border-top: 1px dashed $color-border-gray;
 					}

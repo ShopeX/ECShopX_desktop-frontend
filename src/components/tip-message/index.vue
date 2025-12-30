@@ -37,7 +37,7 @@
       <img class="sp-tip-message__img" v-if="img" :src="require(`~/assets/imgs/${img}`)" alt>
       <span>
         <span class="sp-tip-message__txt">{{tipText || $t('tip-message.index.587556-1')}}</span>
-        <nuxt-link v-if="tipLink" :to="to">{{tipLink}}</nuxt-link>
+        <nuxt-link v-if="tipLink" :to="getLocalizedPath(to)">{{tipLink}}</nuxt-link>
       </span>
     </div>
     <slot></slot>
@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpTipMessage',
   props: {
@@ -81,6 +82,13 @@ export default {
           this.showTip = true
         }, 300)
       }
+    }
+  },
+  methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      if (!path) return ''
+      return localePath(path, this.$i18n.locale, this)
     }
   }
 

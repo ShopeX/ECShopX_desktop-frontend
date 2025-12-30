@@ -8,6 +8,12 @@
     <div v-if="visible" class="cookie-consent">
       <div class="cookie-consent__mask" @click="handleMaskClick"></div>
       <div class="cookie-consent__content">
+        <div 
+          class="cookie-consent__close" 
+          @click="handleReject"
+        >
+          <span class="cookie-consent__close-icon" aria-label="关闭">×</span>
+        </div>
         <div class="cookie-consent__body">
           <div class="cookie-consent__text">
             <div 
@@ -50,8 +56,13 @@ export default {
     }
   },
   mounted() {
-    this.fetchPrivacyContent()
-    this.checkAndShow()
+    this.fetchPrivacyContent().then((res)=>{
+      
+      if(res){
+
+        this.checkAndShow()
+      }
+    })
   },
   methods: {
     /**
@@ -63,6 +74,7 @@ export default {
         if (res && res.pc_privacy_content) {
           this.privacyContent = res.pc_privacy_content
         }
+        return res.pc_privacy_content 
       } catch (error) {
         console.warn('Failed to fetch privacy content:', error)
         // 如果接口失败，使用 i18n 翻译作为后备
@@ -158,6 +170,34 @@ export default {
     border-radius: 0;
   }
 
+  &__close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    z-index: 3;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &-icon {
+      font-size: 24px;
+      color: #666;
+      line-height: 1;
+      display: inline-block;
+      font-weight: 300;
+      user-select: none;
+      font-family: Arial, sans-serif;
+    }
+  }
+
   &__body {
     padding: 55px 44px;
     display: flex;
@@ -250,6 +290,17 @@ export default {
     &__content {
       width: 90%;
       max-width: 100%;
+    }
+
+    &__close {
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+
+      .ec-icon-close {
+        font-size: 18px;
+      }
     }
 
     &__body {

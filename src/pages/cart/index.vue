@@ -27,7 +27,7 @@
           <SpRadio type="checkbox" :theme="themeColor" :value="item.is_checked"
             @change="(val) => handleOnChangeCheck(val, item.cart_id)" />
           <div class="g-wrap">
-            <nuxt-link :to="`/items/${item.item_id}`">
+            <nuxt-link :to="getLocalizedPath(`/items/${item.item_id}`)">
               <SpImg class="spimg" noSize :src="item.pics" />
             </nuxt-link>
             <div class="goods-name">{{ item.item_name }}</div>
@@ -85,7 +85,7 @@
           <img class="cart-empty-img" src="@/assets/imgs/cart-empty.png" alt="" />
           <div class="cart-empty-info">
             <div class="txt">{{ $t('cart.index.281938-15') }}</div>
-            <nuxt-link to="/items">
+            <nuxt-link :to="getLocalizedPath('/items')">
               <span :style="{
                   color: themeColor
                 }">{{ $t('cart.index.281938-16') }}<i class="ec-icon ec-icon-right"></i></span>
@@ -127,6 +127,7 @@
   import {
     mixin
   } from '@/mixins'
+  import { localePath } from '@/utils/localePath'
   import CartRecommend from './comps/cart-recommend'
   import CouponPicker from './comps/coupon-picker'
   export default {
@@ -196,6 +197,10 @@
       ...mapActions({
         CART_GETINFO: 'cart/CART_GETINFO'
       }),
+      // 生成本地化路径
+      getLocalizedPath(path) {
+        return localePath(path, this.$i18n.locale, this)
+      },
       async handleOnChangeCheck(val, cart_id) {
         await this.$api.cart.updateCheckStatus({
           cart_id,
@@ -281,7 +286,14 @@
       // 去结算
       handleClickSubmit(shop) {
         if (shop.goodsCheckNum > 0) {
-          this.$router.push(`cart/checkout?mode=cart&id=${shop.shop_id}`)
+          const basePath = this.getLocalizedPath('/cart/checkout')
+          this.$router.push({
+            path: basePath,
+            query: {
+              mode: 'cart',
+              id: shop.shop_id
+            }
+          })
         }
       }
     }

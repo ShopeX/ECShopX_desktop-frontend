@@ -18,11 +18,11 @@
       <div class="container ">
         <div class="topbar-login fl">
           <div class="no-login active">
-            <NuxtLink to="/" class="index-link">{{ $t('sp-header.index.663900-0') }}</NuxtLink>
+            <NuxtLink :to="getLocalizedPath('/')" class="index-link">{{ $t('sp-header.index.663900-0') }}</NuxtLink>
             <template v-if="!userInfo">
-              <NuxtLink to="/auth/login" class="topbar-login__link " style="color:#FF5D02;">{{
+              <NuxtLink :to="getLocalizedPath('/auth/login')" class="topbar-login__link " style="color:#FF5D02;">{{
                 $t('sp-header.index.663900-1') }}</NuxtLink>
-              <NuxtLink to="/auth/reg" class="topbar-login__link topbar-register__link ">{{
+              <NuxtLink :to="getLocalizedPath('/auth/reg')" class="topbar-login__link topbar-register__link ">{{
                 $t('sp-header.index.663900-2') }}</NuxtLink>
               <!-- <img src="../../assets/imgs/top.png" /> -->
             </template>
@@ -59,13 +59,13 @@
           </div>
         </div>
         <div class="topbar-member fr">
-          <NuxtLink to="/cart" style="margin-right:0;">{{ $t('sp-header.index.663900-5') }}</NuxtLink>
+          <NuxtLink :to="getLocalizedPath('/cart')" style="margin-right:0;">{{ $t('sp-header.index.663900-5') }}</NuxtLink>
           <span>|</span>
-          <NuxtLink to="/member/trade" style="margin-right:0;">{{ $t('sp-header.index.663900-6') }}</NuxtLink>
+          <NuxtLink :to="getLocalizedPath('/member/trade')" style="margin-right:0;">{{ $t('sp-header.index.663900-6') }}</NuxtLink>
           <span>|</span>
-          <NuxtLink to="/member/user-info" style="margin-right:0;">{{ $t('sp-header.index.663900-7') }}</NuxtLink>
+          <NuxtLink :to="getLocalizedPath('/member/user-info')" style="margin-right:0;">{{ $t('sp-header.index.663900-7') }}</NuxtLink>
           <span>|</span>
-          <NuxtLink to="/shop">{{ $t('sp-header.index.663900-8') }}</NuxtLink>
+          <NuxtLink :to="getLocalizedPath('/shop')">{{ $t('sp-header.index.663900-8') }}</NuxtLink>
           <!-- 隐藏商家中心 -->
           <!-- <NuxtLink to="/member/user-info">商家中心</NuxtLink> -->
 
@@ -76,7 +76,7 @@
     </div>
 
     <!-- 挂件 -->
-    <!-- <component
+    <component
       mode="render"
       v-for="(wgt, index) in wgts"
       :is="wgt.type"
@@ -84,7 +84,7 @@
       :page-props="pageConfig"
       :key="`wgt-${index}`"
       @callback="handleCallback"
-    ></component> -->
+    ></component>
   </div>
 </template>
 
@@ -93,6 +93,7 @@ import { mixin as clickaway } from '@/plugins/clickaway'
 import { mapState } from 'vuex'
 import { lockScreen } from '@/utils/dom'
 import S from '@/spx'
+import { localePath } from '@/utils/localePath'
 
 export default {
   name: 'SpHeader',
@@ -137,10 +138,11 @@ export default {
   computed: {
     ...mapState({
       userInfo: (state) => state.user.userInfo,
-      // wgts: (state) => {
-      //   const res = state.headerTemplate
-      //   return res ? JSON.parse(res.params) : []
-      // },
+      wgts: (state) => {
+        console.log('state',state.headerTemplate)
+        const res = state.headerTemplate
+        return res ? JSON.parse(res.params) : []
+      },
       pageConfig: (state) => {
         return state.pageConfig
       }
@@ -154,6 +156,10 @@ export default {
     }
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     getCurrentLanguageName() {
       if (!this.$i18n || !this.$i18n.locale) {
         return '中文'
@@ -216,14 +222,50 @@ export default {
       if (path.includes('/ar')) return 'ar'
       return ''
     },
-    handleLogout() {
+    async handleLogout() {
+      try {
+        // 调用后端 logout API 清除服务端 session
+        await this.$api.auth.logout()
+      } catch (e) {
+        // 即使 API 调用失败，也继续执行退出流程
+        console.warn('Logout API call failed:', e)
+      }
+      
+      // 清除 cookie
       this.$cookies.remove('ECSHOPX_TOKEN')
+      
+      // 清除 Vuex store 中的用户信息
+      this.$store.commit('user/resetInfo')
+      
+      // 清除 localStorage 中由 vuex-persistedstate 保存的状态
+      if (process.client && window.localStorage) {
+        // 清除 vuex-persistedstate 保存的 user 模块数据
+        const persistedState = localStorage.getItem('xiaocao-store')
+        if (persistedState) {
+          try {
+            const state = JSON.parse(persistedState)
+            if (state.user) {
+              state.user = {
+                token: null,
+                userInfo: null,
+                sessionId: null
+              }
+              localStorage.setItem('xiaocao-store', JSON.stringify(state))
+            }
+          } catch (e) {
+            console.warn('Failed to clear persisted state:', e)
+          }
+        }
+      }
+      
+      // 调用 S.logout() 清除 AUTH_TOKEN 并跳转
       S.logout()
     },
     handleCallback(params) {
       if (params) {
         let keywords = params.data.keyword
-        this.$router.push(`/items?keywords=${keywords}`)
+        const path = this.getLocalizedPath(`/items?keywords=${keywords}`)
+        this.$router.push(path)
       }
     }
   }

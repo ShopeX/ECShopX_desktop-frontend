@@ -70,14 +70,34 @@
     right: 13px;
     z-index: 1102;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     &.top16 {
       top: 16px;
       color: #fff;
     }
 
-    .ec-icon-close {
-      font-size: 20px;
+    &-icon {
+      font-size: 24px;
+      color: #666;
+      line-height: 1;
+      display: inline-block;
+      font-weight: 300;
+      user-select: none;
+      font-family: Arial, sans-serif;
+    }
+
+    &.top16 &-icon {
+      color: #fff;
     }
   }
   &__header {
@@ -136,7 +156,7 @@
         v-if="!confirm && !maskClose && closeIconVisible"
       >
         <!-- <img src="~/assets/imgs/close-btn.png" :width="54" :height="54"> -->
-        <div class="ec-icon ec-icon-close"></div>
+        <span class="sp-modal__close-icon">×</span>
       </div>
       <div class="sp-modal__header" v-if="title">{{ title }}</div>
       <slot name="title"></slot>

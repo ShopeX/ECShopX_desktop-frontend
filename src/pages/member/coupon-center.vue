@@ -25,7 +25,7 @@
                 {{ $t('member.coupon-center.473557-1') }}
               </div>
             </div>
-            <nuxt-link class="coupon-my" to="/member/coupon">
+            <nuxt-link class="coupon-my" :to="getLocalizedPath('/member/coupon')">
               <img src="@/assets/imgs/coupons/quan (5).png" alt="">
               <span class="vip-desc"
                 >{{ $t('member.coupon-center.473557-2') }}
@@ -90,6 +90,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import { localePath } from '@/utils/localePath'
 
 import smenu from './comps/smenu'
 import couponCenterItem from './comps/coupon-center-item'
@@ -138,6 +139,10 @@ export default {
     this.getCouponList()
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     async getCouponList() {
       let params = {
         page_no: this.page,

@@ -38,17 +38,24 @@
   <div class="bread-crumb"> 
     <!-- <nuxt-link to="/">首页</nuxt-link> -->
     <span v-for="(item, index) in value" :key="index" class="bread-crumb__name">
-      <nuxt-link :to="item.url" v-if="item.url">{{item.name}}</nuxt-link>
+      <nuxt-link :to="getLocalizedPath(item.url)" v-if="item.url">{{item.name}}</nuxt-link>
       <span v-else>{{item}}</span><i class="ec-icon ec-icon-right" v-if="index < value.length - 1"></i>
     </span>
   </div>
 </template>
 
 <script>
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpBreadCrumb',
   props: {
     value: Array
+  },
+  methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    }
   }
   // created () {
   //   const { catname } = this.$route.query

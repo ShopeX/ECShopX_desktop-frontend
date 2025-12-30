@@ -5,7 +5,7 @@
 
 <style lang="scss" src="./reg.scss"></style>
 <template>
-  <div class="page-auth-reg container">
+  <div class="page-auth-reg ">
     <!-- <div class="reg-logo">
       <img
         referrerpolicy="no-referrer"

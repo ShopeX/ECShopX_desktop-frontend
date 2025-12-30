@@ -38,11 +38,14 @@ export default {
     bodyTemplate.forEach((item) => {
       const config = JSON.parse(item.config)
       if (config.type != 'W0000') {
+      
         _bodyTemplate.push(config)
       }else{
+        console.log('W0000',config)
         store.commit('setPageConfig', config)
       }
     })
+    console.log('_bodyTemplate',_bodyTemplate)
     return {
       wgts: _bodyTemplate
     }

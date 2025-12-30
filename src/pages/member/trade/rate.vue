@@ -20,7 +20,8 @@
     }
   }
   .bd {
-    width: 100%;
+    width: 1190px;
+    margin: 0 auto;
     background-color: #fff;
     .rate-item {
       width: 100%;

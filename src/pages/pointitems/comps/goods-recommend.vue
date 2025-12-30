@@ -144,6 +144,7 @@
 <script>
 import GoodsCard from './goods-card'
 import { analytics } from '@/plugins/analytics'
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpGoodsRecommend',
   props: {
@@ -192,9 +193,13 @@ export default {
         }]
       }, 'productRecommendationClick')
     },
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     resolveLink (item) {
       const { item_id } = item
-      return `/items/${item_id}`
+      return this.getLocalizedPath(`/items/${item_id}`)
     }
   }
 }

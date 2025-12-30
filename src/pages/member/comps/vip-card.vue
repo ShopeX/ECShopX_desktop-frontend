@@ -7,7 +7,7 @@
 <div class="vip-card" v-if="info" :style="{'background-image':'url(' + vip_bg + ')'}">
   <div class="vip-card__hd">
     <span>{{info.username || info.mobile}}</span>
-    <nuxt-link to="/member/rights">
+    <nuxt-link :to="getLocalizedPath('/member/rights')">
       <span class="vip-card__rights">{{ $t('comps.vip-card.642296-0') }}</span>
     </nuxt-link>
   </div>
@@ -25,6 +25,7 @@
 
 <script>
 import ProgressBar from './progress-bar'
+import { localePath } from '@/utils/localePath'
 
 import grade_1 from '~/assets/imgs/grade_1.png'
 import grade_2 from '~/assets/imgs/grade_2.png'
@@ -54,6 +55,12 @@ export default {
 
       const { grade_id } = this.info
       return this.GRADE_MAP[grade_id] || this.GRADE_MAP[1]
+    }
+  },
+  methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
     }
   }
 }

@@ -2,7 +2,222 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [4.1.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.1.0...v4.1.1) (2025-12-10)
+## [4.2.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.1.0...v4.2.0) (2025-12-29)
+
+
+### Bug Fixes
+
+* 去除一些非必要文档 ([9ae272f](https://git.ishopex.cn/onex/ecshopx-newpc/commit/9ae272fd384479cfc020f4120cd68bb5e1784aaa))
+* add .gitgnore ([178dac6](https://git.ishopex.cn/onex/ecshopx-newpc/commit/178dac60ff34d686d6d36967ddb5b7a3838ab255))
+* Fix some issues ([8c78a2d](https://git.ishopex.cn/onex/ecshopx-newpc/commit/8c78a2d08dbc52a5794880390c4cd885f7a1750e))
+* Fix some issues ([2187ff3](https://git.ishopex.cn/onex/ecshopx-newpc/commit/2187ff3dfe817760144c2c6d77b169135496ffc5))
+* **scope:** update package ([d733a9c](https://git.ishopex.cn/onex/ecshopx-newpc/commit/d733a9c64a652b38483f3db16a483296806f3669))
+* **scope:** update readme ([958707f](https://git.ishopex.cn/onex/ecshopx-newpc/commit/958707f09f91aa2b6716012aa0d0791cd90b1f28))
+* Some parameter errors ([4c165cc](https://git.ishopex.cn/onex/ecshopx-newpc/commit/4c165ccd1daac350621f934814f7c6438798d9c9))
+
+## [3.21.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.20.0...v3.21.0) (2025-05-29)
+
+## [3.20.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.4...v3.20.0) (2025-04-27)
+
+### [3.19.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.3...v3.19.4) (2025-04-23)
+
+### [3.19.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.2...v3.19.3) (2025-04-17)
+
+### [3.19.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.1...v3.19.2) (2025-04-16)
+
+### [3.19.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.0...v3.19.1) (2025-04-09)
+
+## [3.19.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.18.0...v3.19.0) (2025-03-27)
+
+## [3.18.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.17.0...v3.18.0) (2025-03-18)
+
+## [3.17.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.2...v3.17.0) (2025-02-14)
+
+### [3.16.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.1...v3.16.2) (2025-02-08)
+
+### [3.16.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.0...v3.16.1) (2025-02-07)
+
+## [3.16.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.3...v3.16.0) (2024-10-28)
+
+### [3.15.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.2...v3.15.3) (2024-08-28)
+
+### [3.15.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.1...v3.15.2) (2024-08-16)
+
+### [3.15.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.0...v3.15.1) (2024-07-12)
+
+
+### Bug Fixes
+
+* 添加储值支付 ([c74f28c](https://git.ishopex.cn/onex/ecshopx-newpc/commit/c74f28cd9b5ec1bffed7ed225e737d258ef8440a))
+
+## [3.15.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.1...v3.15.0) (2024-07-08)
+
+### [3.14.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.0...v3.14.1) (2024-04-12)
+
+
+### Features
+
+* 登录页logo、背景图，支持后台配置 ([4ff9b07](https://git.ishopex.cn/onex/ecshopx-newpc/commit/4ff9b07cea9c71e9cbaa29466a250d47d1dbbac5))
+* 优化图片展示、报错 ([f569c4a](https://git.ishopex.cn/onex/ecshopx-newpc/commit/f569c4a87641ced4263545ff7949c6ac0c01b630))
+
+## [3.14.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.5...v3.14.0) (2024-03-11)
+
+### [3.13.5](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.4...v3.13.5) (2024-03-10)
+
+### [3.13.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.3...v3.13.4) (2023-09-27)
+
+### [3.13.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.2...v3.13.3) (2023-09-26)
+
+### [3.13.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.1...v3.13.2) (2023-09-26)
+
+### [3.13.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.0...v3.13.1) (2023-06-05)
+
+## [3.13.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.1...v3.13.0) (2023-06-01)
+
+### [3.12.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.0...v3.12.1) (2023-05-24)
+
+## [3.12.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.10.1...v3.12.0) (2023-05-18)
+
+### 3.10.1 (2023-04-04)
+
+## [3.21.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.20.0...v3.21.0) (2025-05-29)
+
+## [3.20.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.4...v3.20.0) (2025-04-27)
+
+### [3.19.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.3...v3.19.4) (2025-04-23)
+
+### [3.19.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.2...v3.19.3) (2025-04-17)
+
+### [3.19.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.1...v3.19.2) (2025-04-16)
+
+### [3.19.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.0...v3.19.1) (2025-04-09)
+
+## [3.19.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.18.0...v3.19.0) (2025-03-27)
+
+## [3.18.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.17.0...v3.18.0) (2025-03-18)
+
+## [3.17.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.2...v3.17.0) (2025-02-14)
+
+### [3.16.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.1...v3.16.2) (2025-02-08)
+
+### [3.16.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.0...v3.16.1) (2025-02-07)
+
+## [3.16.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.3...v3.16.0) (2024-10-28)
+
+### [3.15.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.2...v3.15.3) (2024-08-28)
+
+### [3.15.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.1...v3.15.2) (2024-08-16)
+
+### [3.15.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.0...v3.15.1) (2024-07-12)
+
+
+### Bug Fixes
+
+* 添加储值支付 ([c74f28c](https://git.ishopex.cn/onex/ecshopx-newpc/commit/c74f28cd9b5ec1bffed7ed225e737d258ef8440a))
+
+## [3.15.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.1...v3.15.0) (2024-07-08)
+
+### [3.14.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.0...v3.14.1) (2024-04-12)
+
+
+### Features
+
+* 登录页logo、背景图，支持后台配置 ([4ff9b07](https://git.ishopex.cn/onex/ecshopx-newpc/commit/4ff9b07cea9c71e9cbaa29466a250d47d1dbbac5))
+* 优化图片展示、报错 ([f569c4a](https://git.ishopex.cn/onex/ecshopx-newpc/commit/f569c4a87641ced4263545ff7949c6ac0c01b630))
+
+## [3.14.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.5...v3.14.0) (2024-03-11)
+
+### [3.13.5](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.4...v3.13.5) (2024-03-10)
+
+### [3.13.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.3...v3.13.4) (2023-09-27)
+
+### [3.13.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.2...v3.13.3) (2023-09-26)
+
+### [3.13.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.1...v3.13.2) (2023-09-26)
+
+### [3.13.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.0...v3.13.1) (2023-06-05)
+
+## [3.13.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.1...v3.13.0) (2023-06-01)
+
+### [3.12.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.0...v3.12.1) (2023-05-24)
+
+## [3.12.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.10.1...v3.12.0) (2023-05-18)
+
+### 3.10.1 (2023-04-04)
+
+## [3.21.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.20.0...v3.21.0) (2025-05-29)
+
+## [3.20.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.4...v3.20.0) (2025-04-27)
+
+### [3.19.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.3...v3.19.4) (2025-04-23)
+
+### [3.19.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.2...v3.19.3) (2025-04-17)
+
+### [3.19.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.1...v3.19.2) (2025-04-16)
+
+### [3.19.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.19.0...v3.19.1) (2025-04-09)
+
+## [3.19.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.18.0...v3.19.0) (2025-03-27)
+
+## [3.18.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.17.0...v3.18.0) (2025-03-18)
+
+## [3.17.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.2...v3.17.0) (2025-02-14)
+
+### [3.16.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.1...v3.16.2) (2025-02-08)
+
+### [3.16.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.16.0...v3.16.1) (2025-02-07)
+
+## [3.16.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.3...v3.16.0) (2024-10-28)
+
+### [3.15.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.2...v3.15.3) (2024-08-28)
+
+### [3.15.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.1...v3.15.2) (2024-08-16)
+
+### [3.15.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.15.0...v3.15.1) (2024-07-12)
+
+
+### Bug Fixes
+
+* 添加储值支付 ([c74f28c](https://git.ishopex.cn/onex/ecshopx-newpc/commit/c74f28cd9b5ec1bffed7ed225e737d258ef8440a))
+
+## [3.15.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.1...v3.15.0) (2024-07-08)
+
+### [3.14.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.14.0...v3.14.1) (2024-04-12)
+
+
+### Features
+
+* 登录页logo、背景图，支持后台配置 ([4ff9b07](https://git.ishopex.cn/onex/ecshopx-newpc/commit/4ff9b07cea9c71e9cbaa29466a250d47d1dbbac5))
+* 优化图片展示、报错 ([f569c4a](https://git.ishopex.cn/onex/ecshopx-newpc/commit/f569c4a87641ced4263545ff7949c6ac0c01b630))
+
+## [3.14.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.5...v3.14.0) (2024-03-11)
+
+### [3.13.5](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.4...v3.13.5) (2024-03-10)
+
+### [3.13.4](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.3...v3.13.4) (2023-09-27)
+
+### [3.13.3](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.2...v3.13.3) (2023-09-26)
+
+### [3.13.2](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.1...v3.13.2) (2023-09-26)
+
+### [3.13.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.13.0...v3.13.1) (2023-06-05)
+
+## [3.13.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.1...v3.13.0) (2023-06-01)
+
+### [3.12.1](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.12.0...v3.12.1) (2023-05-24)
+
+## [3.12.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.10.1...v3.12.0) (2023-05-18)
+
+### 3.10.1 (2023-04-04)
+
+## [4.2.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.1.0...v4.2.0) (2025-12-29)
+
+## [4.1.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.0.0...v4.1.0) (2025-12-11)
+
+
+### Features
+
+* squash merge ([4662fd2](https://git.ishopex.cn/onex/ecshopx-newpc/commit/4662fd2167c16a9175f19f6a38d1e98abaada3f1))
 
 ## [4.0.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v3.21.0...v4.0.0) (2025-11-19)
 

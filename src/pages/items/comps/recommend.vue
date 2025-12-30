@@ -47,7 +47,7 @@
     </div>
     <div class="recommend-list">
       <div class="recommend-item" v-for="(item, index) in recommendList" :key="`recommend-item__${index}`">
-        <nuxt-link :to="`/items/${item.item_id}`">
+        <nuxt-link :to="getLocalizedPath(`/items/${item.item_id}`)">
           <div class="recommend-item__img">
             <img :src="item.pics[0]" v-if="item.pics && item.pics.length>0" width="100%" />
           </div>
@@ -63,6 +63,7 @@
 
 <script>
 import GoodsRecommend from './goods-recommend'
+import { localePath } from '@/utils/localePath'
 export default {
   name: 'SpRecommend',
   props: {},
@@ -76,6 +77,10 @@ export default {
     this.getRecommend()
   },
   methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    },
     async getRecommend () {
       let params = {
         page: 1,
@@ -86,7 +91,8 @@ export default {
       this.recommendList = list
     },
     clickeTo(item){
-      this.$router.push(`/items/${item.itemId}`)
+      const path = this.getLocalizedPath(`/items/${item.itemId}`)
+      this.$router.push(path)
     }
   }
 }

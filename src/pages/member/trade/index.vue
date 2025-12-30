@@ -97,7 +97,7 @@
                             <div class="product-status-warp">
                               <div
                                 class="p-status-text"
-                                :class="child.orderStatus == 'NOTPAY' ? 'nopay-color' : ''"
+                              
                               >
                                 {{ orderStatusText[child.orderStatus] }}
                               </div>

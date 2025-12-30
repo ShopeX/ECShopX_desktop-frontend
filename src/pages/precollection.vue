@@ -50,22 +50,22 @@
             <img src="~/assets/imgs/resource/201911/pc/prec/prec1.jpg" alt />
           </div>
           <div class="swiper-slide">
-            <nuxt-link :to="`/items/179`">
+            <nuxt-link :to="getLocalizedPath('/items/179')">
               <img src="~/assets/imgs/resource/201911/pc/prec/prec2.jpg" alt />
             </nuxt-link>
           </div>
           <div class="swiper-slide">
-            <nuxt-link :to="`/items/182`">
+            <nuxt-link :to="getLocalizedPath('/items/182')">
               <img src="~/assets/imgs/resource/201911/pc/prec/prec3.jpg" alt />
             </nuxt-link>
           </div>
           <div class="swiper-slide">
-            <nuxt-link :to="`/items/181`">
+            <nuxt-link :to="getLocalizedPath('/items/181')">
               <img src="~/assets/imgs/resource/201911/pc/prec/prec4.jpg" alt />
             </nuxt-link>
           </div>
           <div class="swiper-slide">
-            <nuxt-link :to="`/items/183`">
+            <nuxt-link :to="getLocalizedPath('/items/183')">
               <img src="~/assets/imgs/resource/201911/pc/prec/prec5.jpg" alt />
             </nuxt-link>
           </div>
@@ -80,6 +80,7 @@
 
 <script>
 import { analytics } from '@/plugins/analytics'
+import { localePath } from '@/utils/localePath'
 
 export default {
   data() {
@@ -113,6 +114,11 @@ export default {
     //   }
     // })
   },
-  methods: {}
+  methods: {
+    // 生成本地化路径
+    getLocalizedPath(path) {
+      return localePath(path, this.$i18n.locale, this)
+    }
+  }
 }
 </script>
