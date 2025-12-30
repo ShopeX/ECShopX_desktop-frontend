@@ -1,0 +1,24 @@
+{
+	"zh": {
+		"store.index.407028-0": "门店位置",
+		"store.index.407028-1": "使用我的当前位置",
+		"store.index.407028-2": "请选择您想搜索的门店",
+		"store.index.407028-3": "门店搜索_Aigle官方网站",
+		"store.index.407028-4": "门店查询",
+		"store.index.407028-5": "上海",
+		"store.index.407028-6": "上海市",
+		"store.index.407028-7": "没有查询到店铺",
+		"store.index.407028-8": "/市/i,"
+	},
+	"en": {
+		"store.index.407028-0": "Store location",
+		"store.index.407028-1": "Use my current location",
+		"store.index.407028-2": "Please select the store you want to search for",
+		"store.index.407028-3": "Store Search_Sigle Official Website",
+		"store.index.407028-4": "retail store ",
+		"store.index.407028-5": "Shanghai",
+		"store.index.407028-6": "Shanghai City",
+		"store.index.407028-7": "No store found",
+		"store.index.407028-8": "/City/i,"
+	}
+}

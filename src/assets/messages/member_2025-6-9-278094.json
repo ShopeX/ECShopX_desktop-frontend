@@ -1,0 +1,28 @@
+{
+	"zh": {
+		"comps.receive.780323-0": "自提信息",
+		"comps.receive.780323-1": "自提点：",
+		"comps.receive.780323-2": "自提地址：",
+		"comps.receive.780323-3": "联系电话：",
+		"comps.receive.780323-4": "提货时间：",
+		"comps.receive.780323-5": "提货人：",
+		"comps.receive.780323-6": "提货手机：",
+		"comps.receive.780323-7": "收货人信息",
+		"comps.receive.780323-8": "收货人:",
+		"comps.receive.780323-9": "联系方式：",
+		"comps.receive.780323-10": "收货地址:"
+	},
+	"en": {
+		"comps.receive.780323-0": "Self pickup information",
+		"comps.receive.780323-1": "Self pickup point:",
+		"comps.receive.780323-2": "Self pickup address:",
+		"comps.receive.780323-3": "contact number:",
+		"comps.receive.780323-4": "Delivery time:",
+		"comps.receive.780323-5": "Delivery person:",
+		"comps.receive.780323-6": "Pick up mobile phone:",
+		"comps.receive.780323-7": "Recipient Information",
+		"comps.receive.780323-8": "consignee:",
+		"comps.receive.780323-9": "contact information:",
+		"comps.receive.780323-10": "Shipping address:"
+	}
+}

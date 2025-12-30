@@ -1,0 +1,10 @@
+{
+	"zh": {
+		"finish.fail.429253-0": "付款失败，",
+		"finish.fail.429253-1": "点击重新付款。"
+	},
+	"en": {
+		"finish.fail.429253-0": "Payment failed,",
+		"finish.fail.429253-1": "Click to make a new payment."
+	}
+}

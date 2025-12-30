@@ -1,0 +1,36 @@
+{
+	"zh": {
+		"comp.settleformThree.659476-0": "请上传营业执照照片",
+		"comp.settleformThree.659476-1": "上传营业执照",
+		"comp.settleformThree.659476-2": "重新上传",
+		"comp.settleformThree.659476-3": "请上传法人手持身份证照片",
+		"comp.settleformThree.659476-4": "上传身份证正面图片",
+		"comp.settleformThree.659476-5": "上传身份证反面图片",
+		"comp.settleformThree.659476-6": "请上传手持身份证正反面照片",
+		"comp.settleformThree.659476-7": "请上传结算银行卡正面照片",
+		"comp.settleformThree.659476-8": "上传银行卡正面照片",
+		"comp.settleformThree.659476-9": "请上传银行卡正面照片",
+		"comp.settleformThree.659476-10": "• 上传图片尺寸需小于2M",
+		"comp.settleformThree.659476-11": "请选择请选择结算银行类型所在省市",
+		"comp.settleformThree.659476-12": "最多上传1张图片",
+		"comp.settleformThree.659476-13": "图片类型错误",
+		"comp.settleformThree.659476-14": "上传图片不得大于2M"
+	},
+	"en": {
+		"comp.settleformThree.659476-0": "Please upload a photo of your business license",
+		"comp.settleformThree.659476-1": "Upload business license",
+		"comp.settleformThree.659476-2": "Re upload",
+		"comp.settleformThree.659476-3": "Please upload a photo of the legal representative holding their ID card",
+		"comp.settleformThree.659476-4": "Upload the front image of the ID card",
+		"comp.settleformThree.659476-5": "Upload the reverse image of the ID card",
+		"comp.settleformThree.659476-6": "Please upload photos of the front and back of your handheld ID card",
+		"comp.settleformThree.659476-7": "Please upload a photo of the front of the settlement bank card",
+		"comp.settleformThree.659476-8": "Upload a photo of the front of the bank card",
+		"comp.settleformThree.659476-9": "Please upload a photo of the front of your bank card",
+		"comp.settleformThree.659476-10": "The uploaded image size must be less than 2M",
+		"comp.settleformThree.659476-11": "Please select the province or city where the settlement bank type is located",
+		"comp.settleformThree.659476-12": "Upload up to 1 image",
+		"comp.settleformThree.659476-13": "Image type error",
+		"comp.settleformThree.659476-14": "The uploaded image must not be larger than 2M"
+	}
+}

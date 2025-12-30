@@ -1,0 +1,25 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.sp-point-price {
+    
+    display: flex;
+
+    .point{
+        height: 25px;
+        font-size: 18px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: $color-brand-primary;
+        line-height: 25px;
+    }
+    .symbol{
+        font-size: 12px;
+        position: relative;
+        margin-left: 6px;
+        top: 5px;
+        color: $color-brand-primary;
+    }
+}

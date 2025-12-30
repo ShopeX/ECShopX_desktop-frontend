@@ -1,0 +1,31 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-cashier {
+  &__title {
+    font-size: 28px;
+    text-align: center;
+    padding: 50px 0 30px;
+  }
+  &__warp {
+    // width: 500px;
+    margin: 0 auto;
+  }
+  &__wxbarcode {
+    position: relative;
+    width: 630px;
+    height: 349px;
+    background: url("~assets/imgs/window-wx.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    img {
+      position: absolute;
+      width: 180px;
+      left: 62px;
+      top: 100px;
+    }
+  }
+}

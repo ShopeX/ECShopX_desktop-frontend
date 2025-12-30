@@ -1,0 +1,81 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-w0008 {
+  &.focus-active {
+    // .widget-body {
+    //   left:
+    //   width: 500px !important;
+    // }
+  }
+  &__wrap {
+    // height: calc(100% - 30px);
+    border-style: solid;
+    border-width: 1px;
+    border: solid #666;
+    border-width: 1px 1px;
+    position: relative;
+    border-radius: 20px;
+    .espier-icon-sousuo-01 {
+      position: absolute;
+      font-size: 20px;
+      top: 6px;
+      left: 8px;
+    }
+    .search-input {
+      // width: calc(100% - 100px);
+      height: 36px;
+      padding: 6px 10px 6px 40px;
+      border-radius: 20px;
+      border: 0;
+      &:focus {
+        outline: none;
+      }
+    }
+    .search-icon {
+      width: 100px;
+      height: 36px;
+      float: right;
+      text-align: center;
+      line-height: 36px;
+      font-size: 14px;
+      cursor: pointer;
+      border: 1px;
+      border-radius: 38px;
+    }
+  }
+  .hot-keyword {
+    height: 26px;
+    line-height: 26px;
+    > span {
+      font-size: 13px;
+    }
+    &__item {
+      margin: 0 8px;
+      position: relative;
+      &:hover {
+        .link-page {
+          &__a {
+            &:hover {
+              color: #ff5d02 !important;
+            }
+          }
+        }
+      }
+      &:not(:last-child) {
+        // &::after {
+        //   display: inline-block;
+        //   width: 1px;
+        //   height: 14px;
+        //   content: '';
+        //   background: #999;
+        //   position: absolute;
+        //   right: -9px;
+        //   top: 0;
+        // }
+      }
+    }
+  }
+}

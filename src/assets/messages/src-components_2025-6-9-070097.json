@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"sp-datepicker.index.700493-0": "年",
+		"sp-datepicker.index.700493-1": "月",
+		"sp-datepicker.index.700493-2": "日"
+	},
+	"en": {
+		"sp-datepicker.index.700493-0": "year",
+		"sp-datepicker.index.700493-1": "the moon",
+		"sp-datepicker.index.700493-2": "sun"
+	}
+}

@@ -1,0 +1,144 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-receive-coupon {
+    margin: 0 auto 100px;
+    &__b {
+      padding-top: 60px;
+    }
+    .left {
+      float: left;
+      width: 230px;
+    }
+    .right {
+      float: left;
+      // padding: 0 100px;
+      width: calc(100% - 230px);
+      .h-title {
+        font-size: 16px;
+        background: $color-border-gray-light;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        .back-btn {
+          color: #7f7f7f;
+          display: inline-block;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .coupon-list {
+      text-align: center;
+      &__warp {
+        display: block;
+        margin-bottom: 20px;
+        .clearfix {
+          display: inline-block;
+          > div {
+            float: left;
+            text-align: left;
+          }
+        }
+      }
+      &__content {
+        width: 500px;
+        padding: 0 20px;
+        .price {
+          font-size: 22px;
+          color: $color-active;
+          vertical-align: bottom;
+          font-weight: bold;
+        }
+        .coupon-d {
+          font-size: 18px;
+          color: $color-active;
+          font-family: Arial;
+          margin-left: 5px;
+        }
+        .coupon-e {
+          font-size: 18px;
+        }
+      }
+      &__btn {
+        margin-top: 8px;
+      }
+      &__h {
+        margin: 5px 0;
+      }
+    }
+    @include respond(sm) {
+      margin-bottom: 50px;
+      &__b {
+        padding-top: 0;
+        > .left {
+          display: none;
+        }
+      }
+      .right {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        .r-content {
+          width: 100%;
+        }
+        .profile-container-member {
+          padding: 0 10px;
+          margin-bottom: 15px;
+        }
+      }
+      .coupon-list {
+        &__warp {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #000;
+          margin-bottom: 10px;
+          .clearfix {
+            > div {
+              max-width: 205px;
+            }
+          }
+          &:last-child {
+            border-bottom-width: 0;
+            padding-bottom: 0;
+          }
+        }
+        &__h {
+          margin: 5px 0 0 0;
+        }
+        &__icon {
+          margin-top: 15px;
+          img {
+            width: 80px;
+          }
+        }
+        &__content {
+          width: inherit;;
+          padding: 0 3px 5px;
+          .price {
+            font-size: 18px;
+            color: $color-active;
+          }
+          .coupon-d {
+            font-size: 14px;
+            color: $color-active;
+          }
+          .coupon-e {
+            display: block;
+            font-size: 14px;
+          }
+        }
+        &__datetime {
+          font-size: 12px;
+        }
+        &__btn {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+  

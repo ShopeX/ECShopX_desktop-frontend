@@ -1,0 +1,20 @@
+{
+	"zh": {
+		"items.index.172234-0": "没有搜索到相应商品",
+		"items.index.172234-1": "商品列表",
+		"items.index.172234-2": "综合",
+		"items.index.172234-3": "销量",
+		"items.index.172234-4": "上新",
+		"items.index.172234-5": "价格降序",
+		"items.index.172234-6": "价格升序"
+	},
+	"en": {
+		"items.index.172234-0": "No corresponding product was found in the search",
+		"items.index.172234-1": "Product List",
+		"items.index.172234-2": "comprehensive",
+		"items.index.172234-3": "sales volume",
+		"items.index.172234-4": "Up new",
+		"items.index.172234-5": "Price descending order",
+		"items.index.172234-6": "Price ascending order"
+	}
+}

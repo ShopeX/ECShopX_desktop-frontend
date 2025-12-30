@@ -1,0 +1,14 @@
+{
+	"zh": {
+		"comps.timerIndex.792449-0": "天",
+		"comps.timerIndex.792449-1": "时",
+		"comps.timerIndex.792449-2": "分",
+		"comps.timerIndex.792449-3": "秒"
+	},
+	"en": {
+		"comps.timerIndex.792449-0": "day",
+		"comps.timerIndex.792449-1": "time",
+		"comps.timerIndex.792449-2": "divide",
+		"comps.timerIndex.792449-3": "second"
+	}
+}

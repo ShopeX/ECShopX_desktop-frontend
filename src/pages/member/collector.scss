@@ -1,0 +1,28 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@import "./member.scss";
+
+.page-collector {
+    background: #f5f5f5;
+  overflow: hidden;
+  .container {
+    background: transparent;
+  }
+  .member-content-right{
+    // background: #fff;
+  }
+  .collect-list {
+    padding: 10px;
+  }
+  .pagination-wrap {
+    text-align: right;
+    margin-top: 20px;
+  }
+}
+
+.member__tips {
+  text-align: center;
+}

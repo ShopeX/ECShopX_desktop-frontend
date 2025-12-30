@@ -1,0 +1,26 @@
+{
+	"zh": {
+		"member.receiveCoupon.522771-0": "&lt; 返回",
+		"member.receiveCoupon.522771-1": "领取优惠券",
+		"member.receiveCoupon.522771-2": "店铺优惠券",
+		"member.receiveCoupon.522771-3": "领取",
+		"member.receiveCoupon.522771-4": "已领取",
+		"member.receiveCoupon.522771-5": "已领完",
+		"member.receiveCoupon.522771-6": "抱歉！暂无可领取优惠券",
+		"member.receiveCoupon.522771-7": "请继续购物。",
+		"member.receiveCoupon.522771-8": "/items?tag=新品",
+		"member.receiveCoupon.522771-9": "领取优惠券成功"
+	},
+	"en": {
+		"member.receiveCoupon.522771-0": "&Lt; Return",
+		"member.receiveCoupon.522771-1": "Get coupons",
+		"member.receiveCoupon.522771-2": "Shop coupons",
+		"member.receiveCoupon.522771-3": "receive",
+		"member.receiveCoupon.522771-4": "Received already",
+		"member.receiveCoupon.522771-5": "Already received",
+		"member.receiveCoupon.522771-6": "i 'm sorry! No coupons available for collection at the moment",
+		"member.receiveCoupon.522771-7": "Please continue shopping.",
+		"member.receiveCoupon.522771-8": "/items? Tag=New Product",
+		"member.receiveCoupon.522771-9": "Received coupon successfully"
+	}
+}

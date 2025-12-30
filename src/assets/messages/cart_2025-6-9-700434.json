@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"comps.steps.003931-0": "1. 购物袋",
+		"comps.steps.003931-1": "2. 填写和提交订单信息",
+		"comps.steps.003931-2": "3. 成功提交订单"
+	},
+	"en": {
+		"comps.steps.003931-0": "1. Shopping bag",
+		"comps.steps.003931-1": "2. Fill in and submit order information",
+		"comps.steps.003931-2": "3. Successfully submitted the order"
+	}
+}

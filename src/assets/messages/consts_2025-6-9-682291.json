@@ -1,0 +1,32 @@
+{
+	"zh": {
+		"consts.index.822605-0": "全部商品适用",
+		"consts.index.822605-1": "指定商品适用",
+		"consts.index.822605-2": "全部分类适用",
+		"consts.index.822605-3": "全部商品标签适用",
+		"consts.index.822605-4": "全部品牌适用",
+		"consts.index.822605-5": "团购",
+		"consts.index.822605-6": "满减",
+		"consts.index.822605-7": "满折",
+		"consts.index.822605-8": "满赠",
+		"consts.index.822605-9": "秒杀",
+		"consts.index.822605-10": "限时特惠",
+		"consts.index.822605-11": "换购",
+		"consts.index.822605-12": "会员限购"
+	},
+	"en": {
+		"consts.index.822605-0": "Applicable to all products",
+		"consts.index.822605-1": "Applicable to designated products",
+		"consts.index.822605-2": "All categories are applicable",
+		"consts.index.822605-3": "All product labels are applicable",
+		"consts.index.822605-4": "Applicable to all brands",
+		"consts.index.822605-5": "Group buying",
+		"consts.index.822605-6": "Full reduction",
+		"consts.index.822605-7": "Full discount",
+		"consts.index.822605-8": "Full gift",
+		"consts.index.822605-9": "seckill",
+		"consts.index.822605-10": "Limited time special offer",
+		"consts.index.822605-11": "Exchange Purchase",
+		"consts.index.822605-12": "Membership purchase restriction"
+	}
+}

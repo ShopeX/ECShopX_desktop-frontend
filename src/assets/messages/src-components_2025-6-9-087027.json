@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"sp-fastbuy.index.869986-0": "加入购物车",
+		"sp-fastbuy.index.869986-1": "商品:",
+		"sp-fastbuy.index.869986-2": "价格:",
+		"sp-fastbuy.index.869986-3": "购买数量:",
+		"sp-fastbuy.index.869986-4": "库存："
+	},
+	"en": {
+		"sp-fastbuy.index.869986-0": "add to cart",
+		"sp-fastbuy.index.869986-1": "Product:",
+		"sp-fastbuy.index.869986-2": "Price:",
+		"sp-fastbuy.index.869986-3": "Purchase quantity:",
+		"sp-fastbuy.index.869986-4": "stock:"
+	}
+}

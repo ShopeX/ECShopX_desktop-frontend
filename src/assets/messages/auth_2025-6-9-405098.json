@@ -1,0 +1,32 @@
+{
+	"zh": {
+		"auth.bind.050344-0": "绑定手机号",
+		"auth.bind.050344-1": "手机号/电子邮箱",
+		"auth.bind.050344-2": "图片验证码",
+		"auth.bind.050344-3": "动态验证码",
+		"auth.bind.050344-4": "确定",
+		"auth.bind.050344-5": "手机号填写错误",
+		"auth.bind.050344-6": "图形验证码填写错误",
+		"auth.bind.050344-7": "短信验证码填写错误",
+		"auth.bind.050344-8": "获取验证码",
+		"auth.bind.050344-9": "绑定成功",
+		"auth.bind.050344-10": "发送成功",
+		"auth.bind.050344-11": "${e}秒后重发",
+		"auth.bind.050344-12": "重发验证码"
+	},
+	"en": {
+		"auth.bind.050344-0": "Bind phone number",
+		"auth.bind.050344-1": "Mobile phone number/email address",
+		"auth.bind.050344-2": "Image verification code",
+		"auth.bind.050344-3": "Dynamic verification code",
+		"auth.bind.050344-4": "sure",
+		"auth.bind.050344-5": "Incorrect phone number input",
+		"auth.bind.050344-6": "Incorrect filling of graphic verification code",
+		"auth.bind.050344-7": "Error in filling in SMS verification code",
+		"auth.bind.050344-8": "Obtain verification code",
+		"auth.bind.050344-9": "Binding successful",
+		"auth.bind.050344-10": "Sent successfully",
+		"auth.bind.050344-11": "Resend in ${e} seconds",
+		"auth.bind.050344-12": "Resend verification code"
+	}
+}

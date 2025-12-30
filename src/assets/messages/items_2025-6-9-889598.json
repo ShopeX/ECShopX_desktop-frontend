@@ -1,0 +1,38 @@
+{
+	"zh": {
+		"items._id.894430-0": "关注店铺",
+		"items._id.894430-1": "取消关注",
+		"items._id.894430-2": "手机逛",
+		"items._id.894430-3": "请输入",
+		"items._id.894430-4": "搜本店",
+		"items._id.894430-5": "搜商城",
+		"items._id.894430-6": "商品分类",
+		"items._id.894430-7": "品牌：",
+		"items._id.894430-8": "正在加载详情...",
+		"items._id.894430-9": "暂无评价",
+		"items._id.894430-10": "-无",
+		"items._id.894430-11": "商品详情",
+		"items._id.894430-12": "商品介绍",
+		"items._id.894430-13": "商品评价",
+		"items._id.894430-14": "首页",
+		"items._id.894430-15": "关注成功"
+	},
+	"en": {
+		"items._id.894430-0": "Follow the store",
+		"items._id.894430-1": "unfollow",
+		"items._id.894430-2": "Mobile shopping",
+		"items._id.894430-3": "Enter",
+		"items._id.894430-4": "Search our store",
+		"items._id.894430-5": "Search Mall",
+		"items._id.894430-6": "CATEGORY",
+		"items._id.894430-7": "Brand:",
+		"items._id.894430-8": "Loading details ..",
+		"items._id.894430-9": "No reviews available at the moment",
+		"items._id.894430-10": "-None",
+		"items._id.894430-11": "Product Details",
+		"items._id.894430-12": "Product Introduction",
+		"items._id.894430-13": "Reviews",
+		"items._id.894430-14": "home page",
+		"items._id.894430-15": "Follow Success"
+	}
+}

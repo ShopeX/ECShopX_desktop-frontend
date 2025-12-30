@@ -1,0 +1,132 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+@import "./md-colors";
+
+$font-family     : -apple-system, PingFang SC, Microsoft YaHei, "微软雅黑", Hiragino Sans GB,sans-serif !default;
+$font-size       : 14px !default;
+
+$font-size-large : floor($font-size * 1.2) !default;
+$font-size-small : floor($font-size * 0.9) !default;
+
+$border-radius   : 4px !default;
+$edge-size       : 15px !default;
+$edge-margin     : 10px !default;
+
+/*==============================
+=            colors            =
+==============================*/
+
+$color-red                : $md-red !default;
+$color-blue               : $md-blue !default;
+$color-green              : $md-green !default;
+$color-yellow             : $md-yellow !default;
+$color-orange             : $md-orange-400 !default;
+$color-black              : #000 !default;
+$color-gray               : #999 !default;
+$color-gray-light         : #777 !default;
+
+$color-brand-primary      : #3696F3 !default;
+$color-brand-accent       : #C0D9F3 !default;
+$color-brand-accent-light : #31373f !default;
+$color-brand-primary-text : #ffffff !default;
+$color-brand-accent-text  : #333333 !default;
+
+$color-primary-text       : #333333 !default;
+$color-secondary-text     : #777777 !default;
+$color-hint-text          : #888 !default;
+$color-disabled-text      : #ccc !default;
+$color-border-gray        : #ececec !default;
+$color-border-gray-light  : #e5e5e5 !default;
+$color-border-gray-dark   : #b9b9b9 !default;
+$color-bg-gray            : #f6f6f6 !default;
+$color-divider            : $color-border-gray-light !default;
+$color-link               : $color-brand-primary !default;
+$color-link-dark          : $md-grey-900 !default;
+$color-invalid            : #c51333 !default;
+$color-active             : #cb0025 !default;
+$color-warning            : #ff9900 !default;
+$color-success            : #00397e !default;
+
+/*===============================
+=            z-index            =
+===============================*/
+$z-index-level-1   : 100 !default;
+$z-index-level-2   : 200 !default;
+$z-index-level-3   : 300 !default;
+$z-index-level-4   : 400 !default;
+$z-index-level-5   : 500 !default;
+$z-index-level-6   : 600 !default;
+$z-index-level-7   : 700 !default;
+$z-index-level-8   : 800 !default;
+$z-index-level-9   : 900 !default;
+$z-index-level-10  : 1000 !default;
+$z-index-level-11  : 1100 !default;
+$z-index-level-12  : 1200 !default;
+
+$z-index-toolbar  : $z-index-level-1 !default;
+$z-index-tooltip  : $z-index-level-3 !default;
+$z-index-dropdown : $z-index-level-3 !default;
+$z-index-modal    : $z-index-level-10 !default;
+$z-index-toast    : $z-index-level-12 !default;
+
+/*====================================
+=            input fields            =
+====================================*/
+$input-height                 : 36px !default;
+$input-height-small           : 28px !default;
+$input-height-mini            : 22px !default;
+$input-margin-bottom          : 12px !default;
+
+$input-text-color             : $color-primary-text !default;
+$input-text-font-size         : $font-size !default;
+$input-text-color-disabled    : $color-disabled-text !default;
+$input-text-color-invalid     : $color-invalid !default;
+
+$input-border-color           : $color-border-gray-light !default;
+$input-border-color-hover     : $color-border-gray-dark !default;
+$input-border-color-active    : $color-border-gray-dark !default;
+$input-border-color-invalid   : $color-invalid !default;
+$input-border-width           : 1px !default;
+
+$input-feedback-color         : $color-secondary-text !default;
+$input-feedback-color-invalid : $color-invalid !default;
+
+// Animation
+$animation-time         : .3s !default;
+$transition-time        : .2s !default;
+$ease-in-out            : ease-in-out !default;
+
+/*==============================
+=    responsive break-points    =
+==============================*/
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+) !default;
+
+/*=================================
+=            customize            =
+=================================*/
+
+$box-shadow             : 2px 2px 5px rgba(#000, .02);
+
+// Button
+$btn-padding-base       : 5px 15px 6px;
+$btn-font-size          : $font-size !default;
+$btn-border-radius      : $border-radius !default;
+
+/*=================================
+=            font-size            =
+=================================*/
+$fk                     : 1;
+$f-14                   : 14px * $fk;
+$f-16                   : 16px * $fk;
+$f-18                   : 18px * $fk;
+$f-20                   : 20px * $fk;
+$f-22                   : 22px * $fk;
+$f-24                   : 24px * $fk;
+$f-26                   : 26px * $fk;

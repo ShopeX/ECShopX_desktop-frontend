@@ -1,0 +1,130 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-auth-login {
+  // margin: 50px auto 100px;
+	background: transparent;
+	height: 590px;
+	align-items: center;
+	.login-logo{
+		left: auto;
+		// top: 100px;
+		position: absolute;
+		width: 561px;
+		height: 590px;
+	}
+  .login-main {
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 350px;
+		// height: 372px;
+		justify-content: center;
+		align-items: center;
+		top: 82px;;
+    left: 844px;
+		position: relative;
+    padding: 5px;
+		.login-title {
+		  font-weight: 400;
+		  color: #8C8C8C;
+			height: 26px;
+		  line-height: 39px;
+			font-size: 26px;
+		  margin: 24px 0;
+		  text-align: center;
+		}
+  }
+  .tabs {
+		margin: 0 24px;
+    @include clearfix();
+    .tab-item {
+      float: left;
+      height: 30px;
+      cursor: default;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      line-height: 30px;
+      margin-right: 10px;
+			font-weight: 500;
+      color: #3B3B3B;
+    }
+  }
+  .form {
+		margin-top: 24px;
+    .form-item {
+      margin-bottom: 16px;
+			padding: 0 24px;
+      .sp-input_input {
+        height: 40px;
+      }
+      .sp-btn {
+        height: 42px;
+				&__primary{
+					background: linear-gradient(270deg, #FF8600 0%, #FF5A00 100%);
+				}
+      }
+    }
+    .btn-container {
+      margin-bottom: 10px;
+    }
+    .yzm-field {
+      .sp-input {
+        width: 195px;
+      }
+      .yzm-img {
+        float: right;
+        width: 92px;
+        height: 38px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .btn-timer {
+        float: right;
+        width: 92px;
+        height: 38px;
+      }
+      .sp-timer {
+        height: 38px;
+        width: 92px;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        color: #888;
+        font-size: 14px;
+        cursor: default;
+				color: #8C8C8C;
+				letter-spacing: -0.4480000138282776px;
+      }
+    }
+  }
+  .form-link {
+    text-align: center;
+    a {
+      color: #888;
+      font-size: 13px;
+      margin: 0 10px;
+    }
+    .ec-icon {
+      font-size: 13px;
+      color: #888;
+    }
+  }
+  .trust-login {
+    text-align: center;
+    margin-top: 12px;
+		margin-bottom: 24px;
+    .trust-login {
+      display: inline-block;
+    }
+    .ec-icon {
+      font-size: 30px;
+      &-weixin1 {
+        color: #45bb35;
+      }
+    }
+  }
+}

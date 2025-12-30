@@ -1,0 +1,36 @@
+{
+	"zh": {
+		"mini-cart.index.927209-0": "颜色：",
+		"mini-cart.index.927209-1": "尺码：",
+		"mini-cart.index.927209-2": "数量：",
+		"mini-cart.index.927209-3": "购物袋中还没有商品，赶紧选购吧！",
+		"mini-cart.index.927209-4": "立即选购",
+		"mini-cart.index.927209-5": "订单小计",
+		"mini-cart.index.927209-6": "结算",
+		"mini-cart.index.927209-7": "购物袋",
+		"mini-cart.index.927209-8": "提示",
+		"mini-cart.index.927209-9": "请确认是否移除该商品?",
+		"mini-cart.index.927209-10": "商品删除成功",
+		"mini-cart.index.927209-11": "/items?tag=新品",
+		"mini-cart.index.927209-12": "库存不足，最大库存为1件",
+		"mini-cart.index.927209-13": "此商品的最小购买数量为1件",
+		"mini-cart.index.927209-14": "库存不足，最大库存为{0}件"
+	},
+	"en": {
+		"mini-cart.index.927209-0": "Color:",
+		"mini-cart.index.927209-1": "size:",
+		"mini-cart.index.927209-2": "quantity",
+		"mini-cart.index.927209-3": "There are no items in the shopping bag yet, hurry up and choose!",
+		"mini-cart.index.927209-4": "Buy Now",
+		"mini-cart.index.927209-5": "Order Subtotal ",
+		"mini-cart.index.927209-6": "settlement",
+		"mini-cart.index.927209-7": "Shopping bag",
+		"mini-cart.index.927209-8": "prompt",
+		"mini-cart.index.927209-9": "Please confirm whether to remove the product?",
+		"mini-cart.index.927209-10": "Product deleted successfully",
+		"mini-cart.index.927209-11": "/items? Tag=New Product",
+		"mini-cart.index.927209-12": "Insufficient inventory, maximum inventory is 1 piece",
+		"mini-cart.index.927209-13": "The minimum purchase quantity for this product is 1 piece",
+		"mini-cart.index.927209-14": "Insufficient inventory, maximum inventory is {0} pieces"
+	}
+}

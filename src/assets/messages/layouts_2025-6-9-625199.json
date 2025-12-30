@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"layouts.error.251551-0": "抱歉！您所访问的页面不存在！",
+		"layouts.error.251551-1": "点击返回首页。",
+		"layouts.error.251551-2": "抱歉！应用程序错误异常！"
+	},
+	"en": {
+		"layouts.error.251551-0": "i 'm sorry! The page you are visiting does not exist!",
+		"layouts.error.251551-1": "Click to return to the homepage.",
+		"layouts.error.251551-2": "i 'm sorry! Application error exception!"
+	}
+}

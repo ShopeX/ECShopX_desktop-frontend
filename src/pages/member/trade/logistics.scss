@@ -1,0 +1,94 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$logistics-circle-size:8;
+.page-logistics {
+  position: relative;
+  margin: 0 auto 100px;
+  .member-content-right{
+    padding-left: 30px;
+  }
+  &__title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__address{
+    padding: 10px 0;
+    border-top: 1px solid $color-border-gray;
+    border-bottom: 1px solid $color-border-gray;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .logistics-list {
+    border-left: 1px solid $color-border-gray;
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    &__circle{
+      position: absolute;
+      width: $logistics-circle-size + px;
+      height: $logistics-circle-size + px;
+      border-radius: 50%;
+      background: #bdbbbb;
+      left: -1px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      transform: translateX(-50%);
+    }
+    &__placeholder{
+      position: absolute;
+      left: -5px;
+      height: calc(50% - 4px);
+      width: $logistics-circle-size + px;
+      background: #fff;
+      &.last{
+        bottom: 0;
+      }
+    }
+    li:nth-child(1){
+      color: $color-secondary-text;
+      .logistics-list__circle{
+        background: #000;
+      }
+    }
+  }
+
+  @include respond(sm) {
+    &__b {
+      padding-top: 0;
+    }
+    .left {
+      display: none;
+    }
+    .right {
+      width: 100%;
+      .page-logistics__title {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .logistics-list {
+        margin-top: 20px;
+        padding: 0 10px;
+        li {
+          margin-bottom: 30px;
+          .datetime {
+            width: 150px;
+            margin-right: 50px;
+            display: block;
+          }
+          .info {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

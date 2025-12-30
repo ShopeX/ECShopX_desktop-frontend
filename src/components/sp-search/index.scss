@@ -1,0 +1,101 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.sp-search {
+  width: 100%;
+  box-sizing: content-box;
+  text-align: left;
+  input {
+    width: calc(100% - 100px);
+    height: 100%;
+    &:focus {
+      &::-webkit-input-placeholder {
+        color: #6c6c6c;
+      }
+    }
+  }
+  &__default {
+    border: 1px solid $color-brand-primary;
+    display: inline-block;
+    border-radius: 5px;
+    input {
+      border: 0;
+      // color: $color-brand-primary;
+      border-radius: 5px;
+      // background: $color-brand-primary;
+      padding: 10px;
+      font-size: 14px;
+    }
+    input::-webkit-input-placeholder {
+      color: $color-brand-primary;
+      font-size: 14px;
+    }
+    .mb-iconfont {
+      color: $color-brand-primary;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .icon {
+      float: right;
+      text-align: center;
+    }
+  }
+  &__primary {
+    border: 1px solid $color-brand-primary;
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    input {
+      border: 0;
+      // color: $color-brand-primary;
+      padding: 10px;
+      font-size: 14px;
+    }
+    input::-webkit-input-placeholder {
+      font-size: 14px;
+    }
+    .mb-iconfont {
+      // position: relative;
+      // top: 0px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .icon {
+      float: right;
+      background: $color-brand-primary;
+      color: $color-primary-text;
+      line-height: 36px;
+      text-align: center;
+      margin-top: 1px;
+      width: 100px;
+    }
+  }
+  .icon {
+    // padding-top: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: translateY(-1px);
+    i {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+    }
+  }
+  .hot-keyword {
+    margin-top: 4px;
+    font-size: 13px;
+    span {
+      color: $color-brand-primary;
+    }
+    a {
+      margin: 0 5px;
+      color: #999;
+      cursor: pointer;
+      span {
+        color: #999;
+      }
+    }
+  }
+}

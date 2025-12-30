@@ -1,0 +1,28 @@
+{
+	"zh": {
+		"pointitems._id.032647-0": "品牌：",
+		"pointitems._id.032647-1": "更多参数 》",
+		"pointitems._id.032647-2": "正在加载详情...",
+		"pointitems._id.032647-3": "该商品暂无内容数据",
+		"pointitems._id.032647-4": "正在加载",
+		"pointitems._id.032647-5": "暂无评价",
+		"pointitems._id.032647-6": "没有更多了",
+		"pointitems._id.032647-7": "商品介绍",
+		"pointitems._id.032647-8": "商品评价",
+		"pointitems._id.032647-9": "首页",
+		"pointitems._id.032647-10": "商品详情"
+	},
+	"en": {
+		"pointitems._id.032647-0": "Brand:",
+		"pointitems._id.032647-1": "More Parameters",
+		"pointitems._id.032647-2": "Loading details ..",
+		"pointitems._id.032647-3": "This product currently has no content data available",
+		"pointitems._id.032647-4": "Loading",
+		"pointitems._id.032647-5": "No reviews available at the moment",
+		"pointitems._id.032647-6": "There's nothing more",
+		"pointitems._id.032647-7": "Product Introduction",
+		"pointitems._id.032647-8": "Reviews",
+		"pointitems._id.032647-9": "home page",
+		"pointitems._id.032647-10": "Product Details"
+	}
+}

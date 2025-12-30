@@ -1,0 +1,30 @@
+{
+	"zh": {
+		"items.index copy.995821-0": "搜索",
+		"items.index copy.995821-1": "确定",
+		"items.index copy.995821-2": "共",
+		"items.index copy.995821-3": "件商品",
+		"items.index copy.995821-4": "商品列表无数据",
+		"items.index copy.995821-5": "加载中...",
+		"items.index copy.995821-6": "首页",
+		"items.index copy.995821-7": "按新品排序",
+		"items.index copy.995821-8": "价格降序",
+		"items.index copy.995821-9": "价格升序",
+		"items.index copy.995821-10": "销量",
+		"items.index copy.995821-11": "浏览量"
+	},
+	"en": {
+		"items.index copy.995821-0": "search",
+		"items.index copy.995821-1": "determine",
+		"items.index copy.995821-2": "common",
+		"items.index copy.995821-3": "Item Product",
+		"items.index copy.995821-4": "The product list has no data",
+		"items.index copy.995821-5": "Loading in progress ..",
+		"items.index copy.995821-6": "home page",
+		"items.index copy.995821-7": "Sort by New Product",
+		"items.index copy.995821-8": "Price descending order",
+		"items.index copy.995821-9": "Price ascending order",
+		"items.index copy.995821-10": "sales volume",
+		"items.index copy.995821-11": "Page View"
+	}
+}

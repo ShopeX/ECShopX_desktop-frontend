@@ -1,0 +1,137 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-W0017 {
+  &-body {
+    // padding: 10px;
+  }
+  .wgt-goodstab {
+    &_tab {
+      height: 60px;
+      padding: 0 20px;
+      // border-bottom: 1px solid red;
+      &:after {
+        content: '\0020';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        overflow: hidden;
+      }
+      .title {
+        margin-top: 20px;
+        width: 112px;
+        text-align: center;
+        float: left;
+        .title-span {
+          width: 88px;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+        }
+      }
+      .tabList {
+        text-align: left;
+        float: left;
+        margin-top: 22px;
+        margin-left: 80px;
+        .tabItem {
+          // line-height: 40px;
+          padding: 0 15px;
+          display: inline-block;
+          cursor: pointer;
+          color: #606266;
+          font-size: 14px;
+          &:hover,
+          &.active {
+            font-weight: 650;
+            color: #ff5d02;
+          }
+        }
+      }
+    }
+    &_goods {
+      float: right;
+      position: relative;
+      width: 100%;
+      // height: 560px;
+      overflow: hidden;
+      // padding: 0 10px;
+      .goods-main-img {
+        display: flex;
+        float: left;
+        margin-right: 64px;
+      }
+    }
+  }
+
+  .goods-wrap {
+    // margin-left:10px;
+    display: none;
+    &.active {
+      display: block;
+    }
+    &:after {
+      content: '\0020';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    .goods-list-wrap {
+      float: left;
+      text-align: center;
+
+      .goods-wrap__info {
+        text-align: center;
+        width: 238px;
+        height: 266px;
+        // background: #33ee99;
+        .goods-title {
+          color: #3b3b3b;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          word-break: break-all;
+        }
+        .goods-sub-title {
+          line-height: 27px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          word-break: break-all;
+          margin-top: 0px;
+          margin-bottom: 10px;
+        }
+      }
+      .goods-image {
+        // text-align:center;
+        padding: 0 25px;
+        margin-top: 0px;
+      }
+    }
+    .goods-tags {
+      margin: 4px 0;
+    }
+    .tag-item {
+      padding: 0 5px;
+      // margin-top: 10px;
+      margin-right: 4px;
+      border-radius: 2px;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+    }
+  }
+}

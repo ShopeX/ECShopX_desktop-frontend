@@ -1,0 +1,10 @@
+{
+	"zh": {
+		"comps.wxpayH5.653734-0": "正在支付...",
+		"comps.wxpayH5.653734-1": "支付单号:"
+	},
+	"en": {
+		"comps.wxpayH5.653734-0": "Payment in progress ..",
+		"comps.wxpayH5.653734-1": "Payment Order Number:"
+	}
+}

@@ -1,0 +1,89 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@font-face {
+  font-family: 'new_iconfont';  /* Project id 3062221 */
+  src: url('//at.alicdn.com/t/font_3062221_js4klwiz25i.woff2?t=1646756009752') format('woff2'),
+       url('//at.alicdn.com/t/font_3062221_js4klwiz25i.woff?t=1646756009752') format('woff'),
+       url('//at.alicdn.com/t/font_3062221_js4klwiz25i.ttf?t=1646756009752') format('truetype'),
+       url('//at.alicdn.com/t/font_3062221_js4klwiz25i.svg?t=1646756009752#new_iconfont') format('svg');
+}
+
+.new_iconfont {
+  font-family: "new_iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-new-pc-a-lujingbeifen2:before {
+  content: "\e610";
+}
+
+.icon-new-pc-erweima:before {
+  content: "\e60f";
+}
+
+.icon-new-pc-shoucang:before {
+  content: "\e90d";
+}
+
+.icon-new-pc-daifukuan:before {
+  content: "\e60d";
+}
+
+.icon-new-pc-daishouhuo:before {
+  content: "\e60c";
+}
+
+.icon-new-pc-daipingjia:before {
+  content: "\e60b";
+}
+
+.icon-new-pc-daiziti:before {
+  content: "\e60a";
+}
+
+.icon-new-pc-shouhou:before {
+  content: "\e609";
+}
+
+.icon-new-pc-youhuiquan:before {
+  content: "\e608";
+}
+
+.icon-new-pc-dingdan:before {
+  content: "\e607";
+}
+
+.icon-new-pc-huiyuanxinxi:before {
+  content: "\e606";
+}
+
+.icon-new-pc-tuxingyanzhengma:before {
+  content: "\e605";
+}
+
+.icon-new-pc-yanzhengma:before {
+  content: "\e604";
+}
+
+.icon-new-pc-mima:before {
+  content: "\e603";
+}
+
+.icon-new-pc-zhanghu:before {
+  content: "\e602";
+}
+
+.icon-new-pc-sousuo:before {
+  content: "\e622";
+}
+
+.icon-new-pc-cart:before {
+  content: "\e627";
+}
+

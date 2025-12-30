@@ -1,0 +1,26 @@
+{
+	"zh": {
+		"comps.coupon-center-item.982976-0": "微软雅黑",
+		"comps.coupon-center-item.982976-1": "折",
+		"comps.coupon-center-item.982976-2": "满",
+		"comps.coupon-center-item.982976-3": "可用",
+		"comps.coupon-center-item.982976-4": "兑换券",
+		"comps.coupon-center-item.982976-5": "使用规则",
+		"comps.coupon-center-item.982976-6": "立即领取",
+		"comps.coupon-center-item.982976-7": "已领取",
+		"comps.coupon-center-item.982976-8": "已结束",
+		"comps.coupon-center-item.982976-9": "暂无使用规则"
+	},
+	"en": {
+		"comps.coupon-center-item.982976-0": "Microsoft YaHei ",
+		"comps.coupon-center-item.982976-1": "break",
+		"comps.coupon-center-item.982976-2": "full",
+		"comps.coupon-center-item.982976-3": "available",
+		"comps.coupon-center-item.982976-4": "Exchange coupons",
+		"comps.coupon-center-item.982976-5": "Usage rules",
+		"comps.coupon-center-item.982976-6": "Get it now",
+		"comps.coupon-center-item.982976-7": "Received already",
+		"comps.coupon-center-item.982976-8": "Ended",
+		"comps.coupon-center-item.982976-9": "There are currently no usage rules available"
+	}
+}

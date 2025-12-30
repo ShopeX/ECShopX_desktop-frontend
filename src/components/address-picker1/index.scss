@@ -1,0 +1,16 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.address-picker {
+  .address-item {
+    margin: 5px 0;
+    label {
+      font-size: 14px;
+    }
+  }
+  &__btns {
+    margin-top: 10px;
+  }
+}

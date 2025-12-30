@@ -1,0 +1,154 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-order-detail {
+  .member-content-right{
+    background: #fff;
+    padding-top: 0;
+  }
+
+  .border-top{
+    border-top: 1px solid#adadad;
+  }
+
+  .goods-item {
+    &__status {
+      position: absolute;
+      right: 0;
+      top: 16px;
+    }
+  }
+
+  &__status{
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $color-primary-text;
+    padding: 17px 0;
+    min-height: 50px;
+    &-status{
+      position: absolute;
+      right: 10px;
+      top: 17px;
+    }
+    &-date{
+      margin-top: 11px;
+    }
+  }
+  &__address{
+    padding: 17px 0;
+    p{
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: $color-primary-text;
+      margin-top: 4px;
+      &:nth-child(1){
+        margin-top: 0;
+      }
+    }
+  }
+  &__good-list{
+    padding: 20px 0;
+    @extend .border-top;
+    .goods-item{
+      position: relative;
+      margin-bottom: 20px;
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+      &__img{
+        width: 155px;
+        height: 210px;
+        background: #fff;
+        border: 1px solid #c2baba;
+      }
+      &__right{
+        width: calc(100% - 180px);
+        height: 100%;
+        padding-top: 16px;
+      }
+      &__title{
+        font-size: 16px;
+        color: $color-secondary-text;
+        margin-bottom: 8px;
+      }
+      &__specs-bn{
+        font-size: 16px;
+        color: $color-primary-text;
+        font-weight: normal;
+        margin-bottom: 12px;
+      }
+      &__price{
+        position: absolute;
+        bottom: 10px;
+        font-size: 16px;
+        color: $color-secondary-text;
+      }
+      &__specs{
+        &-color{
+          display: block;
+          font-size: 16px;
+          margin-bottom: 8px;
+          margin-top: 8px;
+        }
+        &-size{
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__total{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-bottom: 17px;
+    &-text{
+      color: $color-primary-text;
+      margin-top: 10px;
+      &:nth-child(1){
+        margin-top: 0;
+      }
+    }
+    &-price-num{
+      color: $color-secondary-text;
+    }
+  }
+  &__info{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $color-primary-text;
+    padding: 17px 0;
+    &-title{
+      font-weight: bold;
+      color: $color-secondary-text;
+    }
+    .info-row{
+      display: flex;
+      flex-wrap: wrap;
+      p{
+        width: 33%;
+        text-align: left;
+        margin-top: 9px;
+      }
+    }
+  }
+  &__button-wraper{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .time{
+    color: $md-red;
+  }
+  .ml20{
+    margin-left: 20px;
+  }
+  .price-wraper{
+    display: inline-block;
+    min-width: 100px;
+    text-align: right;
+  }
+}

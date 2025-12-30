@@ -1,0 +1,257 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-body {
+  // background: #eeeeee;
+  // min-height: 100vh;
+  padding-bottom: 10px;
+}
+.container-shop{
+  text-align: end;
+}
+.container{
+  background: #eeeeee;
+  // min-height: 100vh;
+  // 设置填写信息顶部步骤
+  .settle_hd{
+    min-height: 60px;
+    line-height: 60px;
+    background: #eeeeee;
+    padding-bottom: 20px;
+    &-title{
+      display: flex;
+      justify-content: space-around;
+      &-text {
+        height: max-content;
+      }
+      .active {
+        color: #f4811f;
+        position: relative;
+        .cricle{
+          position: absolute;
+          bottom: -5px;
+          left: 45%;
+          background: #f4811f;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+    }
+    &-line {
+      height: 2px;
+      background: #f4811f;
+    }
+    .line_one {
+      width: 17%;
+    }
+    .line_two {
+      width: 50%;
+    }
+    .line_three {
+      width: 83.5%;
+    }
+  }
+  .settle_bd {
+    width: 1190px;
+    background: #fff;
+    padding-top: 20px;
+    border: 1px solid #ebeef5;
+    box-shadow: 0 2px 12px 0 #cccccc;
+    .settle__form {
+      .form {
+        &-item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          &__error-message{
+            left: 220px ;
+          }
+          .label-text {
+            display: inline-block;
+            font-size: 13px;
+            width: 200px;
+            text-align: right;
+            position: relative;
+            top: 2px;
+            color: #888;
+            margin-right: 20px;
+            .must-icon{
+              color: red;
+            }
+          }
+          .input-text,
+          .radio-group__warp {
+            width: calc(100% - 400px);
+          }
+          .sort-select,
+          .input-sort-select,
+          .sp-input {
+            width: 200px;
+          }
+          .address-input {
+            width: 400px;
+          }
+          .member-input-text{
+            width: calc(100% - 400px);
+            .sort-select{
+              width: 100%;
+            }
+          }
+        }
+        .bank_info{
+          .input-sort-select__dropdown-list{
+            border-top: 1px solid #dcdcdc;
+            top: -364px;
+            max-height: 364px;
+          }
+          .bank_input{
+            ::v-deep .sp-input__input{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .chooseBanck{
+        height: 38px;
+        width: 200px;
+        border: 1px solid #dcdcdc;
+        font-size: 14px;
+        color: #666;
+        position: relative;
+        vertical-align: middle;
+      }
+      .btn-container{
+        justify-content: center;
+        .protocolLink{
+          position: relative;
+          left: -100px;
+          color: #f4811f;
+          cursor: pointer;
+        }
+        .btn {
+          width: 105px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          float: left;
+          text-align: center;
+          margin-right: 15px;
+          cursor: pointer;
+        }
+        .btn-submit {
+          color: #fff;
+        }
+        .btn-fastbuy {
+          border-width: 1px;
+          border-style: solid;
+        }
+      }
+      .upload {
+
+        // text-align: left;
+        .input {
+          visibility: hidden;
+          height: 19px;
+          width: 60px;
+        }
+
+        .spimg-item {
+          display: inline-block;
+          vertical-align: text-top;
+          margin-right: 10px;
+          cursor: pointer;
+          position: relative;
+          .spimg1 {
+            width: 250px;
+            height: 150px;
+          }
+        }
+
+        .input-icon {
+          // display: inline-block;
+          vertical-align: text-top;
+          width: 250px;
+          // height: 50px;
+          // background-color: #f6f6f6;
+          text-align: center;
+          cursor: pointer;
+          padding: 5px;
+          .ec-icon {
+            font-size: 22px;
+            line-height: 50px;
+            color: #ddd;
+          }
+        }
+      }
+      // .input-sort-select__dropdown-list{
+      //   max-height: 160px;
+      // }
+    }
+    .tips{
+      padding-left: 140px;
+      color: #a9b1c2;
+    }
+  }
+  .protocol-title {
+    width: 100%;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 8px 8px 0 0;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+
+  .protocol-info {
+    min-height: 150px;
+    padding: 30px;
+    max-height: 600px;
+    overflow: auto;
+  }
+  .confirm-title {
+    width: 100%;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 8px 8px 0 0;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  .confirm-info{
+    min-height: 150px;
+    padding: 30px;
+    .dialog-info{
+      margin-bottom: 20px;
+    }
+    .bank-list{
+      margin: 20px 0;
+      &-info{
+        margin: 5px 0;
+      }
+    }
+    .btns {
+      // border-top: 1px solid #ececec;
+      padding: 10px 20px;
+      text-align: right;
+      .btn {
+        display: inline-block;
+        border-radius: 3px;
+        width: 105px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #ececec;
+      }
+      .btn-ok{
+        margin-right: 10px;
+      }
+    }
+  }
+}

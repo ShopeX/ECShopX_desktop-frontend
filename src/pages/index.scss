@@ -1,0 +1,113 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$content-w:1150px;
+$head-placeheight:120px;
+.page-index {
+  padding-bottom: 0;
+  // transform: translateY(-$head-placeheight);
+  &__container {
+    position: relative;
+    width: auto !important;
+    max-width: 1440px !important;
+    margin: 0 auto;
+  }
+  // .mb {
+  //   display: none;
+  // }
+  // .center {
+  //   margin: 0 auto;
+  // }
+  // .img-warp {
+  //   font-size: 0;
+  //   line-height: 0;
+  // }
+  // .banner-sm {
+  //   > div {
+  //     width: 50%;
+  //   }
+  // }
+  .wdget-title,.wdget-sub-title {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: $color-secondary-text;
+    text-align: center;
+    .inner{
+      display: inline-block;
+      font-weight: 300;
+      width: $content-w;
+      text-align: left;
+    }
+  }
+  .wdget-sub-title{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  // .wdget-pinpai {
+  //   text-align: center;
+
+  //   ul {
+  //     display: inline-block;
+  //     li {
+  //       float: left;
+  //       .pinpai-desc {
+  //         font-size: 20px;
+  //         font-weight: bold;
+  //       }
+  //     }
+  //   }
+  // }
+  .wdget-recommend {
+    width: $content-w;
+    // padding: 2px;
+    margin: 0 auto;
+    .good-card__content {
+      display: none;
+    }
+  }
+  .wdget-more {
+    width: $content-w;
+    // padding: 2px;
+    margin: 0 auto;
+  }
+
+  // .banner__btn {
+  //   display: block;
+  //   position: absolute;
+  //   top: 27%;
+  //   width: 80px;
+  //   height: 70px;
+  //   z-index: 99;
+  //   opacity: 0.7;
+  //   &-prev {
+  //     background: url("~assets/imgs/banner_arr_left.png") no-repeat center center;
+  //     left: 0px;
+  //   }
+  //   &-next {
+  //     background: url("~assets/imgs/banner_arr_right.png") no-repeat center center;
+  //     right: 0px;
+  //   }
+  // }
+  .recommend-content {
+    // padding: 0 50px;
+    // height: 0;
+    // overflow: hidden;
+    &.active {
+      height: auto;
+      overflow: initial;
+    }
+  }
+  @include respond(sm) {
+    padding-bottom: 0;
+    .wdget-recommend {
+      width: 100%;
+      overflow: hidden;
+    }
+    .recommend-content {
+      padding: 0;
+    }
+  }
+}

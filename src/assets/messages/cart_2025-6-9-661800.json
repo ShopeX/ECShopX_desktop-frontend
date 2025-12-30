@@ -1,0 +1,38 @@
+{
+	"zh": {
+		"comps.member-address-picker.617682-0": "收货人：",
+		"comps.member-address-picker.617682-1": "手机：",
+		"comps.member-address-picker.617682-2": "地址名称：",
+		"comps.member-address-picker.617682-3": "使用新收货地址",
+		"comps.member-address-picker.617682-4": "收货人",
+		"comps.member-address-picker.617682-5": "请输入收货人的姓名",
+		"comps.member-address-picker.617682-6": "手机号",
+		"comps.member-address-picker.617682-7": "请输入联络电话/手机号码",
+		"comps.member-address-picker.617682-8": "所在城市",
+		"comps.member-address-picker.617682-9": "详细地址",
+		"comps.member-address-picker.617682-10": "请输入详细地址",
+		"comps.member-address-picker.617682-11": "邮编",
+		"comps.member-address-picker.617682-12": "请输入邮编",
+		"comps.member-address-picker.617682-13": "确认收货信息",
+		"comps.member-address-picker.617682-14": "请输入收货人姓名",
+		"comps.member-address-picker.617682-15": "请输入11位手机号"
+	},
+	"en": {
+		"comps.member-address-picker.617682-0": "consignee:",
+		"comps.member-address-picker.617682-1": "mobile phone:",
+		"comps.member-address-picker.617682-2": "Address Name:",
+		"comps.member-address-picker.617682-3": "Use a new shipping address",
+		"comps.member-address-picker.617682-4": "consignee",
+		"comps.member-address-picker.617682-5": "Please enter the recipient's name",
+		"comps.member-address-picker.617682-6": "cell-phone number",
+		"comps.member-address-picker.617682-7": "Please enter your contact phone number/mobile phone number",
+		"comps.member-address-picker.617682-8": "city",
+		"comps.member-address-picker.617682-9": "detailed address",
+		"comps.member-address-picker.617682-10": "Please enter detailed address",
+		"comps.member-address-picker.617682-11": "zip code",
+		"comps.member-address-picker.617682-12": "Please enter postal code",
+		"comps.member-address-picker.617682-13": "Confirm receipt information",
+		"comps.member-address-picker.617682-14": "Please enter the recipient's name",
+		"comps.member-address-picker.617682-15": "Please enter an 11 digit phone number"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"comps.fast-cart.153439-0": "积分兑换",
+		"comps.fast-cart.153439-1": "商品:",
+		"comps.fast-cart.153439-2": "价格:",
+		"comps.fast-cart.153439-3": "{0}积分",
+		"comps.fast-cart.153439-4": "{0}积分",
+		"comps.fast-cart.153439-5": "购买数量:",
+		"comps.fast-cart.153439-6": "库存：",
+		"comps.fast-cart.153439-7": "立即兑换"
+	},
+	"en": {
+		"comps.fast-cart.153439-0": "Redeem",
+		"comps.fast-cart.153439-1": "Product:",
+		"comps.fast-cart.153439-2": "Price:",
+		"comps.fast-cart.153439-3": "{0} Points",
+		"comps.fast-cart.153439-4": "{0} Points",
+		"comps.fast-cart.153439-5": "Purchase quantity:",
+		"comps.fast-cart.153439-6": "stock:",
+		"comps.fast-cart.153439-7": "Redeem now "
+	}
+}

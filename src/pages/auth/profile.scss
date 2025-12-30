@@ -1,0 +1,75 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-profile {
+  overflow: hidden;
+  .profile-container {
+    width: 600px;
+    padding-bottom: 150px;
+    margin: 50px auto 0;
+    .profile-reg__success {
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        vertical-align: middle;
+      }
+      span {
+        font-size: 20px;
+        vertical-align: middle;
+      }
+    }
+    .profile-tab {
+      @include clearfix();
+      margin-bottom: 20px;
+      li {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        cursor: default;
+        span {
+          display: inline-block;
+          font-size: 20px;
+          font-weight: bold;
+          &.active {
+            border-bottom: 2px solid $color-active;
+          }
+        }
+      }
+    }
+  }
+  .form-item{
+    .label-text{
+      float: left;
+    }
+    .form-value{
+      margin-left: 150px;
+    }
+  }
+  .radio-group__warp {
+    padding: 6px 0;
+  }
+  .member-input__checkbox {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .btn-container {
+    text-align: right;
+  }
+  .jump {
+    text-align: right;
+    a {
+      font-size: 14px;
+      color: #999;
+      cursor: pointer;
+    }
+  }
+  .tip {
+    color: $color-active;
+  }
+  .hobby-list-group {
+    display: block;
+  }
+}

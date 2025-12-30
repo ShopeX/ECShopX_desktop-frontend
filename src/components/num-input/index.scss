@@ -1,0 +1,169 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+
+.sp-num-input {
+    $self: &;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 1;
+    &.is-focus {
+        #{$self}__input {
+            border-color: $input-border-color-active;
+        }
+    }
+    &.is-disabled {
+        background: $color-bg-gray;
+        color: $input-text-color-disabled;
+        border-color: $color-border-gray-light !important;
+    }
+
+    &__input {
+        font-family: $font-family;
+        font-size: $input-text-font-size;
+        // color: $color-gray-light;
+        border: $input-border-width solid $input-border-color;
+        border-radius: $border-radius;
+        box-sizing: border-box;
+        height: $input-height;
+        width: 70px;
+        outline: 0;
+        line-height: 1;
+        padding: 3px 20px 3px 10px;
+        box-sizing: border-box;
+    }
+
+    &__btn {
+        background: #fff;
+        border: $input-border-width solid $input-border-color;
+        border-radius: $border-radius;
+        position: absolute;
+        right: $input-border-width;
+        top: $input-border-width;
+        width: 20px;
+        height: calc((#{$input-height} - 2 * #{$input-border-width} - 1px) / 2);
+        cursor: pointer;
+        overflow: hidden;
+        box-sizing: content-box;
+        font-size: 0;
+        outline: none;
+        user-select: none;
+        &:hover {
+            background: lighten($color-bg-gray, 1%);
+        }
+        &:active {
+            background: darken($color-bg-gray, 1%);
+        }
+        &:after {
+            content: "";
+            border: 2px solid $color-border-gray;
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-left: 0;
+            border-top: 0;
+            top: 50%;
+            left: 50%;
+            margin: -3px 0 0 -3px;
+            position: absolute;
+            transform: rotate(225deg);
+        }
+    }
+
+    height: 44px;
+    border: 1px solid $input-border-color;
+    position: relative;
+    padding: 0 32px;
+    &__input {
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        width: 46px;
+        padding: 0;
+        border: 0;
+    }
+    &__btn {
+        background: #eee;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        width: 32px;
+        height: 42px;
+        line-height: 40px;
+        padding: 0;
+        display: block;
+        border-radius: 0;
+        border: none;
+        &:hover {
+            // background: #888;
+        }
+        &:after {
+            display: none;
+        }
+        &-up {
+            right: 0;
+            top: 0;
+        }
+        &-down {
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__btn-up {
+        border-top: none;
+        border-right: none;
+    }
+
+    &__btn-down {
+        border-right: none;
+        border-bottom: none;
+        // top: auto;
+        // bottom: $input-border-width;
+        &:after {
+            transform: rotate(45deg);
+        }
+    }
+
+    &__size-small {
+        #{$self}__input {
+            height: $input-height-small;
+        }
+        #{$self}__btn {
+            height: calc((#{$input-height-small} - 2 * #{$input-border-width} - 1px) / 2);
+        }
+    }
+
+    &__size-mini {
+        #{$self}__input {
+            height: $input-height-mini;
+        }
+        #{$self}__btn {
+            height: calc((#{$input-height-mini} - 2 * #{$input-border-width} - 1px) / 2);
+        }
+    }
+
+    &__size-sm {
+        padding: 0 25px !important;
+        height: 22px !important;
+        .sp-num-input {
+            &__input {
+                height: 22px;
+                line-height: 22px;
+                width: 30px;
+            }
+            &__btn {
+                height: 21px;
+                line-height: 21px;
+                font-size: 14px;
+                width: 20px;
+            }
+        }
+    }
+}

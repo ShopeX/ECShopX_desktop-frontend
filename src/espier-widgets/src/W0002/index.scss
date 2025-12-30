@@ -1,0 +1,135 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-w0002 {
+  // background: #fff;
+  overflow: hidden;
+  .wgt-goods {
+    &_title {
+      height: 40px;
+      line-height: 40px;
+      // padding: 0 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      .bg-null {
+        span,
+        a {
+          &::before,
+          &::after {
+            display: none !important;
+          }
+        }
+      }
+      .link-page {
+        span,
+        a {
+          // font-size: 28px;
+          // color: #333;
+          // display: block;
+          &:before {
+            content: '';
+            display: inline-block;
+            background-image: url(./img/sprite.png);
+            background-position: 0px 0px;
+            width: 28px;
+            height: 24px;
+            left: 0px;
+          }
+          &:after {
+            content: '';
+            display: inline-block;
+            background-image: url(./img/sprite.png);
+            background-position: -28px 0px;
+            width: 28px;
+            height: 24px;
+            right: 0px;
+          }
+        }
+      }
+    }
+
+    &_list {
+      overflow: hidden;
+      padding: 0;
+      margin: 0 -10px;
+      .goods-item {
+        float: left;
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 214px;
+        height: auto;
+        // margin: 5px 0;
+        margin: 0 0 10px 20px;
+        padding-bottom: 6px;
+        background: #fff;
+        .goods-item_price {
+          .mkt-original-price {
+            margin-left: 20px;
+            overflow-wrap: break-word;
+            text-decoration: line-through;
+          }
+        }
+        &_wrap {
+          position: relative;
+          width: 214px;
+          height: 214px;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+          }
+        }
+        &_img {
+          position: relative;
+          .img-wrap {
+            height: 214px !important;
+            width: 214px !important;
+          }
+          // img {
+          //   position: absolute;
+          //   top: 50%;
+          //   left: 50%;
+          //   transform: translate(-50%, -50%);
+          // }
+        }
+        &_tag {
+          margin: 0px 10px;
+          height: 20px;
+          .tag-item {
+            padding: 0 5px;
+            // border: 1px solid rgba(247, 137, 137, 1);
+            border-radius: 2px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+            color: #f56c6c;
+            background-color: rgba(254, 240, 240, 1);
+            // @include mult-ellipsis(1);
+            margin-right: 4px;
+            display: inline-block;
+          }
+        }
+        &_title {
+          // margin: 8px 10px;
+          margin-top: 8px;
+          font-size: 14px;
+          padding: 0 4px;
+          height: 40px;
+          line-height: 22px;
+          font-weight: 500;
+          color: #3b3b3b;
+          @include mult-ellipsis(2);
+        }
+        &_price {
+          margin-top: 8px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

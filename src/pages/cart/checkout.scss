@@ -1,0 +1,508 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-checkout {
+  .checkout-title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 4px;
+    margin-top: 20px;
+  }
+
+  .content-body {
+    border: 1px solid #E8E8E8;
+    padding: 0 20px;
+    margin-bottom: 50px;
+    .content-item {
+      border-bottom: 1px solid $color-border-gray-light;
+      .ziti-info{
+        margin-left: 10px;
+        &>div{
+          margin-bottom: 10px;
+          &>.ziti-info-name{
+            width: 80px;
+            display: inline-block;
+          }
+        }
+      }
+      .integral{
+        display:flex;
+        .integral-rules{
+          line-height: 50px;
+          font-size:12px;
+          margin-left:20px;
+        }
+      }
+      .integral-item{
+        margin: 10px 0;
+        .integral-input{
+          margin-left: 20px;
+        }
+      }
+      &-hd {
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        .use-invoice {
+          float: right;
+        }
+        .btn-text {
+          float: right;
+          font-weight: normal;
+          font-size: 12px;
+          cursor: default;
+        }
+      }
+      &-bd {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        &.address {
+
+        }
+        &.address-list {
+          .sp-btn-picker-group {
+            .address-item {
+              &:not(:last-child) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+        .address-item {
+          @include clearfix();
+          .address-item-detail {
+            float: left;
+            width: calc(100% - 200px);
+            font-size: 13px;
+            height: 30px;
+            line-height: 30px;
+            @include clearfix();
+            padding: 0 10px;
+            &:hover {
+              background-color: #E8E8E8;
+              .btn-tools {
+                display: block;
+              }
+            }
+            .phone {
+              float: left;
+              margin-right: 10px;
+              color: #888;
+            }
+            .d-detail {
+              float: left;
+              color: #888;
+            }
+            .def-tag {
+              float: left;
+              color: #fff;
+              border-radius: 2px;
+              padding: 1px 2px;
+              margin-left: 20px;
+              font-size: 12px;
+              height: 20px;
+              line-height: 20px;
+              margin-top: 5px;
+            }
+            .btn-tools {
+              float: right;
+              display: none;
+              .btn-text {
+                margin-right: 10px;
+                cursor: default;
+              }
+            }
+          }
+        }
+        .goods-list {
+          &-item {
+            @include clearfix();
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+            .goods-img {
+              float: left;
+              width: 80px;
+              height: 80px;
+              margin-right: 10px;
+            }
+            .goods-name {
+              float: left;
+              width: 300px;
+              @include multi-ellipsis(2);
+              font-size: 12px;
+              color: #666;
+              margin-right: 50px;
+            }
+            .goods-price {
+              float: left;
+              width: 100px;
+              .sp-price {
+                font-family: Arial, Helvetica, sans-serif;
+                position: relative;
+                top: -2px;
+              }
+              .price__symbol {
+                font-size: 12px;
+                color: #666;
+              }
+              .price__int {
+                font-size: 12px;
+                color: #666;
+              }
+              .price__decimal {
+                font-size: 12px;
+                color: #666;
+              }
+            }
+            .goods-num {
+              float: left;
+              font-size: 12px;
+              color: #666;
+            }
+          }
+        }
+        &.ziti {
+          color: #606266;
+          .ziti-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+          }
+          .ziti-address {
+            font-size: 12px;
+          }
+          .ziti-time {
+            font-size: 12px;
+          }
+          .ziti-phone {
+            font-size: 12px;
+          }
+        }
+        &.ziti-list {
+          color: #606266;
+          display: flex;
+          &>div{
+            margin-left: 45px;
+            line-height: 25px;
+          }
+          .ziti-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+          }
+          .ziti-address {
+            font-size: 12px;
+          }
+          .ziti-time {
+            font-size: 12px;
+          }
+          .ziti-phone {
+            font-size: 12px;
+          }
+        }
+        
+        &.invoice {
+          .invoice-info {
+            margin-top: 20px;
+          }
+        }
+        .invoice-row {
+          width: 30%;
+          margin-bottom: 10px;
+          &__title {
+            font-size: 12px;
+            color: #666;
+          }
+          .tip {
+            display: none;
+            color: $color-brand-primary;
+            font-size: 12px;
+            text-align: right;
+            margin-top: 5px;
+          }
+          &.invalid {
+            .sp-input {
+              border-color: $color-brand-primary;
+            }
+            .tip {
+              display: block;
+            }
+          }
+        }
+        &.coupon-list {
+          .couponInfo{
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .not-use {
+            height: 92px;
+            color: #666;
+            padding: 38px 0px;
+          }
+          .sp-btn-picker {
+            height: auto;
+            line-height: normal;
+            width: 180px;
+            .ec-icon::before {
+              top: 3px;
+            }
+          }
+          .coupon-wrap {
+            background: #7EA7CE;
+            padding: 14px 0 10px;
+            line-height: 16px;
+          }
+          .coupon-name {
+            color: #fff;
+            font-size: 26px;
+            text-align: left;
+            padding-left: 20px;
+            .price__symbol{
+              color: #fff;
+            }
+            .price__int{
+              color: #fff;
+            }
+            .price__decimal{
+              color: #fff;
+            }
+          }
+          .symbol {
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+            top: -1px;
+            left: 2px;
+          }
+          .coupon-title {
+            color: #fff;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 12px;
+          }
+          .coupon-date {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            text-align: left;
+            color: #666;
+          }
+        }
+        &.checkout-total {
+          padding: 20px 0;
+          text-align: right;
+          margin-bottom: 0;
+          .total-row {
+            margin-left: 530px;
+            @include clearfix();
+            .label {
+              float: left;
+              width: 450px;
+              text-align: right;
+            }
+            .value {
+              float: left;
+              width: 140px;
+              text-align: right;
+            }
+          }
+        }
+        
+      }
+      // .content-item-bd {
+      //   .coupon-item {
+      //     width: 250px;
+      //     height: 100px;
+      //     border: 1px solid $color-border-gray-light;
+      //     display: inline-block;
+      //     padding: 10px;
+      //     margin-right: 10px;
+      //     margin-bottom: 10px;
+      //     position: relative;
+      //     cursor: pointer;
+      //     vertical-align: top;
+      //     &.empty {
+      //       text-align: center;
+      //       // height: 78px;
+      //       // 
+      //       .coupon-title {
+      //         line-height: 78px;
+      //         margin-bottom: 0;
+      //       }
+      //     }
+      //     .coupon-amount,
+      //     .coupon-discount {
+      //       font-size: 22px;
+      //       font-weight: bold;
+      //       margin-bottom: 10px;
+      //       line-height: 1;
+      //       .symbol {
+      //         font-size: 14px;
+      //         font-weight: normal;
+      //       }
+      //     }
+      //     .coupon-title,
+      //     .coupon-time {
+      //       color: #606266;
+      //     }
+      //     .coupon-title {
+      //       margin-bottom: 2px;
+      //     }
+      //     .corner {
+      //       position: absolute;
+      //       bottom: 0;
+      //       right: 0;
+      //       width: 0;
+      //       height: 0;
+      //       border-bottom: 19px solid #ea2329;
+      //       border-left: 19px solid transparent;
+      //       z-index: 10;
+      //       opacity: 0;
+            
+      //     }
+      //     &.active {
+      //       // padding: 9px;
+      //     }
+      //     .ec-icon {
+      //         position: absolute;
+      //         bottom: 0;
+      //         right: 0;
+      //         &::before {
+      //           position: absolute;
+      //           font-size: 10px;
+      //           color: #fff;
+      //           width: 6px;
+      //           height: 6px;
+      //           bottom: 6px;
+      //           right: 5px;
+      //           z-index: 999;
+      //         }
+      //       }
+      //   }
+      //   .active {
+      //     border: 2px solid $color-brand-primary;
+      //     .corner {
+      //       opacity: 1;
+            
+      //     }
+      //   }
+      //   .invoice-radio {
+      //     margin-right: 30px;
+      //     margin-bottom: 15px;
+      //   }
+      //   .invoice-row {
+      //     width: 30%;
+      //     margin-bottom: 10px;
+      //     &__title {
+      //       font-size: 12px;
+      //       color: #666;
+      //     }
+      //     .tip {
+      //       display: none;
+      //       color: $color-brand-primary;
+      //       font-size: 12px;
+      //       text-align: right;
+      //       margin-top: 5px;
+      //     }
+      //     &.invalid {
+      //       .sp-input {
+      //         border-color: $color-brand-primary;
+      //       }
+      //       .tip {
+      //         display: block;
+      //       }
+      //     }
+      //   }
+      // }
+      // .coupon-items {
+      //   max-height: 250px;
+      //   overflow: auto;
+      // }
+      // .content-item-ft {
+      //   .content-item-f-spinput {
+      //     width: 750px;
+      //     display: inline-block;
+      //   }
+      //   .content-item-ft-btn {
+      //     border-radius: 3px;
+      //     background-color: $color-brand-primary;
+      //     color: #fff;
+      //     width: 105px;
+      //     height: 34px;
+      //     border: 1px solid $color-border-gray-light;
+      //     line-height: 34px;
+      //     text-align: center;
+      //     cursor: pointer;
+      //     margin: 0 0px 20px 20px;
+      //   }
+      //   &-total {
+      //     padding: 40px 30px 0;
+      //     // height: 34px;
+      //     // line-height: 34px;
+      //     font-size: 14px;
+      //     text-align: right;
+      //     .total-row {
+      //       color: #797979;
+      //       margin-bottom: 10px;
+      //       &:last-child {
+      //         margin-bottom: 0;
+      //       }
+      //     }
+      //     .text-red {
+      //       display: inline-block;
+      //       width: 100px;
+      //       font-weight: bold;
+      //     }
+      //   }
+      // }
+      // .content-item-btn {
+      //   border-radius: 3px;
+      //   margin-left: 40px;
+      //   width: 105px;
+      //   height: 34px;
+      //   border: 1px solid $color-border-gray-light;
+      //   line-height: 34px;
+      //   text-align: center;
+      //   cursor: pointer;
+      //   margin-top: 20px;
+      // }
+    }
+    .content-ft {
+      padding: 20px 0;
+      text-align: right;
+      .actual-total {
+        display: inline-block;
+        margin-right: 20px;
+        color: #606266;
+        .label {
+          color: #666;
+        }
+        .sp-price {
+          font-size: 26px;
+        }
+      }
+      .content-ft-btn {
+        border-radius: 2px;
+        width: 105px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        display: inline-block;
+      }
+    }
+
+    .address-active {
+      border: 1px solid $color-brand-primary;
+    }
+  }
+  .address-add {
+    padding: 30px;
+  }
+}

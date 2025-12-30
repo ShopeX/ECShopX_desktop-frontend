@@ -1,0 +1,139 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.widget-0010 {
+  .minicart-wrap {
+    position: relative;
+    &:hover {
+      .minicart-list {
+        // display: block;
+        border: 1px solid #e5e5e5;
+        box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2);
+        height: 400px;
+        transition: height 0.2s;
+      }
+    }
+  }
+  .minicart-btn {
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 38px;
+
+    .count {
+      right: 3px;
+      color: #fff;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .minicart-list {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+
+    z-index: 9999;
+    // padding: 10px;
+    background: #fff;
+    // display: none;
+    height: 0;
+    overflow: hidden;
+    .cart-main-wrap {
+      height: 300px;
+      padding: 10px;
+      overflow-y: auto;
+    }
+    .cart-main {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .cart-sub {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .cart-item {
+      @include clearfix();
+    }
+    .goods-image {
+      float: left;
+      img {
+        display: block;
+      }
+    }
+    .goods-info {
+      &-warp {
+        margin-left: 70px;
+      }
+      &__name {
+        font-size: 13px;
+        line-height: 16px;
+        height: 42px;
+      }
+      &__ft {
+        .price__symbol {
+          margin-top: 3px;
+          font-size: 12px;
+        }
+        .price__int {
+          font-size: 16px;
+        }
+        .price__decimal {
+          font-size: 16px;
+        }
+        .goods-num {
+          float: right;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .cart-total {
+    border-top: 1px solid #e3e3e3;
+    height: 100px;
+    &__hd {
+      padding: 15px 0 10px;
+      font-size: 14px;
+      text-align: center;
+      .goods-price {
+        margin-left: 5px;
+        .price__symbol {
+          margin-top: 3px;
+          font-size: 12px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    &__bd {
+      text-align: center;
+      .btn {
+        display: inline-block;
+        // padding: 0 10px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+        margin: 0 10px;
+        cursor: pointer;
+        width: 90px;
+        box-sizing: border-box;
+        vertical-align: bottom;
+      }
+      .btn-cart {
+        border: 1px solid #e3e3e3;
+      }
+    }
+  }
+}

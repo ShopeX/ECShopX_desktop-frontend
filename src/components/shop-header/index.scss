@@ -1,0 +1,29 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.header-bar {
+  width: 100%;
+  background: #FFF;
+  &__topbar {
+    .container-shop{
+      min-height: auto;
+      background: #FFF;
+      text-align: end;
+      display: flex;
+      justify-content: space-between;
+      .exit-btn {
+        font-size: 13px;
+        cursor: pointer;
+        color: rgb(71, 158, 233);
+      }
+    }
+    //background: #f2f2f2;
+    padding: 5px 0;
+    text-align: end;
+  }
+  .clearfix:after{
+   display: none;
+ }
+}

@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"auth-header.index.243996-0": "还没有账号",
+		"auth-header.index.243996-1": "免费注册",
+		"auth-header.index.243996-2": "现在登录"
+	},
+	"en": {
+		"auth-header.index.243996-0": "I don't have an account yet",
+		"auth-header.index.243996-1": "Free registration",
+		"auth-header.index.243996-2": "log in now"
+	}
+}

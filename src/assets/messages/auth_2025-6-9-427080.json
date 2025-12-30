@@ -1,0 +1,32 @@
+{
+	"zh": {
+		"auth.bindphone.270187-0": "绑定手机号",
+		"auth.bindphone.270187-1": "手机号/电子邮箱",
+		"auth.bindphone.270187-2": "图片验证码",
+		"auth.bindphone.270187-3": "动态验证码",
+		"auth.bindphone.270187-4": "确定",
+		"auth.bindphone.270187-5": "手机号填写错误",
+		"auth.bindphone.270187-6": "图形验证码填写错误",
+		"auth.bindphone.270187-7": "短信验证码填写错误",
+		"auth.bindphone.270187-8": "获取验证码",
+		"auth.bindphone.270187-9": "绑定成功",
+		"auth.bindphone.270187-10": "发送成功",
+		"auth.bindphone.270187-11": "${e}秒后重发",
+		"auth.bindphone.270187-12": "重发验证码"
+	},
+	"en": {
+		"auth.bindphone.270187-0": "Bind phone number",
+		"auth.bindphone.270187-1": "Mobile phone number/email address",
+		"auth.bindphone.270187-2": "Image verification code",
+		"auth.bindphone.270187-3": "Dynamic verification code",
+		"auth.bindphone.270187-4": "sure",
+		"auth.bindphone.270187-5": "Incorrect phone number input",
+		"auth.bindphone.270187-6": "Incorrect filling of graphic verification code",
+		"auth.bindphone.270187-7": "Error in filling in SMS verification code",
+		"auth.bindphone.270187-8": "Obtain verification code",
+		"auth.bindphone.270187-9": "Binding successful",
+		"auth.bindphone.270187-10": "Sent successfully",
+		"auth.bindphone.270187-11": "Resend in ${e} seconds",
+		"auth.bindphone.270187-12": "Resend verification code"
+	}
+}

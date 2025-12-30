@@ -1,0 +1,140 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-profile {
+  margin: 0 auto 100px;
+  &__b {
+    padding-top: 60px;
+  }
+  .left {
+    float: left;
+    width: 230px;
+  }
+  .right {
+    float: left;
+    width: calc(100% - 230px);
+    .r-content {
+      width: 690px;
+      margin: 0 auto;
+    }
+    .h-title {
+      font-size: 16px;
+      background: $color-border-gray-light;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .hobby {
+    &-list {
+      &__item {
+        float: left;
+        width: 25%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .sms-info {
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
+      .y-label {
+        text-align: right;
+        font-size: 16px;
+        line-height: 46px;
+        width: 16%;
+        float: left;
+      }
+      .sp-datepicker {
+        float: left;
+        width: 84%;
+      }
+    }
+  }
+  .profile-container-member {
+    margin-bottom: 50px;
+    width: 690px;
+    .btn-warp {
+      .btn-c {
+        width: 27%;
+        float: left;
+      }
+    }
+    .other-account-info {
+      .mb-iconfont {
+        font-size: 18px;
+      }
+      .mb-iconfont-weixin2 {
+        color: #4fc000;
+      }
+      .mb-iconfont-weibo2 {
+        color: #ea5a59;
+      }
+      .mb-iconfont-QQ {
+        color: #68a6e1;
+      }
+      .account {
+        margin: 0 10px;
+        min-width: 100px; 
+        display: inline-block;
+      }
+      .bind-btn {
+        color: #114686;
+        cursor: pointer;
+      }
+    }
+  }
+  .form-item__email {
+    margin-bottom: 5px;
+  }
+  .tip {
+    font-size: 12px;
+    color: #c51333;
+    margin-left: 16%;
+  }
+  @include respond(sm) {
+    margin-bottom: 50px;
+    &__b {
+      padding-top: 0;
+      > .left {
+        display: none;
+      }
+    }
+    .right {
+      width: 100%;
+      padding: 0;
+      .h-title {
+        text-align: center;
+      }
+      .r-content {
+        width: 100%;
+      }
+      .profile-container-member {
+        padding: 0 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        .btn-warp {
+          .btn-c {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .sms-info {
+      .left {
+        width: 22%;
+      }
+      .right {
+        width: 78%;
+      }
+    }
+    .hobby-list__item {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-item {
+  background-color: #fff;
+
+  &.pointitem{
+    min-height: 1200px;
+
+    .goods-list{
+      display: flex;
+      flex-wrap: wrap;
+
+      .goods-card-pointitem {
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+    }
+  }
+  
+  .bread-crumb {
+    margin: 0 0 20px 0;
+  }
+  .search-shop {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    .shop-img {
+      width: 125px;
+      float: left;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .shop-info {
+      float: left;
+      width: calc(100% - 225px);
+      padding-left: 40px;
+      padding-top: 7px;
+      div {
+        font-size: 14px;
+        &:first-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .shop-link {
+      color: #1766dd;
+      width: 100px;
+      padding-top: 21px;
+      display: inline-block;
+      float: left;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+  
+  .tab-wrap {
+    height: 41px;
+    margin: 10px 0;
+    border-bottom: 1px solid #e4e7ed;
+    .tab-list {
+      display: inline-block;
+      border: 1px solid #e4e7ed;
+      border-bottom: none;
+      .tab-item {
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        padding: 0 20px;
+        text-align: center;
+        display: inline-block;
+        border-right: 1px solid #e4e7ed;
+        cursor: pointer;
+        position: relative;
+        float: left;
+        &:last-child {
+          border-right-width: 0;
+        }
+        &.active {
+          background:  $color-brand-primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .pagination-wrap {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .loading-data, .no-data {
+    text-align: center;
+    padding-top: 10px;
+  }
+}

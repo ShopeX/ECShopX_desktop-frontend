@@ -1,0 +1,42 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.sp-float-menu {
+  position: fixed;
+  right: 0;
+  // bottom: 80px;
+  top: 20%;
+  transform: translateY(50%);
+  z-index: $z-index-toolbar;
+  width: 50px;
+  height: 140px;
+  background-color: #fff;
+  &-item {
+    width: 30px;
+    min-height: 40px;
+    margin: 0 0 10px;
+    text-align: center;
+    cursor: pointer;
+    &__icon, &__img {
+      display: inline-block;
+      margin: 16px auto 5px;
+    }
+    &__icon {
+      font-size: 40px;
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 1.2;
+    }
+  }
+
+  @include respond(sm) {
+    &-item {
+       &__text {
+        //  display: none;
+       }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"comps.buy-toolbar.158642-0": "商品已下架",
+		"comps.buy-toolbar.158642-1": "赠品不可购买",
+		"comps.buy-toolbar.158642-2": "活动即将开始",
+		"comps.buy-toolbar.158642-3": "加入购物车",
+		"comps.buy-toolbar.158642-4": "立即购买"
+	},
+	"en": {
+		"comps.buy-toolbar.158642-0": "The product has been taken down",
+		"comps.buy-toolbar.158642-1": "Gifts cannot be purchased",
+		"comps.buy-toolbar.158642-2": "The event is about to begin",
+		"comps.buy-toolbar.158642-3": "add to cart",
+		"comps.buy-toolbar.158642-4": "BUY NOW"
+	}
+}

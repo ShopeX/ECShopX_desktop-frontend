@@ -1,0 +1,143 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+.page-checkout {
+  background-color: #fff;
+  .coupon-group{
+    margin-bottom: 10px;
+    &__input{
+      width: 200px;
+    }
+    &__select{
+      width: 200px;
+      .sort-select__value{
+        background: #fff;
+        border: 1px solid #ccc;
+      }
+      &-text{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        color: $color-primary-text;
+        vertical-align: middle;
+      }
+    }
+    &__hd{
+      float: right;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: $color-primary-text;
+    }
+  }
+  .cart-wrap {
+    .cart-sec {
+      padding-bottom: 10px;
+      &-hd {
+        margin: 10px 0;
+        color: $color-primary-text;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &-bd{
+        .payments-list{
+          @include clearfix;
+          .payment-item{
+            float: left;
+            margin-right: 30px;
+            img{
+              width: 55px;
+            }
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+        .invoice-radio{
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: $color-primary-text;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .cart-main {
+    font-size: $font-size-large;
+    .cart-sec {
+      &-hd {
+        margin: 10px 0;
+        color: $color-primary-text;
+        font-size: 16px;
+        font-weight: bold;
+        h3 {
+          margin: 10px 0;
+          color: $color-primary-text;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+    .checkout-transport{
+      margin-bottom: 10px;
+      &__text{
+        font-size: 14px;
+        color: $color-primary-text;
+        margin-bottom: 5px;
+      }
+    }
+    .gift-info{
+      padding-left: 0;
+      .cart-item{
+        margin-top: 20px;
+      }
+    }
+    .cart-gift-item{
+      margin-top: 20px;
+    }
+  }
+  .cart-side {
+    float: right;
+    position: static;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .cart-address {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #adadad;
+    .btn-edit {
+      position: absolute;
+      font-weight: normal;
+      right: 5px;
+      top: 0;
+      cursor: pointer;
+    }
+  }
+
+  .address-info {
+    line-height: 1.5;
+    padding: 0 0 10px;
+    &>p{
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+    // &__label{
+    //   font-size: 16px;
+    //   line-height: 24px;
+    //   letter-spacing: 2px;
+    //   color: $color-primary-text;
+    // }
+    &__addbtn{
+      text-align: right;
+      margin-top: 40px;
+    }
+  }
+  .cart-bottom-tips{
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 1px;
+  }
+}

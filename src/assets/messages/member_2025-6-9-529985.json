@@ -1,0 +1,24 @@
+{
+	"zh": {
+		"member.collector.299067-0": "我的收藏",
+		"member.collector.299067-1": "您的收藏清单是空白的，保存你的心仪单品，实时掌握商品动态。",
+		"member.collector.299067-2": "您的收藏夹已成功添加入购物袋",
+		"member.collector.299067-3": "返回",
+		"member.collector.299067-4": "前往购物袋",
+		"member.collector.299067-5": "我的账户_标品官方网站",
+		"member.collector.299067-6": "提示",
+		"member.collector.299067-7": "请确认是否移除收藏?",
+		"member.collector.299067-8": "已成功删除"
+	},
+	"en": {
+		"member.collector.299067-0": "My collection",
+		"member.collector.299067-1": "Your collection list is blank. Save your favorite items and keep track of product updates in real-time.",
+		"member.collector.299067-2": "Your favorites have been successfully added to your shopping bag",
+		"member.collector.299067-3": "return",
+		"member.collector.299067-4": "Go to shopping bag",
+		"member.collector.299067-5": "My Account _ Standard Official Website",
+		"member.collector.299067-6": "Tips",
+		"member.collector.299067-7": "Please confirm if you want to remove the collection?",
+		"member.collector.299067-8": "Successfully deleted"
+	}
+}

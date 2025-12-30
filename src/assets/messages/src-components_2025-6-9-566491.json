@@ -1,0 +1,24 @@
+{
+	"zh": {
+		"sp-header.index.663900-0": "首页",
+		"sp-header.index.663900-1": "请登录",
+		"sp-header.index.663900-2": "注册",
+		"sp-header.index.663900-3": "你好",
+		"sp-header.index.663900-4": "退出",
+		"sp-header.index.663900-5": "我的购物车",
+		"sp-header.index.663900-6": "我的订单",
+		"sp-header.index.663900-7": "会员中心",
+		"sp-header.index.663900-8": "商家入驻"
+	},
+	"en": {
+		"sp-header.index.663900-0": "home page",
+		"sp-header.index.663900-1": "Please log in",
+		"sp-header.index.663900-2": "register",
+		"sp-header.index.663900-3": "Hello",
+		"sp-header.index.663900-4": "exit",
+		"sp-header.index.663900-5": "My shopping cart",
+		"sp-header.index.663900-6": "My Order",
+		"sp-header.index.663900-7": "member center",
+		"sp-header.index.663900-8": "Merchants settle in"
+	}
+}

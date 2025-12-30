@@ -1,0 +1,36 @@
+{
+	"zh": {
+		"member.address-item-add.704004-0": "收货人：",
+		"member.address-item-add.704004-1": "手机号：",
+		"member.address-item-add.704004-2": "所在城市：",
+		"member.address-item-add.704004-3": "详细地址：",
+		"member.address-item-add.704004-4": "邮编：",
+		"member.address-item-add.704004-5": "设置为默认收货地址",
+		"member.address-item-add.704004-6": "确认",
+		"member.address-item-add.704004-7": "取消",
+		"member.address-item-add.704004-8": "收件人必填",
+		"member.address-item-add.704004-9": "电话号码必填",
+		"member.address-item-add.704004-10": "地址必填",
+		"member.address-item-add.704004-11": "详细地址必填",
+		"member.address-item-add.704004-12": "邮政编码必填",
+		"member.address-item-add.704004-13": "地址新增成功",
+		"member.address-item-add.704004-14": "地址更新成功"
+	},
+	"en": {
+		"member.address-item-add.704004-0": "consignee:",
+		"member.address-item-add.704004-1": "cell-phone number:",
+		"member.address-item-add.704004-2": "Location City:",
+		"member.address-item-add.704004-3": "Detailed address:",
+		"member.address-item-add.704004-4": "Postal Code:",
+		"member.address-item-add.704004-5": "Set as default shipping address",
+		"member.address-item-add.704004-6": "confirm",
+		"member.address-item-add.704004-7": "cancel",
+		"member.address-item-add.704004-8": "Recipient is required",
+		"member.address-item-add.704004-9": "Phone number is required",
+		"member.address-item-add.704004-10": "Address required",
+		"member.address-item-add.704004-11": "Detailed address is required",
+		"member.address-item-add.704004-12": "Postal code is required",
+		"member.address-item-add.704004-13": "Address added successfully",
+		"member.address-item-add.704004-14": "Address updated successfully"
+	}
+}

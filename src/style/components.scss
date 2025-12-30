@@ -1,0 +1,90 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+// .sp-price {
+//   font-size: $font-size-large;
+//   color: #212322;
+//   letter-spacing: 1px;
+//   .price {
+//     &__symbol {
+//       margin-right: 8px;
+//     }
+//   }
+// }
+
+.sp-btn {
+  transition: all 0.3s;
+  &:hover {
+    background: lighten($color-brand-primary, 20%);
+    color: #fff;
+  }
+  &.is-disabled,
+  &:disabled {
+    opacity: 1;
+    background: lighten($color-brand-primary, 70%);
+  }
+}
+
+.sp-label {
+  background: #fff;
+  color: $color-brand-primary;
+  border: 1px solid $color-brand-primary;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+}
+
+[type='radio'] {
+  $radio-size: 16px;
+
+  &:checked,
+  &:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  &:checked + span,
+  &:not(:checked) + span {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+  &:checked + span:before,
+  &:not(:checked) + span:before {
+    background: #fff;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: $radio-size;
+    height: $radio-size;
+    border: 1px solid $color-brand-primary;
+    border-radius: 100%;
+  }
+  &:checked + span:after,
+  &:not(:checked) + span:after {
+    $radio-inner-size: $radio-size - 4px * 2;
+    content: '';
+    width: $radio-inner-size;
+    height: $radio-inner-size;
+    background: $color-brand-primary;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+  }
+  &:not(:checked) + span:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  &:checked + span:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

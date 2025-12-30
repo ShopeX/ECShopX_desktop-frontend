@@ -1,0 +1,124 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@import "./member.scss";
+.page-coupon {
+  background: #f5f5f5;
+  overflow: hidden;
+  .container {
+    background: transparent;
+  }
+  .member-content-right{
+    background: $color-bg-gray;
+    &-header {
+      background: #fff;
+    }
+  }
+  .loading-container {
+    text-align: center;
+  }
+  .no-coupon {
+    padding: 200px 0;
+    text-align: center;
+    color: #888;
+  }
+  .coupon-list {
+    @include clearfix();
+    .coupon-item {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      // 一行三张优惠券，设置4n导致显示问题，暂注释
+      // &:nth-child(4n + 4) {
+      //   margin-right: 0;
+      // }
+    }
+  }
+  .coupon-toolbar {
+    height: 32px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 20px;
+    .coupon-type {
+      font-size: 12px;
+      display: inline-block;
+      padding: 0 15px;
+      cursor: pointer;
+      border: 1px solid #f8f8f8;
+      text-align: center;
+      &__current, .ec-icon-unfold{
+        color: $color-brand-primary;
+        display: inline-block;
+      }
+      .ec-icon-unfold {
+        vertical-align: bottom;
+      }
+      &__cover {
+        display: none;
+        &-item {
+          display: block;
+          &:hover {
+            color: $color-brand-primary;
+          }
+        }
+      }
+      &:hover {
+        border-color: #efefef;
+        background: #fff;
+        .coupon-type__cover {
+          display: block;
+        }
+        .ec-icon-unfold {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &__content{
+    padding: 20px;
+    background: #fff;
+  }
+  &__page-wraper{
+    text-align: right;
+  }
+  .pagination-wrap {
+    text-align: right;
+    margin-top: 10px;
+  }
+  &__block{
+    border-top: 1px dotted #ccc;
+    padding-top: 20px;
+    &.lose-eff{
+      .coupon-item{
+        opacity: 0.5;
+      }
+    }
+    &-title{
+      font-size: 16px;
+      text-align: left;
+      font-weight: bold;
+      line-height: 16px;
+      letter-spacing: 2px;
+      color: $color-secondary-text;
+      margin-bottom: 10px;
+    }
+  }
+  &__coupon{
+    @include clearfix();
+    &-item{
+      float: left;
+      margin-bottom: 35px;
+      margin-right: 74px;
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+  }
+  .member__tips {
+    text-align: center;
+  }
+}

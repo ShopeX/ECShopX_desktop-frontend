@@ -1,0 +1,198 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@import "variables";
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin text-overflow(){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin pdt-img($width, $height: "", $type: contain, $offset: 0) {
+  $height: $width;
+  @if $height != "" {
+    $height: $width
+  }
+  
+  $offset: strip-unit($offset);
+  width: $width;
+  height: $height * 1.2825;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  @if $type == contain {
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  } @else if $type == cover {
+    img {
+      display: block;
+      position: absolute;
+      width: $width;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @if $offset > 0 {
+        margin: #{$offset}px 0 0 #{$offset}px;
+      }
+    }
+  }
+}
+
+@mixin clearfix(){
+  &:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow:hidden;}
+  overflow: hidden;
+}
+
+@mixin multi-ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+@mixin pointitem-detail-title() {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #444444;
+    width: 70px;
+    display: inline-block; 
+    flex-shrink: 0;
+    margin-right: 0;
+}
+
+@mixin avatar ($size, $radius:$border-radius) {
+  background: rgba(#fff, .5);
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  text-align: center;
+  border-radius: $radius;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+}
+
+@mixin mult-ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+@mixin arrow ($size:4px) {
+  content: "";
+  border: $size / 2 solid $color-border-gray;
+  display: block;
+  width: $size;
+  height: $size;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+}
+
+@mixin input-style() {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $input-text-color;
+  background: #fff;
+  box-sizing: border-box;
+  height: $input-height;
+  padding: 3px 8px;
+  line-height: 1;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $border-radius;
+  -webkit-appearance: none;
+  transition: color-border .15s;
+  outline: none;
+  &:hover {
+    border-color: $input-border-color-hover;
+  }
+  &:disabled {
+    border-color: $input-text-color-disabled !important;
+    background-color: $color-bg-gray;
+  }
+  &::placeholder {
+    color: $color-disabled-text;
+  }
+}
+
+@mixin respond ($breakpoint) {
+  $breakpoint: unquote($breakpoint);
+  $respond-key: null;
+  $breakpoint-value: null;
+
+  @if str-index($breakpoint, "+") != null {
+    $breakpoint: str-slice($breakpoint, 0, str-index($breakpoint, "+") - 1);
+    $respond-key: "min-width";
+  } @else {
+    $respond-key: "max-width";
+  }
+
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (#{$respond-key}: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}';
+  }
+}
+
+@mixin respond-between ($lower, $upper) {
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+  } @else {
+    @if (map-has-key($breakpoints, $lower) == false) {
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    @if (map-has-key($breakpoints, $upper) == false) {
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}
+
+@mixin position($t:'',$r:'',$b:'',$l:''){
+  @if($t == '' and $r == ''and $b == '' and  $l == ''){
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  } @else{
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+  }
+}

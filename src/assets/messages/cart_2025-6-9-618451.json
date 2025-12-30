@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"comps.coupon-picker.184020-0": "优惠券",
+		"comps.coupon-picker.184020-1": "领取",
+		"comps.coupon-picker.184020-2": "兑换券",
+		"comps.coupon-picker.184020-3": "{0}折",
+		"comps.coupon-picker.184020-4": "代金券",
+		"comps.coupon-picker.184020-5": "满{0}可用",
+		"comps.coupon-picker.184020-6": "折扣券",
+		"comps.coupon-picker.184020-7": "领取成功"
+	},
+	"en": {
+		"comps.coupon-picker.184020-0": "coupon",
+		"comps.coupon-picker.184020-1": "receive",
+		"comps.coupon-picker.184020-2": "Exchange coupons",
+		"comps.coupon-picker.184020-3": "{0} discount",
+		"comps.coupon-picker.184020-4": "voucher",
+		"comps.coupon-picker.184020-5": "Full {0} available",
+		"comps.coupon-picker.184020-6": "coupon",
+		"comps.coupon-picker.184020-7": "Received successfully"
+	}
+}

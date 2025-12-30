@@ -1,0 +1,12 @@
+{
+	"zh": {
+		"trade.logistics.931328-0": "会员中心",
+		"trade.logistics.931328-1": "收货地址",
+		"trade.logistics.931328-2": "您没有相关的物流信息"
+	},
+	"en": {
+		"trade.logistics.931328-0": "Member Center",
+		"trade.logistics.931328-1": "Receiving address",
+		"trade.logistics.931328-2": "You do not have any relevant logistics information"
+	}
+}

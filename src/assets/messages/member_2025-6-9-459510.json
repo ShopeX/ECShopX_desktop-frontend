@@ -1,0 +1,34 @@
+{
+	"zh": {
+		"member.address-add.594384-0": "会员中心",
+		"member.address-add.594384-1": "收货人",
+		"member.address-add.594384-2": "手机号",
+		"member.address-add.594384-3": "所在城市",
+		"member.address-add.594384-4": "详细地址",
+		"member.address-add.594384-5": "邮编",
+		"member.address-add.594384-6": "设置为默认收货地址",
+		"member.address-add.594384-7": "保存",
+		"member.address-add.594384-8": "会员中心_Aigle官方网站",
+		"member.address-add.594384-9": "我的账户_Aigle官方网站",
+		"member.address-add.594384-10": "请输入收货人姓名",
+		"member.address-add.594384-11": "请输入详细地址",
+		"member.address-add.594384-12": "修改成功！",
+		"member.address-add.594384-13": "保存成功！"
+	},
+	"en": {
+		"member.address-add.594384-0": "Member Center",
+		"member.address-add.594384-1": "consignee",
+		"member.address-add.594384-2": "cell-phone number",
+		"member.address-add.594384-3": "city",
+		"member.address-add.594384-4": "Detailed address",
+		"member.address-add.594384-5": "zip code",
+		"member.address-add.594384-6": "Set as default shipping address",
+		"member.address-add.594384-7": "save",
+		"member.address-add.594384-8": "Member Center_Sigle Official Website",
+		"member.address-add.594384-9": "My Account _ Igle Official Website",
+		"member.address-add.594384-10": "Please enter the recipient's name",
+		"member.address-add.594384-11": "Please enter detailed address",
+		"member.address-add.594384-12": "Modified successfully!",
+		"member.address-add.594384-13": "Saved successfully!"
+	}
+}

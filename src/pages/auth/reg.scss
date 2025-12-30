@@ -1,0 +1,274 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$form-w: 555px;
+$reg-pic-w: 555px;
+
+.page-auth-reg {
+	background: transparent;
+	height: 590px;
+	align-items: center;
+	.reg-logo{
+			left: auto;
+			// top: 100px;
+			position: absolute;
+			width: 561px;
+			height: 590px;
+		}
+	.reg-main{
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 350px;
+		height: 430px;
+		justify-content: center;
+		align-items: center;
+		top: 82px;;
+		left: 844px;
+		position: relative;
+		.reg-title {
+			font-weight: 400;
+			color: #8C8C8C;
+			height: 26px;
+			line-height: 39px;
+			font-size: 26px;
+			margin: 24px 0;
+			text-align: center;
+		}
+		.auth-header {
+			border-bottom: 1px solid $color-border-gray;
+			margin-bottom: 60px;
+			.login-link {
+				float: right;
+				font-size: 16px;
+				color: #606266;
+			}
+		}
+		.reg {
+			&-process {
+					text-align: center;
+					height: 60px;
+					.process-item {
+						display: inline-block;
+						margin-right: 89px;
+						position: relative;
+						&:nth-child(3){
+							margin-right: 9px;	
+						}
+						.status {
+							width: 28px;
+							height: 28px;
+							line-height: 26px;
+							text-align: center;
+							border-radius: 50%;
+							border: 2px solid $color-border-gray;
+							.num {
+								color:$color-border-gray;
+								font-weight: bold;
+							}
+							.ec-icon-check {
+								display: none;
+								font-weight: bold;
+							}
+						}
+						.line {
+							position: absolute;
+							top: 15px;
+							right: -89px;
+							width: 89px;
+							height: 2px;
+							background: $color-border-gray;
+							z-index: 10;
+							&.active {
+								background: $color-custom-theme;
+							}
+						}
+						.text {
+							position: absolute;
+							top: 30px;
+							left: -35px;
+							width: 100px;
+							z-index: 10;
+							color: $color-border-gray;
+						}
+						&.active {
+							.status {
+								border-color: $color-custom-theme;
+								.num {
+									display: none;
+								}
+								.ec-icon-check {
+									display: inline-block;
+									color: $color-custom-theme;
+								}
+							}
+							.text {
+								font-weight: bold;
+								color: $color-custom-theme;
+							}
+						}
+					}
+				}
+			&-form {
+				.form {
+					margin-top: 4px;
+					.dash-line {
+						border-top: 1px dashed $color-border-gray;
+					}
+					.form-item {
+						padding: 0 24px;
+						// margin-bottom: 25px;
+						margin-bottom: 16px;
+						position: relative;
+						.label-text {
+							position: absolute;
+							left: 15px;
+							top: 16px;
+							z-index: 10;
+						}
+						.sp-input {
+							width: 100%;
+							overflow: hidden;
+							&__input {
+								height: 38px;
+							}
+						}
+						&.yzm-feild {
+							.sp-input {
+								width: 202px;
+							}
+							.yzm-img {
+								float: right;
+								width: 92px;
+								height: 38px;
+								cursor: pointer;
+								img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+						&.vcode-feild{
+							.sp-input {
+								width: 202px;
+							}
+							.vcode-btn {
+								float: right;
+								width: 92px;
+								height: 38px;
+								cursor: pointer;
+								img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+							.sp-timer {
+								height: 38px;
+								width: 92px;
+								background: #fff;
+								border: 1px solid #dcdcdc;
+								font-size: 14px;
+								cursor: default;
+								color: #8C8C8C;
+								letter-spacing: -0.4480000138282776px;
+							}
+							.form-item__error-message {
+								right: 35%;
+							}
+						}
+						&.btn-container {
+							margin-top: 24px;
+						}
+						.sp-btn {
+							height: 38px;
+							&__primary{
+								background: linear-gradient(270deg, #FF8600 0%, #FF5A00 100%);
+							}
+							&__txt {
+								color: #fff;
+							}
+							&.is-disabled {
+								border-color: $color-border-gray;
+								background: $color-border-gray;
+							}
+						}
+						&.form-select {
+							height: 42px;
+							border: 1px solid $color-border-gray;
+							.sort-select {
+								height: 100%;
+								&__value {
+									height: 100%;
+									background: transparent;
+									&-input {
+										padding: 0;
+									}
+								}
+								&__dropdown-list {
+									border-color: $color-border-gray;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.reg-protocol {
+			padding: 0 24px;
+			margin-bottom: 16px;
+			.protocol {
+				color: #FF5A00;
+				cursor: pointer;
+			}
+		}
+		.reg-complete {
+				text-align: center;
+				padding: 0 24px;
+				.reg-img {
+					width: 58px;
+				}
+				.name {
+					font-size: 24px;
+					font-weight: 400;
+					color: #3B3B3B;
+					margin: 16px 0;
+				}
+				.vip {
+					font-size: 18px;
+					font-weight: 400;
+					color: #8C8C8C;
+				}
+				.sp-btn {
+					margin-top: 65px;
+					height: 38px;
+					&__primary{
+						background: linear-gradient(270deg, #FF8600 0%, #FF5A00 100%);
+					}
+					&__txt {
+						color: #fff;
+					}
+				}
+			}
+		.form-item-desc {
+				font-size: 12px;
+				color: $color-hint-text;
+			}
+	}
+}
+
+.protocol-title {
+	width: 100%;
+	height: 40px;
+	background-color: #eeeeee;
+	border-radius: 8px 8px 0 0;
+	line-height: 40px;
+	text-align: center;
+}
+.protocol-body {
+	padding-bottom: 10px;
+	.protocol-content {
+		padding: 10px;
+		height: 500px;
+		overflow-y: auto;
+	}
+}

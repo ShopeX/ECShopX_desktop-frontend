@@ -1,0 +1,34 @@
+{
+	"zh": {
+		"member.address.908954-0": "收货地址管理",
+		"member.address.908954-1": "新增收货地址",
+		"member.address.908954-2": "您已创建",
+		"member.address.908954-3": "个收货地址，最多可创建20个",
+		"member.address.908954-4": "收货人 :",
+		"member.address.908954-5": "收货地址 :",
+		"member.address.908954-6": "邮政编码 :",
+		"member.address.908954-7": "手机 :",
+		"member.address.908954-8": "默认",
+		"member.address.908954-9": "默认地址",
+		"member.address.908954-10": "设为默认",
+		"member.address.908954-11": "编辑",
+		"member.address.908954-12": "删除",
+		"member.address.908954-13": "新增地址"
+	},
+	"en": {
+		"member.address.908954-0": "Delivery address management",
+		"member.address.908954-1": "Add shipping address",
+		"member.address.908954-2": "You have created",
+		"member.address.908954-3": "Up to 20 shipping addresses can be created",
+		"member.address.908954-4": "consignee:",
+		"member.address.908954-5": "Receiving address",
+		"member.address.908954-6": "Postal Code:",
+		"member.address.908954-7": "mobile phone:",
+		"member.address.908954-8": "default",
+		"member.address.908954-9": "Default Address",
+		"member.address.908954-10": "set as default",
+		"member.address.908954-11": "edit",
+		"member.address.908954-12": "delete",
+		"member.address.908954-13": "Add address"
+	}
+}

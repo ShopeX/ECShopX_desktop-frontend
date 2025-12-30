@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"comps.cart-item-edit.878898-0": "关闭",
+		"comps.cart-item-edit.878898-1": "移入我的收藏",
+		"comps.cart-item-edit.878898-2": "确定",
+		"comps.cart-item-edit.878898-3": "请选择规格",
+		"comps.cart-item-edit.878898-4": "商品已加入收藏"
+	},
+	"en": {
+		"comps.cart-item-edit.878898-0": "close",
+		"comps.cart-item-edit.878898-1": "Move to my collection",
+		"comps.cart-item-edit.878898-2": "sure",
+		"comps.cart-item-edit.878898-3": "Please select specifications",
+		"comps.cart-item-edit.878898-4": "The product has been added to the collection"
+	}
+}

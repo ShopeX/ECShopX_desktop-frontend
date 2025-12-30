@@ -1,0 +1,16 @@
+{
+	"zh": {
+		"comps.coupon-item.071194-0": "折",
+		"comps.coupon-item.071194-1": "兑换券",
+		"comps.coupon-item.071194-2": "满",
+		"comps.coupon-item.071194-3": "可用",
+		"comps.coupon-item.071194-4": "至"
+	},
+	"en": {
+		"comps.coupon-item.071194-0": "break",
+		"comps.coupon-item.071194-1": "Exchange coupons",
+		"comps.coupon-item.071194-2": "full",
+		"comps.coupon-item.071194-3": "available",
+		"comps.coupon-item.071194-4": "to"
+	}
+}

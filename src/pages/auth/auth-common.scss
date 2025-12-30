@@ -1,0 +1,74 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+$form-w: 555px;
+$login-pic-w: 555px;
+
+.auth {
+  width: $form-w + $login-pic-w + 40px;
+  margin: auto;
+
+  &-title {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: $color-secondary-text;
+    margin-bottom: 15px;
+  }
+
+  &-form {
+    float: left;
+    width: $form-w;
+    padding-top: 38px;
+    border-top: 1px solid #adadad;
+  }
+
+  .sp-input {
+    width: 275px;
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .license-info {
+    color: $color-primary-text;
+  }
+
+  .vcode-btn {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .button-vilid {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-item {
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .button-vilid {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-pic {
+    float: left;
+    width: $login-pic-w;
+    height: 445px;
+    margin-left: 40px;
+  }
+}

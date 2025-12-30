@@ -1,0 +1,22 @@
+{
+	"zh": {
+		"auth.profile.118339-0": "注册成功",
+		"auth.profile.118339-1": "填写个人资料",
+		"auth.profile.118339-2": "保存",
+		"auth.profile.118339-3": "点击跳过此步骤",
+		"auth.profile.118339-4": "会员中心_Aigle官方网站",
+		"auth.profile.118339-5": "我的账户_Aigle官方网站",
+		"auth.profile.118339-6": "保存成功",
+		"auth.profile.118339-7": "不能为空"
+	},
+	"en": {
+		"auth.profile.118339-0": "login was successful",
+		"auth.profile.118339-1": "Fill in personal information",
+		"auth.profile.118339-2": "save",
+		"auth.profile.118339-3": "Click to skip this step",
+		"auth.profile.118339-4": "Member Center_Sigle Official Website",
+		"auth.profile.118339-5": "My Account _ Igle Official Website",
+		"auth.profile.118339-6": "Saved successfully",
+		"auth.profile.118339-7": "Cannot be empty"
+	}
+}

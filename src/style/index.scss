@@ -1,0 +1,246 @@
+/**
+ * Copyright © ShopeX （http://www.shopex.cn）. All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+@import 'theme';
+@import 'reset';
+@import 'iconfont';
+@import 'iconfont-ec';
+@import 'layout';
+// @import 'a-icons';
+@import 'components';
+// @import 'member';
+// @import 'form';
+@import 'transitions';
+@import 'iconfont-new';
+@import 'auth';
+
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $color-primary-text;
+}
+.system-auth{
+	--color-primary: #ea2329; //主题色(var(--color-primary))
+	--color-second: #d3777a; //辅助色
+	--color-text: #fff; //主题背景时的文字颜色
+	--color-a: #1766dd; //a标签的颜色
+	--color-tge-red:#f75a4e;//红色tag
+}
+.system-container {
+  --color-primary: #ea2329; //主题色(var(--color-primary))
+  --color-second: #d3777a; //辅助色
+  --color-text: #fff; //主题背景时的文字颜色
+  --color-a: #1766dd; //a标签的颜色
+  --color-tge-red:#f75a4e;//红色tag
+	// background-color: $color-custom-theme;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lock-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+}
+
+.ly-fn-a {
+  cursor: pointer;
+  color: #1766dd;
+  text-decoration: none;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  /*鼠标划过(停留)的链接*/
+  &:hover {
+    text-decoration: none;
+  }
+  /* 正在点击的链接*/
+  &:active {
+    text-decoration: none;
+  }
+  &-red{
+    color: var(--color-primary);
+  }
+}
+
+.ly-fn-h-mid{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.ly-text-red {
+  color: $color-brand-primary;
+}
+.page-body {
+  // min-height: 600px;
+  // min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  // padding: 20px 0;
+  // background-color: #F5F5F5;
+}
+
+.page-container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  padding: 200px 0;
+}
+
+.dp-transition {
+  transition: $transition-time height ease-in-out,
+    $transition-time padding-top ease-in-out,
+    $transition-time padding-bottom ease-in-out;
+}
+
+.container-member {
+  margin-top: 20px;
+}
+
+.market-price {
+  text-decoration: line-through;
+  .price__symbol {
+    color: #b3b3b3;
+    font-size: 16px !important;
+  }
+  .price__int {
+    color: #b3b3b3;
+    font-size: 16px !important;
+  }
+  .price__decimal {
+    color: #b3b3b3;
+    font-size: 16px !important;
+  }
+}
+
+// @media (max-width: 1366px) {
+//   .container {
+//     width: 1160px;
+//   }
+// }
+
+// @include respond(lg) {
+//   .container {
+//     width: 1000px;
+//   }
+// }
+
+// @include respond(md) {
+//   .container {
+//     width: 900px;
+//   }
+// }
+
+@include respond(sm) {
+  .container {
+    width: 100%;
+  }
+}
+
+.form-item__error {
+  input {
+    // border: 1px solid $color-brand-primary;
+  }
+
+  &-message {
+    padding: 0 4px;
+    right: 20px;
+    bottom: -17px;
+    color: $color-invalid;
+    // background: #dddddd;
+  }
+}
+
+.system-auth {
+  .auth-header {
+    padding: 20px 0;
+    .header-login {
+      width: 110px;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    span {
+      vertical-align: top;
+      margin-top: 8px;
+      font-size: 24px;
+      color: #606266;
+      display: inline-block;
+    }
+  }
+}
+.shop-auth {
+  background-color: #fff;
+  .auth-header {
+    padding: 20px 0;
+
+    .header-login {
+      width: 110px;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    span {
+      vertical-align: top;
+      margin-top: 8px;
+      font-size: 24px;
+      color: #606266;
+      display: inline-block;
+    }
+  }
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #bdbdbd;
+  font-size: 12px;
+}  
+
+/*====================================
+=         sp-number-input            =
+====================================*/
