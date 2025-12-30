@@ -10,7 +10,7 @@
     .topbar-login {
       a,
       .name {
-        margin-right: 10px;
+        @include margin-inline-end(10px);
         font-size: 13px;
         color: #666;
       }
@@ -22,17 +22,104 @@
       .member-phone {
         font-size: 13px;
         color: $color-brand-primary;
-        margin-right: 10px;
+        @include margin-inline-end(10px);
       }
       .exit-btn {
         font-size: 13px;
         cursor: pointer;
       }
+      
+      .language-selector {
+        position: relative;
+        display: inline-block;
+        @include margin-inline-start(10px);
+        z-index: 1001;
+        pointer-events: auto;
+        
+        &__current {
+          font-size: 13px;
+          color: #666;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          user-select: none;
+          pointer-events: auto;
+          position: relative;
+          z-index: 1002;
+          
+          .ec-icon {
+            font-size: 12px;
+            transition: transform 0.2s ease;
+            color: #999;
+            
+            &.active {
+              transform: rotate(180deg);
+            }
+          }
+          
+          &:hover {
+            color: $color-brand-primary;
+          }
+        }
+        
+        &__dropdown {
+          @include text-align-start;
+          position: fixed !important;
+          background: #fff;
+          border: 1px solid #dcdcdc;
+          border-radius: 4px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          min-width: 120px;
+          z-index: 10000 !important;
+          list-style: none;
+          padding: 4px 0;
+          margin: 0;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          
+          li {
+            padding: 8px 16px;
+            font-size: 13px;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            
+            &:hover {
+              background: #f5f5f5;
+              color: $color-brand-primary;
+            }
+            
+            &.active {
+              background: #f0f0f0;
+              color: $color-brand-primary;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      
+      // 过渡动画
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.2s ease;
+      }
+      
+      .fade-enter,
+      .fade-leave-to {
+        opacity: 0;
+      }
+      
+      .fade-enter-to,
+      .fade-leave {
+        opacity: 1;
+      }
     }
     .topbar-member {
       a {
         color: #666;
-        margin-right: 10px;
+        @include margin-inline-end(10px);
         font-size: 13px;
       }
     }
@@ -44,7 +131,7 @@
     }
     .logo-con {
       width: 25%;
-      float: left;
+      @include float-start;
       img {
         display: block;
         cursor: pointer;
@@ -52,14 +139,14 @@
     }
     .search-con {
       width: 50%;
-      float: left;
+      @include float-start;
       margin-top: 7px;
     }
     .cart-con {
       width: 25%;
-      float: left;
+      @include float-start;
       margin-top: 7px;
-      text-align: right;
+      @include text-align-end;
       .cart-link {
         background: $color-brand-primary;
         color: $color-primary-text;
@@ -70,10 +157,10 @@
         display: inline-block;
         border-radius: 5px;
         position: relative;
-        .cart-icon {
+          .cart-icon {
           display: inline-block;
           position: relative;
-          margin-right: 5px;
+          @include margin-inline-end(5px);
           height: 100%;
           vertical-align: top;
           .ec-icon-cart {
@@ -83,7 +170,7 @@
           .count {
             position: absolute;
             top: 0;
-            right: 10px;
+            @include right(10px);
             transform: translateY(-35%) translateX(100%);
             border: 1px solid $color-brand-primary;
             background: #fff;
@@ -121,7 +208,7 @@
         }
       }
       &__btn {
-        float: left;
+        @include float-start;
         height: 40px;
         line-height: 40px;
         width: 200px;
@@ -133,7 +220,9 @@
       .category-list {
         position: absolute;
         top: 42px;
+        left: 0;
         width: 1000px;
+        direction: ltr;
         // display: none;
         height: 0;
         overflow: hidden;
@@ -206,11 +295,11 @@
       }
     }
     .navs-con {
-      float: left;
-      margin-left: 60px;
+      @include float-start;
+      @include margin-inline-start(60px);
       .nav-item {
-        float: left;
-        margin-right: 60px;
+        @include float-start;
+        @include margin-inline-end(60px);
         a {
           height: 40px;
           line-height: 40px;

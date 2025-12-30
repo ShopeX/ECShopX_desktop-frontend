@@ -5,6 +5,7 @@
 
 import commonEn from './en.json'
 import commonZh from './zh.json'
+import commonAr from './ar.json'
 
 export default {
   'en': {
@@ -12,5 +13,8 @@ export default {
   },
   'zh': {
    ...commonZh
+  },
+  'ar': {
+   ...commonAr
   }
 }

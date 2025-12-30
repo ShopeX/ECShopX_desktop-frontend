@@ -11,6 +11,10 @@ export const getLanguage = () => {
   export const getlanguageByPath = (path) => {
     const zhKey = 'zh'
     const enKey = 'en'
-    return path.includes(zhKey) ? 'zh' : path.includes(enKey) ? 'en' : ''
+    const arKey = 'ar'
+    if (path.includes(zhKey)) return 'zh'
+    if (path.includes(enKey)) return 'en'
+    if (path.includes(arKey)) return 'ar'
+    return ''
   }
   

@@ -33,6 +33,37 @@ class Cookie {
     if (cval != null)
       document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
   }
+
+  /**
+   * 获取 Cookie 授权状态
+   * @returns {string|null} 'true' | 'false' | null
+   */
+  getCookieConsent() {
+    if (typeof window === 'undefined' || !window.localStorage) {
+      return null
+    }
+    return window.localStorage.getItem('cookie_consent_authorized')
+  }
+
+  /**
+   * 设置 Cookie 授权状态
+   * @param {boolean} value - 授权状态
+   */
+  setCookieConsent(value) {
+    if (typeof window === 'undefined' || !window.localStorage) {
+      return
+    }
+    window.localStorage.setItem('cookie_consent_authorized', String(value))
+  }
+
+  /**
+   * 检查是否已授权 Cookie
+   * @returns {boolean}
+   */
+  hasCookieConsent() {
+    const consent = this.getCookieConsent()
+    return consent === 'true'
+  }
 }
 
 const cookie = new Cookie()

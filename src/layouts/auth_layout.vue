@@ -15,7 +15,7 @@
 
 <template>
   <LayoutHoc>
-  <div class="system-auth">
+  <div class="system-auth" :dir="direction">
     <auth-header :logo="logo" />
     <div class="page-body" :style="{ backgroundImage: `url(${bg})` }">
       <Nuxt />
@@ -31,6 +31,7 @@ import "@/main";
 import { mapActions, mapState } from "vuex";
 import { Tracker } from "@/service";
 import { isNativeBrower } from "@/utils";
+import { getCurrentDirection } from '@/utils/rtl'
 import backgroundImage from '@/assets/imgs/login_background.png'
 import logoImage from '@/assets/imgs/login_yundian.jpg'
 
@@ -57,7 +58,10 @@ export default {
 
         return res.params ? JSON.parse(res.params) : [];
       }
-    })
+    }),
+    direction() {
+      return getCurrentDirection(this)
+    }
   },
   created() {
     this.getPic()

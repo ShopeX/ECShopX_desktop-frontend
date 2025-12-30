@@ -1748,5 +1748,8 @@
 	"W0010.index.258451-1": "A total of {0} products, total",
 	"W0010.index.258451-2": "enter the shopping cart",
 	"W0010.index.258451-3": "shopping cart",
-	"W0008.index.695137-0": "search"
+	"W0008.index.695137-0": "search",
+	"cookieConsent.description": "We Use Cookies\nIn addition to the cookies that are strictly necessary for the operation of this website, we use cookies and other tracking tools to remember your preference, to measure our website performance, to improve our understanding of your interests, and to send you cart notifications. Our partners use trackers to deliver personalised advertising based on your browsing habits and your profile, including by using profiling, or to allow you to share our content on your social networks.\n\nYou can click on \"Accept all cookies\" to consent to the above mentioned uses, click on \"Cookie Settings\" to configure your choices, or click on \"Continue without accepting\" button to refuse all the optional cookies. You may change your preferences, and in particular withdraw your consent, on our website at any moment.\n\nFor more information about these technologies and their use on this website, please consult our Cookie Policy.",
+	"cookieConsent.accept": "ACCEPT ALL",
+	"cookieConsent.reject": "REJECT ALL"
 }
