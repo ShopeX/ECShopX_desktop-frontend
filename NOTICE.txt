@@ -1,0 +1,31 @@
+ECShopX Frontend
+
+This product includes software developed by Shopex.
+
+Copyright © 2019-2026 Shopex.
+All rights reserved.
+
+---
+
+Trademark Notice
+
+"Shopex", "ECShopX", and all related names, logos, and visual identifiers
+are trademarks or registered trademarks of Shopex.
+
+Use of these trademarks is subject to applicable trademark laws and the
+terms and conditions described in the LICENSE file of this repository.
+
+---
+
+Open Core and Commercial Licensing Notice
+
+This repository is part of the ECShopX Open Core project.
+
+The community edition of ECShopX Frontend is provided under the Apache
+License, Version 2.0, with additional terms as described in the LICENSE file.
+
+Commercial licenses are available for certain use cases, including but not
+limited to removal or modification of Shopex branding elements.
+
+For commercial licensing inquiries, please visit:
+https://www.shopex.cn
