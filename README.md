@@ -1,4 +1,4 @@
-<p align="center"><img width="600" height="416" alt="logo2" src="https://github.com/user-attachments/assets/abf6c4c7-8cb1-477e-aea4-9e526cd8225a" /></p>
+<p align="center"><img width="600" height="416" alt="logo2" src="logo.png" /></p>
 
 ### <p align="center">Desktop Frontend</p>
 
