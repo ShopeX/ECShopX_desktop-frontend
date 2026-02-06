@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.2.0...v4.3.0) (2026-02-06)
+
+
+### Bug Fixes
+
+* **all:** fix some bugs ([3d6e71e](https://git.ishopex.cn/onex/ecshopx-newpc/commit/3d6e71ec5cd45fe84d1072d2210e93c92d7be492))
+
 ## [4.2.0](https://git.ishopex.cn/onex/ecshopx-newpc/compare/v4.1.0...v4.2.0) (2025-12-29)
 
 
