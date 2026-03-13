@@ -1,5 +1,3 @@
-import i18n from './src/plugins/nuxti18n'
-
 const path = require('path')
 const merge = require('webpack-merge')
 const pkg = require('./package.json')
@@ -14,6 +12,7 @@ console.log(`build template: ${process.env.npm_config_t}, mode: ${mode}`);
 require('dotenv-flow').config({
   node_env: mode
 })
+const i18n = require('./src/plugins/nuxti18n').default
 
 const SRC_PATH = path.resolve(__dirname, 'src')
 const CUSTOME_PATH = path.resolve(__dirname, 'custome')

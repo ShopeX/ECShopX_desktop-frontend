@@ -30,24 +30,31 @@ import S from '@/spx'
 export default {
   async asyncData({ app, route ,query ,store}) {
     let { pageid } = query
-
-    const bodyTemplate = await app.$api.theme.getTemplateContent({
+    try {
+      const bodyTemplate = await app.$api.theme.getTemplateContent({
         theme_pc_template_id: pageid
       })
-    const _bodyTemplate = []
-    bodyTemplate.forEach((item) => {
-      const config = JSON.parse(item.config)
-      if (config.type != 'W0000') {
-      
-        _bodyTemplate.push(config)
-      }else{
-        console.log('W0000',config)
-        store.commit('setPageConfig', config)
+      const _bodyTemplate = []
+      bodyTemplate.forEach((item) => {
+        const config = JSON.parse(item.config)
+        if (config.type != 'W0000') {
+          _bodyTemplate.push(config)
+        } else {
+          console.log('W0000', config)
+          store.commit('setPageConfig', config)
+        }
+      })
+      console.log('_bodyTemplate', _bodyTemplate)
+      return {
+        wgts: _bodyTemplate
       }
-    })
-    console.log('_bodyTemplate',_bodyTemplate)
-    return {
-      wgts: _bodyTemplate
+    } catch (error) {
+      if (process.server) {
+        console.error('index asyncData getTemplateContent failed:', error && error.message ? error.message : error)
+      }
+      return {
+        wgts: []
+      }
     }
   },
   data() {

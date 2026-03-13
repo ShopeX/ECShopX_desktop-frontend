@@ -127,16 +127,21 @@ export const actions = {
     } catch (e) {
       // console.error(e)
     }
-    const [headerTemplate, bodyTemplate, footerTemplate, seoInfo] = await Promise.all([
+    const settled = await Promise.allSettled([
       app.$api.theme.getHeaderOrFooter({
         page_name: 'header'
       }),
       app.$api.theme.getTemplateContent(),
       app.$api.theme.getHeaderOrFooter({
         page_name: 'footer'
-      } ),
+      }),
       app.$api.global.getGlobalTdk()
-    ] )
+    ])
+    const [headerRes, bodyRes, footerRes, seoRes] = settled
+    const headerTemplate = headerRes.status === 'fulfilled' ? headerRes.value : { params: '[]' }
+    const bodyTemplate = bodyRes.status === 'fulfilled' && Array.isArray(bodyRes.value) ? bodyRes.value : []
+    const footerTemplate = footerRes.status === 'fulfilled' ? footerRes.value : { params: '[]' }
+    const seoInfo = seoRes.status === 'fulfilled' ? seoRes.value : {}
     console.log('promise ending...')
     commit('setSeoInfo', seoInfo)
 

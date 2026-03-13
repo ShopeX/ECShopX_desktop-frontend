@@ -206,25 +206,36 @@ class CreateAxios {
         return Promise.reject(reqErr(res))
       },
       (err) => {
+        // Network timeout/CORS/connection reset can make err.response undefined.
+        const status = err && err.response ? err.response.status : 0
+        const responseData = err && err.response ? err.response.data : null
+        if (!status) {
+          if (process.server) {
+            console.error('HTTP request failed without response status:', err && err.message ? err.message : err)
+          } else {
+            errorMessage((err && err.message) || '网络异常，请稍后重试')
+          }
+          return Promise.reject(err)
+        }
         // console.log( 'xxx:', err )
         // console.log(`server request error: [${req.method}] ${req.res.responseUrl}`)
-        switch (err.response.status) {
+        switch (status) {
           case 401:
-            // if ( process.client ) {
-            const { app } = CreateAxios.content
-            app.$cookies.remove('ECSHOPX_TOKEN')
-            S.logout()
-            window.location.href = `/auth/login?redirectUrl=${$nuxt.$route.fullPath}`
-            // }
+            if (process.client) {
+              const { app } = CreateAxios.content
+              app.$cookies.remove('ECSHOPX_TOKEN')
+              S.logout()
+              window.location.href = `/auth/login?redirectUrl=${$nuxt.$route.fullPath}`
+            }
             break
           default:
-            errorToast(err.response.data)
+            errorToast(responseData || {})
             break
         }
-        if (err.response.status >= 500) {
-          return Promise.reject(err.response)
+        if (status >= 500) {
+          return Promise.reject(err.response || err)
         } else {
-          return Promise.reject()
+          return Promise.reject(err)
         }
       }
     )
