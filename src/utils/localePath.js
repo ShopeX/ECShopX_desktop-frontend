@@ -7,6 +7,12 @@ import { defaultLocale } from './language'
 import { getlanguageByPath } from './doc'
 
 /**
+ * nuxt-i18n strategy `prefix_and_default`:
+ * URLs for the default locale do NOT include the locale prefix (e.g. `/cart`),
+ * while other locales use a prefix (e.g. `/zh/cart`).
+ */
+
+/**
  * 生成本地化路径（带语言前缀）
  * @param {string} path - 原始路径，如 '/items/123' 或 '/items'
  * @param {string} locale - 语言代码，如 'zh', 'en', 'ar'。如果不提供，则从当前路由或默认语言获取
@@ -51,16 +57,13 @@ export function localePath(path, locale = null, context = null) {
   // 如果路径已经包含语言前缀，先移除
   const pathWithoutLang = path.replace(/^\/(zh|en|ar)(\/|$)/, '/')
   
-  // 如果是默认语言且路径是根路径，可以不添加语言前缀（根据 nuxt-i18n 的 prefix_and_default 策略）
-  // 但为了保持一致性，我们总是添加语言前缀
-  if (currentLocale === defaultLocale && pathWithoutLang === '/') {
-    return '/'
-  }
-  
   // 确保路径以 / 开头
   const normalizedPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`
-  
-  // 生成带语言前缀的路径
+
+  if (currentLocale === defaultLocale) {
+    return normalizedPath === '/' ? '/' : normalizedPath
+  }
+
   return `/${currentLocale}${normalizedPath}`
 }
 
